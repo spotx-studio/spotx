@@ -117,10 +117,14 @@
 
 
 // ------------------
-// Case Section
+// Comment Section
 
 .comment{
     background-color: $secondary-850;
+}
+
+.comment .badge-list{
+    gap: 8px;
 }
 
 .comment h4{

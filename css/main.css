@@ -13275,6 +13275,10 @@ body.unscrollable {
   background-color: #262626;
 }
 
+.comment .badge-list {
+  gap: 8px;
+}
+
 .comment h4, .comment .h4 {
   color: #e6e6e6;
 }
