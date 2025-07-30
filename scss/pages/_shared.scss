@@ -1,0 +1,64 @@
+body{
+    background-color: $secondary-900;
+    font-family: 'Sk-modernist', sans-serif;
+}
+
+*{
+    color: $secondary-50;
+}
+
+// Font Weight "Light"
+.f-300{
+    font-weight: 300;
+}
+
+.f-400{
+    font-weight: 400;
+}
+
+// Font Weight "Bold"
+.f-700{
+    font-weight: 700;
+}
+
+.btn {
+    width: fit-content;
+}
+
+.badge{
+    border-radius: 1px;
+    padding: 4px 8px;
+}
+
+.bg-primary{
+    background-color: rgba($color: $primary-400, $alpha: 0.8) !important;
+    color: $primary-900 !important;
+}
+
+.bg-secondary{
+    background: rgba(78, 78, 78, 0.80);
+    color: $secondary-100;
+}
+
+.section-title .p{
+    color: $secondary-200;
+}
+
+.text-highlight{
+    color: $primary-500;
+}
+
+// Footer
+.footer{
+    gap: 4px;
+    padding: 20px 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $secondary-900;
+    border-top: 1px solid var(--800, #333);
+}
+
+.footer .caption{
+    color: $secondary-400;
+}

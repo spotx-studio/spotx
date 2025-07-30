@@ -1,0 +1,30 @@
+.navbar .container{
+    border-bottom: 1.5px solid var(--800, #333) !important;
+    background: var(--900, #1A1A1A) !important;
+}
+
+.nav-link{
+    color: $secondary-500;
+}
+
+.nav-link.active{
+    color: $secondary-50 !important;
+    border-bottom: 2px solid $primary-500;
+}
+
+.navbar-nav{
+    gap: 24px;
+}
+
+.navbar-brand{
+    font-weight: 700;
+}
+
+.navbar-brand .p{
+    color: $primary-50 !important;
+} 
+
+.navbar-brand img{
+    width: 32px;
+    height: 32px;
+}

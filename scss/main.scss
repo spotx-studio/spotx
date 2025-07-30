@@ -1,0 +1,30 @@
+// main.scss
+
+// 🔧 Variable Overrides
+@import 'variables/colors';
+@import 'variables/layout';
+@import 'variables/button';
+@import 'variables/nav';
+
+// 📦  Bootstrap core (now uses your variables)
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// 🎨  Global Custom Styles
+@import 'components/form';
+@import 'components/button';
+@import 'components/offcanvas';
+@import 'components/badge';
+@import 'components/nav';
+@import 'components/scrollspy';
+@import 'components/typography';
+
+// CSS Reset
+@import 'pages/reset';
+
+// Page-specific Styles
+@import 'pages/shared';
+@import 'pages/home';
+@import 'pages/contact';
+@import 'pages/about';
+@import 'pages/case';
+@import 'pages/case-details';

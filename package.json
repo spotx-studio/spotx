@@ -1,0 +1,25 @@
+{
+  "name": "spotx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch scss/main.scss css/main.css",    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spotx-studio/spotx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spotx-studio/spotx/issues"
+  },
+  "homepage": "https://github.com/spotx-studio/spotx#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.89.2"
+  }
+}

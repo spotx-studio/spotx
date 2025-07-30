@@ -1,0 +1,42 @@
+// _colors.scss
+
+// Primary shades
+$primary-50:  #fafee6;
+$primary-100: #f4fecc;
+$primary-200: #e9fd99;
+$primary-300: #defb66;
+$primary-400: #d3fa33;
+$primary-500: #c8f900; // Main
+$primary-600: #a0c700;
+$primary-700: #789500;
+$primary-800: #506400;
+$primary-850: #3C4B00;
+$primary-900: #283200;
+$primary:     $primary-500 !default;
+
+// Secondary shades
+$secondary-50:  #f2f2f2;
+$secondary-100: #e6e6e6;
+$secondary-200: #cccccc;
+$secondary-300: #b3b3b3;
+$secondary-400: #999999;
+$secondary-500: #808080; // Main
+$secondary-600: #666666;
+$secondary-700: #4d4d4d;
+$secondary-800: #333333;
+$secondary-850: #262626;
+$secondary-900: #1a1a1a;
+$secondary:     $secondary-500 !default;
+
+// Map into theme colors
+$theme-colors: (
+  "primary": $primary-800,
+  "secondary": $secondary-800,
+  "gray-light": $secondary-200,
+  "gray-dark": $secondary-900,
+  "success": #2ecc71,
+  "danger": #e74c3c
+);
+
+// Heading Colors
+$headings-color: $secondary-50;

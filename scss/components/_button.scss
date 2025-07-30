@@ -1,0 +1,67 @@
+.btn-primary {
+  @include button-variant(
+    $primary-800,  // ✅ background
+    $primary-800,  // ✅ border
+    $primary-200,  // ✅ text color
+
+    $primary-600,  // ✅ hover bg
+    $primary-850,  // ✅ hover border
+    $primary-850,  // ✅ hover text
+
+    $primary-900,   // ✅ active bg
+    $primary-900,  // ✅ active border
+    $primary-500   // ✅ active text
+  );
+}
+
+.btn-secondary {
+  @include button-variant(
+    $secondary-800,  // ✅ background
+    $secondary-800,  // ✅ border
+    $secondary-200,  // ✅ text color
+
+    $secondary-700,  // ✅ hover bg
+    $secondary-700,  // ✅ hover border
+    $secondary-100,  // ✅ hover text
+
+    $secondary-200,   // ✅ active bg
+    $secondary-200,  // ✅ active border
+    $secondary-850   // ✅ active text
+  );
+}
+
+.btn-suffix{
+    display: flex;
+    padding: 10px 10px 10px 20px;
+    gap: 6px;
+}
+
+.btn-prefix{
+  display: flex;
+    padding: 10px 20px 10px 10px;
+    gap: 6px;
+}
+
+.btn-icon-only{
+    padding: 8px;
+}
+
+.btn-icon{
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width:1025px) {
+    .btn-icon{
+        width: 24px;
+        height: 24px;
+    }
+    .btn-suffix{
+        padding: 12px 12px 12px 24px;
+        gap: 10px;    
+    }
+    .btn-prefix{
+        padding: 12px 24px 12px 12px;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,194 @@
+
+// ------------------
+// Hero Section
+
+.hero-section video{
+    margin-top: -36px;
+}
+
+.content{
+    margin-top: -16px;
+}
+
+.toolbox{
+    padding: 8px 8px 8px 12px;
+    gap: 8px;
+    background-color: $secondary-800;
+    width: fit-content;
+}
+
+.logo-box{
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.tool-icon{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.hero-section .nav{
+    column-gap: 16px;
+    position: relative;
+}
+
+.hero-section .navlink{
+    color: $secondary-700 !important;
+}
+
+.hero-section .navlink.active{
+    color: $secondary-50 !important;
+}
+
+.hero-section .nav-bg-deco{
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    transform: rotate(2deg);
+    z-index: -1;
+}
+
+.hero-section .p{
+    color: $secondary-200;
+}
+
+
+// ------------------
+// Bold Text Section
+
+.boldtext-section{
+    gap: 12px;
+}
+
+.boldtext-section .quote{
+    width: 80px ;
+    height: 80px ;
+}
+
+.boldtext{
+    font-size: 54px;
+    line-height: 120%;
+}
+
+.boldtext-section .p{
+    color: $secondary-400;
+}
+
+
+// ------------------
+// Case Section
+
+.case{
+    background-color: $secondary-850;
+}
+
+.case-section .badge-list{
+    gap: 8px;
+}
+
+.case-section .prj-cover{
+    width: 100%;
+    object-fit: cover;
+    height: 240px;
+}
+
+.case-section .data{
+    font-size: 40px;
+    color: $primary-500;
+    line-height: 125%;
+}
+.case-section .prj-overview{
+    column-gap: 20px;
+    row-gap: 12px;
+}
+
+.case-section .prj-overview .caption{
+    color: $secondary-500;
+}
+
+.case-section .prj-overview .p{
+    color: $secondary-200;
+}
+
+.case-section .prj-highlights .p2{
+    color: $secondary-200;
+}
+
+
+// ------------------
+// Case Section
+
+.comment{
+    background-color: $secondary-850;
+}
+
+.comment h4{
+    color: $secondary-100;
+}
+
+.comment .p{
+    color: $secondary-200;
+}
+
+.comment img.icon{
+    height: 24px;
+    width: 24px;
+}
+
+.comment .company{
+    border-top: 1px solid var(--700, #4D4D4D);
+    
+    .company-logo{
+        height: 20px;
+        width: 20px;
+        margin-right: 8px;
+    }
+
+    .p2{
+        color: $secondary-200;
+    }
+}
+
+// ------------------
+// Service Section
+
+.service-section .package{
+    background-color: $secondary-850;
+    border-radius: 2px;
+    padding: 16px;
+}
+
+.service-section .target{
+    color: $secondary-200;
+}
+
+.service-section .checklist-icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+.service-section .p2{
+    color: $secondary-500;
+}
+
+.service-section li.p2{
+    color: $secondary-200;
+}
+
+.service-section .consultation{
+    color: $secondary-200;
+}
+
+// ------------------
+// Contact Section
+
+.social{
+    background-color: $secondary-850;
+}
+
+.social .icon{
+    width: 24px;
+    height: 24px;
+}

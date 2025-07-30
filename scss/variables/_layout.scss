@@ -1,0 +1,71 @@
+// 📱 Breakpoints (optional: tweak as needed)
+$grid-breakpoints: (
+  xs: 0,
+  sm: 577px,
+  md: 769px,
+  lg: 1025px,
+  xl: 1367px
+) !default;
+
+// 📦 Container Max Widths (match your breakpoints)
+$container-max-widths: (
+  sm: 734px,
+  md: 976px,
+  lg: 1270px,
+  xl: 1366px
+) !default;
+
+// 🔢 Number of columns
+$grid-columns: 12 !default;
+
+// 🔧 Base spacing unit
+$spacer: 16px !default;
+
+// 🔢 Scale of spacing utilities (optional)
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25, //4px
+  2: $spacer * 0.5, //8px
+  3: $spacer * 0.75, //12px
+  4: $spacer * 1, //16px
+  5: $spacer * 1.25, //20px
+  6: $spacer * 1.5, //24px
+  7: $spacer * 2, //32px
+  8: $spacer * 2.5, //40px
+  9: $spacer *3, //48px
+  10: $spacer *5, //80px
+) !default;
+
+
+// Override the Bootstrap column system
+.grid {
+  display: grid;
+  column-gap: 12px;
+  grid-template-columns: repeat(4, 1fr); //xs
+
+  @media (min-width: 769px) {
+    grid-template-columns: repeat(8, 1fr); //md
+    column-gap: 16px;
+  }
+
+  @media (min-width: 1367px) {
+    grid-template-columns: repeat(12, 1fr); //xl
+    column-gap: 20px;
+  }
+}
+
+$max-columns: 12;
+
+@each $bp, $size in $grid-breakpoints {
+  @for $i from 1 through $max-columns {
+    .col-span-#{$bp}-#{$i} {
+      @if $bp == xs {
+        grid-column: span #{$i} / span #{$i};
+      } @else {
+        @media (min-width: $size) {
+          grid-column: span #{$i} / span #{$i};
+        }
+      }
+    }
+  }
+}
