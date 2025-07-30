@@ -12819,31 +12819,44 @@ textarea.form-control-lg {
     gap: 10px;
   }
 }
-.offcanvas {
+.side-menu {
+  position: fixed;
+  top: 0;
   background: #262626;
+  height: 0;
+  overflow: hidden;
+  transition: all ease-out 300ms;
   z-index: 9998;
-  padding-top: 81px;
-  will-change: transform;
-  backface-visibility: hidden;
 }
 
-.modal-backdrop {
-  backdrop-filter: blur(4px);
-  --bs-backdrop-bg: rgba(0, 0, 0, 0.4);
-  --bs-backdrop-opacity: 1;
+.side-menu.show {
+  top: 68px;
+  height: 292px;
+  transition: all ease-out 300ms;
 }
 
-.offcanvas-body {
-  padding: 0;
-}
-
-.offcanvas-body .icon {
+.side-menu .icon {
   width: 24px;
   height: 24px;
 }
 
-.offcanvas-body a {
+.side-menu a {
   border-bottom: 1.5px solid #333333;
+}
+
+.overlay {
+  z-index: 9997;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all ease-out 300ms;
+}
+
+.overlay.show {
+  position: fixed;
 }
 
 .navbar {
@@ -13085,8 +13098,18 @@ body {
   font-family: "Sk-modernist", sans-serif;
 }
 
+body.unscrollable {
+  overflow: hidden;
+}
+
 * {
   color: #f2f2f2;
+}
+
+.hamburger {
+  width: 44px;
+  height: 44px;
+  padding: 4px;
 }
 
 .f-300 {
@@ -13143,7 +13166,11 @@ body {
 }
 
 .hero-section video {
-  margin-top: -36px;
+  width: 100%;
+  height: 400px;
+  overflow: visible;
+  object-fit: cover;
+  margin-top: -80px;
   z-index: -1;
 }
 
@@ -13162,12 +13189,6 @@ body {
   width: 20px;
   height: 20px;
   overflow: hidden;
-}
-
-.tool-icon {
-  height: 20px;
-  width: 20px;
-  object-fit: cover;
 }
 
 .hero-section .nav {

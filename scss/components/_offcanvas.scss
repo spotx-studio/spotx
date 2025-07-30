@@ -1,26 +1,39 @@
-.offcanvas{
+.side-menu{
+    position: fixed;
+    top: 0;
     background: $secondary-850;
+    height: 0;
+    overflow: hidden;
+    transition: all ease-out 300ms;
     z-index: 9998;
-    padding-top: 81px;
-    will-change: transform;
-    backface-visibility: hidden;
 }
 
-.modal-backdrop{
-    backdrop-filter: blur(4px);
-    --bs-backdrop-bg: rgba(0, 0, 0, 0.4);
-    --bs-backdrop-opacity: 1;
+.side-menu.show{
+    top: 68px;
+    height: 292px;
+    transition: all ease-out 300ms;
 }
 
-.offcanvas-body{
-    padding:0;
-}
-
-.offcanvas-body .icon{
+.side-menu .icon{
     width: 24px;
     height: 24px;
 }
 
-.offcanvas-body a{
+.side-menu a{
     border-bottom: 1.5px solid $secondary-800;
+}
+
+.overlay{
+    z-index: 9997;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all ease-out 300ms;
+}
+
+.overlay.show{
+    position: fixed;
 }

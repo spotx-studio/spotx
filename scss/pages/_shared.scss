@@ -51,8 +51,19 @@ body{
     font-family: 'Sk-modernist', sans-serif;
 }
 
+body.unscrollable{
+	overflow: hidden;
+}
+
 *{
     color: $secondary-50;
+}
+
+// Header Side Menu Button
+.hamburger{
+	width: 44px;
+	height: 44px;
+	padding: 4px;
 }
 
 // Font Weight "Light"
