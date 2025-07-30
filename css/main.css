@@ -13088,6 +13088,7 @@ body {
 
 .hero-section video {
   margin-top: -36px;
+  z-index: -1;
 }
 
 .content {
