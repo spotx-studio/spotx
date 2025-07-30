@@ -1,6 +1,7 @@
 .navbar{
     border-bottom: 1.5px solid var(--800, #333) !important;
     background: var(--900, #1A1A1A) !important;
+    z-index: 9999 !important;
 }
 
 .nav-link{

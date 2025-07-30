@@ -12819,9 +12819,36 @@ textarea.form-control-lg {
     gap: 10px;
   }
 }
+.offcanvas {
+  background: #262626;
+  z-index: 9998;
+  padding-top: 81px;
+  height: fit-content !important;
+}
+
+.modal-backdrop {
+  backdrop-filter: blur(4px);
+  --bs-backdrop-bg: rgba(0, 0, 0, 0.4);
+  --bs-backdrop-opacity: 1;
+}
+
+.offcanvas-body {
+  padding: 0;
+}
+
+.offcanvas-body .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.offcanvas-body a {
+  border-bottom: 1.5px solid #333333;
+}
+
 .navbar {
   border-bottom: 1.5px solid var(--800, #333) !important;
   background: var(--900, #1A1A1A) !important;
+  z-index: 9999 !important;
 }
 
 .nav-link {
