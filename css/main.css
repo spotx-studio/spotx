@@ -12823,7 +12823,8 @@ textarea.form-control-lg {
   background: #262626;
   z-index: 9998;
   padding-top: 81px;
-  height: fit-content !important;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .modal-backdrop {
