@@ -2,6 +2,8 @@
     background: $secondary-850;
     z-index: 9998;
     padding-top: 81px;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 .modal-backdrop{
