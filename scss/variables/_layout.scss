@@ -4,15 +4,15 @@ $grid-breakpoints: (
   sm: 577px,
   md: 769px,
   lg: 1025px,
-  xl: 1367px
+  xl: 1200px
 ) !default;
 
 // 📦 Container Max Widths (match your breakpoints)
 $container-max-widths: (
-  sm: 734px,
-  md: 976px,
+  sm: 768px,
+  md: 1024px,
   lg: 1270px,
-  xl: 1366px
+  xl: 1462px
 ) !default;
 
 // 🔢 Number of columns
@@ -34,6 +34,8 @@ $spacers: (
   8: $spacer * 2.5, //40px
   9: $spacer *3, //48px
   10: $spacer *5, //80px
+  11: $spacer *7.5, //120px
+  12: $spacer *10 //160px
 ) !default;
 
 
@@ -48,7 +50,12 @@ $spacers: (
     column-gap: 16px;
   }
 
-  @media (min-width: 1367px) {
+  @media (min-width: 1025px) {
+    grid-template-columns: repeat(8, 1fr); //md
+    column-gap: 20px;
+  }
+
+  @media (min-width: 1200px) {
     grid-template-columns: repeat(12, 1fr); //xl
     column-gap: 20px;
   }

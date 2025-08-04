@@ -6,6 +6,7 @@
     width: 100%;
     height: 400px;
     overflow: visible;
+    object-position: 24px;
     object-fit: cover;
     margin-top: -80px;
     z-index: -1;
@@ -53,6 +54,43 @@
     color: $secondary-200;
 }
 
+// sm rwd css
+@media (min-width:577px) {
+    .hero-section{
+        gap: 16px;
+        height: 440px;
+    }
+    .hero-section video{
+        width: 260px;
+        margin-top: 0px;
+        height: 480px;
+        object-position: -48px;
+    }
+    .content{
+        margin-top: 40px;
+    }
+}
+
+@media (min-width:769px) {
+    .hero-section{
+        height: auto;
+    }
+    .hero-section video{
+        width: 320px;
+    }
+        .content{
+        margin-top: 0px;
+    }
+}
+
+@media (min-width:1025px) {
+    .hero-section video{
+        width: 500px;
+        height: 500px;
+        margin-top: 0px;
+        object-position: 40px;
+    }
+}
 
 // ------------------
 // Bold Text Section
@@ -75,6 +113,53 @@
     color: $secondary-400;
 }
 
+// sm rwd css
+@media (min-width:577px) {
+    .boldtext{
+        font-size: 64px;
+        line-height: 120%;
+    }
+}
+
+// md rwd css
+@media (min-width:769px) {
+    .boldtext-section{
+        gap: 20px;
+    }
+    .boldtext-section .quote{
+        width: 96px;
+        height: 96px;
+    }
+    .boldtext{
+        margin-top: 24px;
+        font-size: 80px;
+    }
+    .boldtext-section .grid .btn{
+        align-self: end;
+        justify-self: end;
+    }
+}
+
+@media (min-width:1025px) {
+    .boldtext-section .quote{
+        width: 106px;
+        height: 106px;
+    }
+}
+
+@media (min-width:1200px) {
+    .boldtext-section{
+        max-width: 1230px;
+    }
+    .boldtext-section .quote{
+        width: 207px;
+        height: 207px;
+    }
+    .boldtext{
+        margin-top: 48px;
+        font-size: 96px;
+    }
+}
 
 // ------------------
 // Case Section
@@ -90,7 +175,8 @@
 .case-section .prj-cover{
     width: 100%;
     object-fit: cover;
-    height: 240px;
+    height: 200px;
+    border-radius: 2px;
 }
 
 .case-section .data{
@@ -115,12 +201,70 @@
     color: $secondary-200;
 }
 
+.case-section .divider{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 1.5px;
+    background: center / cover no-repeat url(../../media/divider.svg);
+}
+
+// sm rwd css
+@media (min-width:577px) {
+    .case-section .divider{
+        display: block;
+        background-image: url(../../media/divider-vertical.svg);
+        width: 1.5px;
+        margin: 0 20px;
+        align-self: stretch;
+        height: auto;
+    }
+    .case-section .prj-block{
+        flex: 1 1 0;
+        min-width: 0;
+    }
+    .case-section .prj-cover{
+        height: 360px;
+    }
+    .case-section .btn.btn-primary{
+        width: fit-content !important;
+    }
+    .case-section .data{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (min-width:769px) {
+    .case-section .prj-cover{
+        width: 400px;
+        height: auto;
+    }
+    .case-section .case{
+        gap: 40px;
+    }
+}
+
+@media (min-width:1200px) {
+    .case-section .prj-cover{
+        width: 625px;
+        height: auto;
+    }
+    .case-section .data{
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+}
 
 // ------------------
 // Comment Section
 
 .comment{
     background-color: $secondary-850;
+}
+
+.comment .cover{
+    background: center center / cover no-repeat url(../../media/group-photo-sm-1.png);
+    height: auto;
 }
 
 .comment .badge-list{
@@ -154,6 +298,35 @@
     }
 }
 
+@media (min-width:577px) {
+    .comment{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        background-color: transparent;
+    }
+    .comment .cover{
+        flex: 1 0 0;
+        padding: 16px;
+    }
+    .comment .testament{
+        flex: 1 0 0;
+        background-color: $secondary-850;
+        padding: 16px;
+    }
+}
+
+@media (min-width:1200px) {
+    .comment-container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); //xl
+        gap: 20px;
+    }
+    .testimonial-section .section-title{
+        text-align: center;
+    }
+}
+
 // ------------------
 // Service Section
 
@@ -184,14 +357,85 @@
     color: $secondary-200;
 }
 
+@media (min-width:577px) {
+    .service-section .btn.btn-primary{
+        width: fit-content !important;
+    }
+    .service-section .divider{
+        height: 1px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width:1025px) {
+    .package-container{
+        gap: 20px;
+    }
+    .service-section .btn.btn-primary{
+        width: 100% !important;
+    }
+}
+
+@media (min-width:1200px) {
+    .service-section .section-title{
+        text-align: center;
+    }
+    .section-title{
+        margin-bottom: 64px;
+    }
+}
+
 // ------------------
 // Contact Section
+.social-media{
+   display: flex;
+   flex-direction: column; 
+}
 
 .social{
+    display: flex;
     background-color: $secondary-850;
+    border-radius: 2px;
 }
 
 .social .icon{
     width: 24px;
     height: 24px;
+}
+
+@media (min-width:577px) {
+    .social-media{
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 16px;
+    }
+
+    .social{
+        grid-column: span 2;
+    }
+}
+
+@media (min-width:769px) {
+    .social .media-icon{
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (min-width:1200px) {
+    .contact-section{
+        gap: 145px;
+    }
+    .social-media{
+        gap: 20px;
+        width: 100%;
+        max-width: 889px;
+    }
+    .social{
+        grid-column: span 2;
+    }
+    .social .media-icon{
+        width: 40px;
+        height: 40px;
+    }
 }

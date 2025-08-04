@@ -80,8 +80,10 @@ body.unscrollable{
     font-weight: 700;
 }
 
-.btn {
+.btn{
     width: fit-content;
+	white-space: nowrap;
+	height: fit-content;
 }
 
 .badge{
@@ -109,13 +111,16 @@ body.unscrollable{
 
 // Footer
 .footer{
+    border-top: 1px solid var(--800, #333);
+    background-color: $secondary-900;
+}
+
+.footer .container{
     gap: 4px;
     padding: 20px 24px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: $secondary-900;
-    border-top: 1px solid var(--800, #333);
 }
 
 .footer .caption{
