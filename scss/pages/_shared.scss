@@ -58,6 +58,24 @@ body.unscrollable{
 *{
     color: $secondary-50;
 }
+
+/* width */
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 1px;
+	background: $secondary-800;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $secondary-700;
+	border-radius: 1px;
+}
+
 .navbar-brand{
 	margin: 0 !important;
 }

@@ -35,15 +35,15 @@
 <body>
     <div class="navbar sticky-top p-0">
         <div class="container p-0 container px-3 py-3 px-sm-6 py-lg-5 px-xl-9 p-0">
-            <a class="navbar-brand d-flex align-items-center flex-grow-1 flex-lg-grow-0" href="#">
+            <a class="navbar-brand d-flex align-items-center flex-grow-1 flex-lg-grow-0" href="/">
                 <img src="../media/logo.svg" alt="" width="30" height="24" class="me-1">
                 <p class="h4 f-700 flex-grow-1 flex-lg-grow-0 text-center">Spotx Studio</p>
             </a>
             <ul class="navbar-nav d-none d-lg-flex flex-row">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link active">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Works</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about/index.html" class="nav-link active">About</a></li>
+                <li class="nav-item"><a href="case/" class="nav-link">Works</a></li>
+                <li class="nav-item"><a href="contact/" class="nav-link">Contact</a></li>
             </ul>
             <a class="btn btn-primary d-none d-lg-block" href="#" role="button">Let's Chat</a>
             <a class="hamburger d-lg-none" href="#"><img src="../media/icons/hamburger.svg" alt=""></a>
@@ -66,14 +66,224 @@
                 <div class="p f-400 text-center">What kind of things I can do</div>
             </div>
             <div class="tab-list d-flex">
-                <div class="tab">UX</div>
+                <a class="tab" id="ux">UX</a>
                 <div class="divider d-none d-sm-block"></div>
-                <div class="tab active">Visuals</div>
+                <a class="tab active" id="visuals">Visuals</a>
                 <div class="divider d-none d-sm-block"></div>
-                <div class="tab">Coding</div>
+                <a class="tab" id="coding">Coding</a>
             </div>
-            <div class="tool-list">
-                <div class="tool"></div>
+            <div class="tool-list grid visuals active px-2 px-sm-0 mt-6">
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-1 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Intermediate</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Figma</h4>
+                        <ul class="p f-300">
+                            <li>Design System from scratch</li>
+                            <li>Mid-to-high Fidelity Wireframes</li>
+                            <li>Prototyping</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-2 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Intermediate</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Photoshop</h4>
+                        <ul class="p f-300">
+                            <li>Photo retouch and enhancement</li>
+                            <li>Product Photo Composition</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-3 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Intermediate</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Lottie</h4>
+                        <ul class="p f-300">
+                            <li>Figma direct import</li>
+                            <li>Animation for UI components </li>
+                            <li>Export into "json" and "lottie"</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-4 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Familiar</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Illustrator</h4>
+                        <ul class="p f-300">
+                            <li>Icon & Sticker Design</li>
+                            <li>Logo Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-5 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Familiar</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Premiere Pro</h4>
+                        <ul class="p f-300">
+                            <li>Color Grading</li>
+                            <li>Voice Enhancement</li>
+                            <li>Subtitle Editing with AI</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-6 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Beginner</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Rive</h4>
+                        <ul class="p f-300">
+                            <li>Animation for UI components</li>
+                            <li>Loader Animation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tool-list grid coding px-2 px-sm-0 mt-6">
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-1 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Intermediate</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Figma</h4>
+                        <ul class="p f-300">
+                            <li>Design System from scratch</li>
+                            <li>Mid-to-high Fidelity Wireframes</li>
+                            <li>Prototyping</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-2 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Intermediate</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Photoshop</h4>
+                        <ul class="p f-300">
+                            <li>Photo retouch and enhancement</li>
+                            <li>Product Photo Composition</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-3 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Intermediate</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Lottie</h4>
+                        <ul class="p f-300">
+                            <li>Figma direct import</li>
+                            <li>Animation for UI components </li>
+                            <li>Export into "json" and "lottie"</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-4 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Familiar</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Illustrator</h4>
+                        <ul class="p f-300">
+                            <li>Icon & Sticker Design</li>
+                            <li>Logo Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-5 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Familiar</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Premiere Pro</h4>
+                        <ul class="p f-300">
+                            <li>Color Grading</li>
+                            <li>Voice Enhancement</li>
+                            <li>Subtitle Editing with AI</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-6 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Beginner</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Rive</h4>
+                        <ul class="p f-300">
+                            <li>Animation for UI components</li>
+                            <li>Loader Animation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tool-list grid ux px-2 px-sm-0 mt-6">
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-1 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Intermediate</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Figma</h4>
+                        <ul class="p f-300">
+                            <li>Design System from scratch</li>
+                            <li>Mid-to-high Fidelity Wireframes</li>
+                            <li>Prototyping</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-2 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Intermediate</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Photoshop</h4>
+                        <ul class="p f-300">
+                            <li>Photo retouch and enhancement</li>
+                            <li>Product Photo Composition</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-3 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Intermediate</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Lottie</h4>
+                        <ul class="p f-300">
+                            <li>Figma direct import</li>
+                            <li>Animation for UI components </li>
+                            <li>Export into "json" and "lottie"</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-4 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Familiar</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Illustrator</h4>
+                        <ul class="p f-300">
+                            <li>Icon & Sticker Design</li>
+                            <li>Logo Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-5 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Familiar</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Premiere Pro</h4>
+                        <ul class="p f-300">
+                            <li>Color Grading</li>
+                            <li>Voice Enhancement</li>
+                            <li>Subtitle Editing with AI</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                    <div class="tool-img tool-6 mb-5 me-sm-5 mb-sm-0"></div>
+                    <span class="badge bg-secondary f-300">Beginner</span>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-3">Rive</h4>
+                        <ul class="p f-300">
+                            <li>Animation for UI components</li>
+                            <li>Loader Animation</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="journey-section mb-10"></div>
@@ -106,19 +316,19 @@
         </div>
     </div>
     <div class="side-menu container">
-        <a href="#" class="d-flex p-6 align-items-center">
+        <a href="/" class="d-flex p-6 align-items-center">
             <h4 class="f-300 flex-grow-1">Home</h4>
             <img src="../media/icons/arrow-grey.svg" alt="" class="icon">
         </a>
-        <a href="#" class="d-flex p-6 align-items-center">
+        <a href="/about/" class="d-flex p-6 align-items-center">
             <h4 class="f-300 flex-grow-1">About</h4>
             <img src="../media/icons/arrow-grey.svg" alt="" class="icon">
         </a>
-        <a href="#" class="d-flex p-6 align-items-center">
+        <a href="/case/" class="d-flex p-6 align-items-center">
             <h4 class="f-300 flex-grow-1">Work</h4>
             <img src="../media/icons/arrow-grey.svg" alt="" class="icon">
         </a>
-        <a href="#" class="d-flex p-6 align-items-center">
+        <a href="/contact/" class="d-flex p-6 align-items-center">
             <h4 class="f-300 flex-grow-1">Contact</h4>
             <img src="../media/icons/arrow-grey.svg" alt="" class="icon">
         </a>
@@ -132,5 +342,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Custom JS -->
     <script src="../js/offcanvas-custom.js"></script>
+    <script src="../js/skillset.js"></script>
 </body>
 </html>

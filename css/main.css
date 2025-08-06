@@ -1,25 +1,25 @@
 @charset "UTF-8";
 .grid {
   display: grid;
-  column-gap: 12px;
+  gap: 12px;
   grid-template-columns: repeat(4, 1fr);
 }
 @media (min-width: 769px) {
   .grid {
     grid-template-columns: repeat(8, 1fr);
-    column-gap: 16px;
+    gap: 16px;
   }
 }
 @media (min-width: 1025px) {
   .grid {
     grid-template-columns: repeat(8, 1fr);
-    column-gap: 20px;
+    gap: 20px;
   }
 }
 @media (min-width: 1200px) {
   .grid {
     grid-template-columns: repeat(12, 1fr);
-    column-gap: 20px;
+    gap: 20px;
   }
 }
 
@@ -13803,6 +13803,23 @@ body.unscrollable {
   color: #f2f2f2;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background: #333333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+  border-radius: 1px;
+}
+
 .navbar-brand {
   margin: 0 !important;
 }
@@ -14358,6 +14375,93 @@ body.unscrollable {
   color: #262626;
   background-color: #a0c700;
   font-weight: 400;
+}
+
+.skillset-section .tool-list {
+  display: none;
+  max-height: 640px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.skillset-section .tool-list.active {
+  display: grid;
+}
+
+.skillset-section .tool-list .tool {
+  position: relative;
+  background-color: #333333;
+  width: 100%;
+}
+
+.skillset-section .tool-list .tool .tool-img {
+  width: 64px;
+  height: 64px;
+  background-size: cover;
+}
+
+.skillset-section .tool-list .badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.skillset-section .tool-list h4, .skillset-section .tool-list .h4 {
+  text-align: center;
+}
+
+.skillset-section .tool-list li {
+  color: #b3b3b3;
+  text-align: center;
+}
+
+.skillset-section .tool-list .tool .tool-1 {
+  background-image: url(../../media/icons/figma.png);
+}
+
+.skillset-section .tool-list .tool .tool-2 {
+  background-image: url(../../media/icons/ps.png);
+}
+
+.skillset-section .tool-list .tool .tool-3 {
+  background-image: url(../../media/icons/lottie.png);
+}
+
+.skillset-section .tool-list .tool .tool-4 {
+  background-image: url(../../media/icons/ai.png);
+}
+
+.skillset-section .tool-list .tool .tool-5 {
+  background-image: url(../../media/icons/pr.png);
+}
+
+.skillset-section .tool-list .tool .tool-6 {
+  background-image: url(../../media/icons/rive.png);
+}
+
+@media (min-width: 577px) {
+  .skillset-section .tool-list {
+    display: none;
+    max-height: none;
+    overflow: visible;
+  }
+  .skillset-section .tool-list .tool .tool-img {
+    width: 100%;
+    max-width: 32px;
+    height: 32px;
+  }
+  .skillset-section .tool-list li, .skillset-section .tool-list h4, .skillset-section .tool-list .h4 {
+    text-align: start;
+  }
+  .skillset-section .tool-list li {
+    padding-left: 12px;
+    background: left 9px/4px no-repeat url(../../media/icons/custom-list-disc.svg);
+  }
+}
+@media (min-width: 1200px) {
+  .skillset-section .tool-list li {
+    background: left 12px/4px no-repeat url(../../media/icons/custom-list-disc.svg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
