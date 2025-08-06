@@ -58,6 +58,14 @@ body.unscrollable{
 *{
     color: $secondary-50;
 }
+.navbar-brand{
+	margin: 0 !important;
+}
+
+// Header Nav-link Hover Effects
+.nav-item:hover{
+	color: $secondary-400;
+}
 
 // Header Side Menu Button
 .hamburger{
@@ -97,8 +105,8 @@ body.unscrollable{
 }
 
 .bg-secondary{
-    background: rgba(78, 78, 78, 0.80);
-    color: $secondary-100;
+    background: rgba(78, 78, 78, 0.80) !important;
+    color: $secondary-100 !important;
 }
 
 .section-title .p{

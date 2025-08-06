@@ -1,0 +1,88 @@
+// -----------------
+// Self Intro Section
+.self-intro-section{
+    overflow: visible;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(../../media/spread.svg);
+}
+
+.gallery{
+    width: 100%;
+    gap: 12px;
+}
+
+.gallery-placeholder{
+    flex: 1 0 0;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.gp1{
+    background-image: url(../../media/creativeguy.png);
+}
+
+.gp2{
+    background-image: url(../../media/photographer.png);
+}
+
+.gp3{
+    background-image: url(../../media/family.png);
+}
+
+.gallery .badge{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+
+.self-intro-section .p{
+    color: $secondary-200;
+}
+
+@media (min-width:577px) {
+    
+}
+
+@media (min-width:769px) {
+    
+}
+
+@media (min-width:1025px) {
+    
+}
+
+@media (min-width:1200px) {
+    
+}
+
+
+// ------------------
+// Skillset Section
+
+.skillset-section{
+    background-color: $secondary-850;
+}
+
+.skillset-section .tab-list{
+    width: 100%;
+}
+
+.skillset-section .tab-list .tab{
+    padding: 12px;
+    border-radius: 2px;
+    background-color: $secondary-800;
+    color: $secondary-200;
+    font-weight: 300;
+    flex: 1 0 0;
+    text-align: center;
+}
+
+.skillset-section .tab-list .tab.active{
+    color: $secondary-850;
+    background-color: $primary-600;
+    font-weight: 400;
+}

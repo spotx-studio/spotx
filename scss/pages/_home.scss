@@ -6,7 +6,7 @@
     width: 100%;
     height: 400px;
     overflow: visible;
-    object-position: 24px;
+    object-position: 0px;
     object-fit: cover;
     margin-top: -80px;
     z-index: -1;
@@ -40,6 +40,7 @@
 
 .hero-section .navlink.active{
     color: $secondary-50 !important;
+    font-weight: 400;
 }
 
 .hero-section .nav-bg-deco{
@@ -246,7 +247,8 @@
 
 @media (min-width:1200px) {
     .case-section .prj-cover{
-        width: 625px;
+        width: 50%;
+        max-width: 625px;
         height: auto;
     }
     .case-section .data{
@@ -260,11 +262,13 @@
 
 .comment{
     background-color: $secondary-850;
+    border-radius: 4px;
 }
 
 .comment .cover{
     background: center center / cover no-repeat url(../../media/group-photo-sm-1.png);
     height: auto;
+    border-radius: 2px;
 }
 
 .comment .badge-list{
@@ -313,6 +317,18 @@
         flex: 1 0 0;
         background-color: $secondary-850;
         padding: 16px;
+        border-radius: 2px;
+    }
+}
+
+@media (min-width:1025px) {
+
+    .comment .testament .p{
+        margin-bottom: 64px !important;
+    }
+    .comment .testament .icon{
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -382,6 +398,9 @@
     }
     .section-title{
         margin-bottom: 64px;
+    }
+    .service-section .package{
+        padding: 24px;
     }
 }
 
