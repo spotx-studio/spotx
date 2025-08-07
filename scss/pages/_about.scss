@@ -3,18 +3,28 @@
 .self-intro-section{
     overflow: visible;
     background-size: 100%;
+    background-repeat: no-repeat;
     background-position: center;
     background-image: url(../../media/spread.svg);
 }
 
+.self-intro-section h1{
+        max-width: 890px;
+}
+
+.self-intro-section .p{
+    max-width: 662px;
+}
+
 .gallery{
     width: 100%;
+    max-width: 890px;
     gap: 12px;
 }
 
 .gallery-placeholder{
     flex: 1 0 0;
-    height: 200px;
+    height: 200px;  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +66,9 @@
 }
 
 @media (min-width:1200px) {
-    
+    .gallery-placeholder{
+        height: 360px;
+    }
 }
 
 
@@ -69,20 +81,21 @@
 
 .skillset-section .tab-list{
     width: 100%;
+    max-width: 890px;
 }
 
 .skillset-section .tab-list .tab{
     padding: 12px;
     border-radius: 2px;
     background-color: $secondary-800;
-    color: $secondary-200;
+    color: $secondary-400;
     font-weight: 300;
     flex: 1 0 0;
     text-align: center;
 }
 
 .skillset-section .tab-list .tab.active{
-    color: $secondary-850;
+    color: $secondary-900;
     background-color: $primary-600;
     font-weight: 400;
 }
@@ -169,8 +182,20 @@
     }
 }
 
+@media (min-width:769px) {
+    .divider{
+        width: 80px;
+        height: 1.5px;
+        background: center center / cover no-repeat url(../../media/divider.svg);
+    }
+}
+
 @media (min-width:1200px){
     .skillset-section .tool-list li{
         background: left 12px / 4px no-repeat url(../../media/icons/custom-list-disc.svg);
+    }
+    .divider{
+        width: 120px;
+        height: 2px;
     }
 }
