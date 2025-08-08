@@ -2,14 +2,14 @@
 // Self Intro Section
 .self-intro-section{
     overflow: visible;
-    background-size: 100%;
+    background-size: 500%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 40% 70%;
     background-image: url(../../media/spread.svg);
 }
 
 .self-intro-section h1{
-        max-width: 890px;
+    max-width: 890px;
 }
 
 .self-intro-section .p{
@@ -51,6 +51,10 @@
 
 .self-intro-section .p{
     color: $secondary-200;
+}
+
+.self-intro-section .btn-gp{
+    gap: 12px;
 }
 
 @media (min-width:577px) {
@@ -197,5 +201,162 @@
     .divider{
         width: 120px;
         height: 2px;
+    }
+}
+
+// -----------
+// Journey Section
+.journey-section .swiper{
+    width: 100%;
+}
+.journey-section .swiper-wrapper{
+    padding-bottom: 32px;
+}
+.journey-section .swiper-button-prev{
+    position: static;
+    height: 40px;
+    width: 40px;
+    background: center center / cover no-repeat url(../../media/icons/swiper-btn-left.svg);
+}
+.journey-section .swiper-button-next{
+    position: static;
+    height: 40px;
+    width: 40px;
+    background: center center / cover no-repeat url(../../media/icons/swiper-btn-right.svg);
+}
+.journey-section .swiper-button-prev:hover{
+    background: center center / cover no-repeat url(../../media/icons/swiper-btn-left-hover.svg);
+}
+.journey-section .swiper-button-next:hover{
+    background: center center / cover no-repeat url(../../media/icons/swiper-btn-right-hover.svg);
+}
+.journey-section .swiper-button-prev:active{
+    background: center center / cover no-repeat url(../../media/icons/swiper-btn-left-on.svg);
+}
+.journey-section .swiper-button-next:active{
+    background: center center / cover no-repeat url(../../media/icons/swiper-btn-right-on.svg);
+}
+.journey-section .swiper-pagination{
+    bottom: 0px;
+}
+.journey-section .swiper-pagination-bullet{
+    background-color: $secondary-200;
+}
+.journey-section .swiper-pagination-bullet-active{
+    background-color: $primary-700 ;
+}
+
+.journey{
+    background-color: $secondary-850;
+    border-radius: 4px;
+}
+
+.journey-section .photo{
+    width: 100%;
+    height: 160px;
+    margin-bottom: 24px;
+    border-radius: 1px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.journey-section .photo.pier{
+    background-image: url(../../media/pier.png);
+}
+.journey-section .photo.inwell{
+    background-image: url(../../media/in-well.png);
+}
+.journey-section .photo.spotx{
+    background-image: url(../../media/spotx-studio.png);
+}
+.journey-section .photo.tcoc{
+    background-image: url(../../media/tcoc.png);
+}
+
+.journey-section .job-desc .icon{
+    height: 40px;
+    width: 40px;
+    background: center center / cover no-repeat url(../../media/icons/jobDesc.svg);
+}
+
+.journey-section .achieve .icon{
+    height: 40px;
+    width: 40px;
+    background: center center / cover no-repeat url(../../media/icons/skills.svg);
+}
+
+.journey-section .cover .p{
+    color: $secondary-400;
+}
+
+.journey-section li{
+    color: $secondary-300;
+    padding-left: 12px;
+    background: left 9px / 4px no-repeat url(../../media/icons/custom-list-disc.svg);
+}
+
+.journey-section .show .icon{
+    height: 16px;
+    width: 16px;
+    background: center center / cover no-repeat url(../../media/icons/arrow-grey.svg);
+    transform: rotate(90deg);
+    transition: all ease-out 300ms;
+}
+
+.journey-section .journey-details{
+    display: none;
+    height: 0px;
+    transition: all ease-out 300ms;
+}
+
+.journey-section .journey-details.active{
+    display: flex;
+    height: fit-content;
+    transition: all ease-out 300ms;
+}
+
+.journey-section .journey-details .p{
+    color: $secondary-300;
+}
+
+.journey-section .show .icon.active{
+    transform: rotate(270deg);
+    transition: all ease-out 300ms;
+}
+
+@media (min-width:769px) {
+    .journey-section .cover{
+        width: 45%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: $secondary-800;
+    }
+    .journey-section .photo{
+        height: 100%;
+    }
+    .journey-section .overview{
+        flex: 1 1 0;
+    }
+    .journey-section .journey-details{
+        display: flex;
+        height: 120px;
+        overflow-y: scroll;
+    }
+}
+
+@media (min-width:1200px) {
+    .journey-section .cover{
+        padding: 40px;
+        max-width: 480px;
+    }
+    .journey-section .journey-details{
+        display: flex;
+        height: 240px;
+        overflow-y: scroll;
+    }
+    .journey-section .job-desc .icon, .journey-section .achieve .icon{
+        height: 48px;
+        width: 48px;
     }
 }
