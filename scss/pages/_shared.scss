@@ -80,11 +80,6 @@ body.unscrollable{
 	margin: 0 !important;
 }
 
-// Header Nav-link Hover Effects
-.nav-item:hover{
-	color: $secondary-400;
-}
-
 // Header Side Menu Button
 .hamburger{
 	width: 44px;
@@ -133,6 +128,19 @@ body.unscrollable{
 
 .text-highlight{
     color: $primary-500;
+}
+
+// Contact Section
+.social:hover{
+	background-color: $secondary-800;
+}
+
+.social .p{
+	color: $secondary-200;
+}
+
+.social:hover .p{
+	color: $secondary-100;
 }
 
 // Footer

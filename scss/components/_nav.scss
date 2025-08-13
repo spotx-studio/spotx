@@ -13,6 +13,20 @@
     border-bottom: 2px solid $primary-500;
 }
 
+// Header Nav-link Hover Effects
+.nav-link{
+	border-bottom: 2px solid transparent;
+}
+.nav-link:hover{
+	color: $secondary-300;
+	border-bottom: 2px solid $secondary-700;
+	transition: all ease-out 300ms;
+}
+.nav-link.active:hover{
+    color: $secondary-50 !important;
+    border-bottom: 2px solid $primary-500;
+}
+
 .navbar-nav{
     gap: 24px;
 }

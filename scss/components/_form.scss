@@ -36,9 +36,6 @@
     height: 20px;
     background: center center / cover no-repeat url(../../media/icons/check-grey.svg);
 }
-textarea{
-    height: 200px;
-}
 form button[type=sumbit]{
     width: 100%;
 }
@@ -93,4 +90,14 @@ form button[type=sumbit]{
 // Autofill Selected
 input:-internal-autofill-selected {
     background-color: $secondary-850 !important;
+}
+
+
+@media (min-width:1025px) {
+    .form-check label{
+        padding: 12px 16px 12px 12px;
+    }
+    .form-control{
+        padding: 12px;
+    }
 }

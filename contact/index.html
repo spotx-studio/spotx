@@ -51,73 +51,84 @@
             </a>
             <ul class="navbar-nav d-none d-lg-flex flex-row">
                 <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="about/" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="case/" class="nav-link">Works</a></li>
-                <li class="nav-item"><a href="contact/" class="nav-link active">Contact</a></li>
+                <li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="/case/" class="nav-link">Works</a></li>
+                <li class="nav-item"><a href="/contact/" class="nav-link active">Contact</a></li>
             </ul>
-            <a class="btn btn-primary d-none d-lg-block" href="#" role="button">Let's Chat</a>
+            <a class="btn btn-primary d-none d-lg-block" href="/contact/" role="button">Let's Chat</a>
             <a class="hamburger d-lg-none" href="#"><img src="../media/icons/hamburger.svg" alt=""></a>
         </div>
     </div>
 
     <!-- Main Content -->
-    <div class="container px-4 px-sm-6 px-lg-9">
-        <div class="welcome-section d-flex flex-column py-8">
-            <div class="headline mb-4 f-700">It <bold>begins</bold> here.</div>
-            <div class="p f-300 mb-6">Whether you’re hiring a UI/UX designer or looking for a design partner, drop me a note and I’ll get back within 24 hours.</div>
-            <a href="#" class="btn btn-secondary">Download CV</a>
+    <div class="container px-4 px-sm-6 px-lg-0">
+        <div class="welcome-section py-8 py-lg-10">
+            <div class="headline mb-6 m-lg-0 f-700 d-flex align-items-end col-span-lg-8 col-span-xl-12">It <bold>begins</bold> here.</div>
+            <div class="p f-300 mb-6 m-lg-0 col-span-lg-6 col-span-xl-7">Whether you’re hiring a UI/UX designer or looking for a design partner, drop me a note and I’ll get back within 24 hours.</div>
+            <a href="../media/cv.pdf" target="_blank" class="btn btn-secondary col-span-lg-8 col-span-xl-12">Download CV</a>
         </div>
-        <form class="mb-10" id="contact-form">
-            <div class="mb-6 input-group d-flex flex-column">
+        <form class="mb-10 grid" id="contact-form">
+            <!-- name -->
+            <div class="input-group d-flex flex-column col-span-xs-4 col-span-lg-3 col-span-xl-5 ">
                 <label for="name" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="John" aria-describedby="" required>
+                <input type="text" class="form-control p" id="name" name="name" placeholder="John" aria-describedby="" required>
             </div>
-            <div class="mb-6 input-group d-flex flex-column">
+            <!-- Company -->
+            <div class="input-group d-flex flex-column col-span-xs-4 col-span-lg-3 col-span-xl-5">
                 <label for="company" class="form-label">Company</label>
-                <input type="text" class="form-control" id="company" name="company" placeholder="ABC Ltd." aria-describedby="">
+                <input type="text" class="form-control p" id="company" name="company" placeholder="ABC Ltd." aria-describedby="">
             </div>
-            <div class="mb-6 input-group d-flex flex-column">
+            <!-- Email -->
+            <div class="input-group d-flex flex-column col-span-xs-4 col-span-lg-3 col-span-xl-5">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" aria-describedby="emailHelp" required>
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <input type="email" class="form-control p" id="email" name="email" placeholder="example@gmail.com" aria-describedby="emailHelp" required>
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
-            <div class="mb-6 input-group d-flex flex-column">
+            <!-- Location -->
+            <div class="input-group d-flex flex-column col-span-xs-4 col-span-lg-3 col-span-xl-5">
                 <label for="location" class="form-label">Location</label>
-                <input type="text" class="form-control" id="location" name="location" placeholder="Taiwan" aria-describedby="">
+                <input type="text" class="form-control p" id="location" name="location" placeholder="Taiwan" aria-describedby="locationHelp">
+                <!-- <div id="locationHelp" class="form-text">We'll contact you at your working hour.</div> -->
             </div>
-            <div class="input-group d-flex flex-column mb-6">
+            <!-- Services -->
+            <div class="input-group d-flex flex-column col-span-xs-4 col-span-md-8 col-span-lg-6 col-span-xl-10">
                 <label class="form-label">Service(s) you need</label>
-                <div class="mb-2 form-check">
-                    <input type="checkbox" class="btn-check" id="UIUX" name="UIUX">
-                    <label class="form-check-label d-flex" for="UIUX">
-                        <div class="check-img me-3"></div>
-                        <div class="p">UIUX Design</div>
-                    </label>
-                </div>
-                <div class="mb-2 form-check">
-                    <input type="checkbox" class="btn-check" id="Dev" name="Dev">
-                    <label class="form-check-label d-flex" for="Dev">
-                        <div class="check-img me-3"></div>
-                        <div class="p">Front-end Web Dev</div>
-                    </label>
-                </div>
-                <div class="mb-2 form-check">
-                    <input type="checkbox" class="btn-check" id="Graphic" name="Graphic">
-                    <label class="form-check-label d-flex" for="Graphic">
-                        <div class="check-img me-3"></div>
-                        <div class="p">Graphic Design</div>
-                    </label>
+                <div class="d-flex flex-column d-md-flex flex-md-row checkbox-container">
+                    <div class="form-check flex-grow-1">
+                        <input type="checkbox" class="btn-check" id="UIUX" name="UIUX">
+                        <label class="form-check-label d-flex align-items-center" for="UIUX">
+                            <div class="check-img me-3"></div>
+                            <div class="p">UIUX Design</div>
+                        </label>
+                    </div>
+                    <div class="form-check flex-grow-1">
+                        <input type="checkbox" class="btn-check" id="Dev" name="Dev">
+                        <label class="form-check-label d-flex align-items-center" for="Dev">
+                            <div class="check-img me-3"></div>
+                            <div class="p">Front-end Web Dev</div>
+                        </label>
+                    </div>
+                    <div class="form-check flex-grow-1">
+                        <input type="checkbox" class="btn-check" id="Graphic" name="Graphic">
+                        <label class="form-check-label d-flex align-items-center" for="Graphic">
+                            <div class="check-img me-3"></div>
+                            <div class="p">Graphic Design</div>
+                        </label>
+                    </div>
                 </div>
             </div>
-            <div class="mb-6 input-group d-flex flex-column">
+            <!-- Comment -->
+            <div class="input-group d-flex flex-column col-span-xs-4 col-span-md-8 col-span-lg-6 col-span-xl-10">
                 <label for="comments" class="form-label">Always good to have more information!</label>            
-                <textarea class="form-control" placeholder="comments? thoughts?" id="comments" name="comments"></textarea>
+                <textarea class="form-control p" placeholder="comments? thoughts?" id="comments" name="comments"></textarea>
             </div>
-            <div class="mb-6 input-group d-flex flex-column d-none">
+            <!-- Honeypot -->
+            <div class="input-group d-flex flex-column d-none">
                 <label for="website">Leave this field blank</label>
                 <input type="text" id="website" name="website" autocomplete="off" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary" >Send</button>
+            <!-- Submit -->
+            <button type="submit" class="btn btn-primary col-span-lg-8" >Send</button>
         </form>
     </div>
     <!-- Footer -->
