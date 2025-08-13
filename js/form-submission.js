@@ -4,6 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
+    // ✅ Check honeypot
+    const honeypot = document.getElementById("website").value;
+    if (honeypot) {
+      console.warn("Bot detected via honeypot. Submission aborted.");
+      return;
+    }
+
     console.log("Form submitted."); // ✅ This is OK here
 
     grecaptcha.ready(function () {
