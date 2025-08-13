@@ -13,7 +13,7 @@
 }
 
 .self-intro-section .p{
-    max-width: 662px;
+    max-width: 480px;
 }
 
 .gallery{
@@ -58,11 +58,15 @@
 }
 
 @media (min-width:577px) {
-    
+    .gallery-placeholder{
+        height: 320px;  
+    }
 }
 
 @media (min-width:769px) {
-    
+    .gallery-placeholder{
+        height: 360px;  
+    }
 }
 
 @media (min-width:1025px) {
@@ -72,6 +76,9 @@
 @media (min-width:1200px) {
     .gallery-placeholder{
         height: 360px;
+    }
+    .self-intro-section .p{
+        max-width: 662px;
     }
 }
 
@@ -98,6 +105,11 @@
     text-align: center;
 }
 
+.skillset-section .tab-list .tab:hover{
+    background-color: $secondary-700;
+    color: $secondary-100;
+}
+
 .skillset-section .tab-list .tab.active{
     color: $secondary-900;
     background-color: $primary-600;
@@ -120,7 +132,6 @@
     background-color: $secondary-800;
     width: 100%;
 }
-
 .skillset-section .tool-list .tool .tool-img{
     width: 64px;
     height: 64px;
@@ -142,28 +153,48 @@
     text-align: center;
 }
 
-.skillset-section .tool-list .tool .tool-1{
+// Visual Tool List IMAGES
+.skillset-section .tool-list.visuals .tool-1{
     background-image: url(../../media/icons/figma.png);
 }
-
-.skillset-section .tool-list .tool .tool-2{
+.skillset-section .tool-list.visuals .tool-2{
     background-image: url(../../media/icons/ps.png);
 }
-
-.skillset-section .tool-list .tool .tool-3{
+.skillset-section .tool-list.visuals .tool-3{
     background-image: url(../../media/icons/lottie.png);
 }
-
-.skillset-section .tool-list .tool .tool-4{
+.skillset-section .tool-list.visuals .tool-4{
     background-image: url(../../media/icons/ai.png);
 }
-
-.skillset-section .tool-list .tool .tool-5{
+.skillset-section .tool-list.visuals .tool-5{
     background-image: url(../../media/icons/pr.png);
 }
-
-.skillset-section .tool-list .tool .tool-6{
+.skillset-section .tool-list.visuals .tool-6{
     background-image: url(../../media/icons/rive.png);
+}
+
+// Web Dev. Tool List IMAGES
+// Visual Tool List IMAGES
+.skillset-section .tool-list.dev .tool-1{
+    background-image: url(../../media/icons/wp.png);
+}
+.skillset-section .tool-list.dev .tool-2{
+    background-image: url(../../media/icons/elementor.png);
+}
+.skillset-section .tool-list.dev .tool-3{
+    background-image: url(../../media/icons/webflow.png);
+}
+.skillset-section .tool-list.dev .tool-4{
+    background-image: url(../../media/icons/bootstrap.png);
+}
+.skillset-section .tool-list.dev .tool-5{
+    background-image: url(../../media/icons/shopify.png);
+}
+.skillset-section .tool-list.dev .tool-6{
+    background-image: url(../../media/icons/cyberbiz.png);
+}
+.skillset-section .tool-list.dev .tool-7{
+    background-image: url(../../media/icons/shopline.png);
 }
 
 @media (min-width:577px){
@@ -180,10 +211,6 @@
     .skillset-section .tool-list li, .skillset-section .tool-list h4{
         text-align: start;
     }
-    .skillset-section .tool-list li{
-        padding-left: 12px;
-        background: left 9px / 4px no-repeat url(../../media/icons/custom-list-disc.svg);
-    }
 }
 
 @media (min-width:769px) {
@@ -192,6 +219,15 @@
         height: 1.5px;
         background: center center / cover no-repeat url(../../media/divider.svg);
     }
+    .skillset-section .tool-list li{
+        padding-left: 12px;
+        background: left 9px / 4px no-repeat url(../../media/icons/custom-list-disc.svg);
+        margin-bottom: 6px;
+    }
+}
+
+@media (min-width:1025px) {
+    
 }
 
 @media (min-width:1200px){
@@ -211,7 +247,18 @@
 }
 .journey-section .swiper-wrapper{
     padding-bottom: 32px;
+    align-items: stretch;
 }
+.journey-section .swiper-slide {
+    display: flex;
+    height: auto;
+}
+.journey {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .journey-section .swiper-button-prev{
     position: static;
     height: 40px;
@@ -276,13 +323,15 @@
 
 .journey-section .job-desc .icon{
     height: 40px;
-    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
     background: center center / cover no-repeat url(../../media/icons/jobDesc.svg);
 }
 
 .journey-section .achieve .icon{
     height: 40px;
-    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
     background: center center / cover no-repeat url(../../media/icons/skills.svg);
 }
 
@@ -326,21 +375,28 @@
 }
 
 @media (min-width:769px) {
+    .journey{
+        gap: 16px;
+        background-color: transparent;
+    }
     .journey-section .cover{
         width: 45%;
         max-width: 400px;
         padding: 20px;
-        background-color: $secondary-800;
+        background-color: $secondary-850;
     }
     .journey-section .photo{
         height: 100%;
     }
     .journey-section .overview{
         flex: 1 1 0;
+        background-color: $secondary-850;
     }
     .journey-section .journey-details{
         display: flex;
-        height: 120px;
+        height: 160px;
+    }
+    .journey-section .journey-details .p{
         overflow-y: scroll;
     }
 }
@@ -353,7 +409,6 @@
     .journey-section .journey-details{
         display: flex;
         height: 240px;
-        overflow-y: scroll;
     }
     .journey-section .job-desc .icon, .journey-section .achieve .icon{
         height: 48px;

@@ -1,0 +1,96 @@
+.input-group > .form-control{
+    width: 100%;
+}
+
+// Normal
+.form-control{
+    background-color: $secondary-850;
+    color: $secondary-200;
+    border: none;
+    border-radius: 0px;
+}
+.form-control::placeholder {
+    font-weight: 300;
+    color: $secondary-600;
+    opacity: 1;
+}
+.form-label{
+    color: $secondary-500;
+}
+.form-text{
+    color: $secondary-700;
+}
+.form-check{
+    padding-left: 0;
+}
+.form-check label{
+    padding: 10px 12px 10px 10px;
+    background-color: $secondary-850;
+    font-weight: 300;
+}
+.form-check label .p{
+    color: $secondary-500;
+}
+.check-img{
+    width: 20px;
+    height: 20px;
+    background: center center / cover no-repeat url(../../media/icons/check-grey.svg);
+}
+textarea{
+    height: 200px;
+}
+form button[type=sumbit]{
+    width: 100%;
+}
+
+// Hovering
+.form-check:hover{
+    label{
+        background-color: $secondary-700;
+    }
+    .p{
+        color: $secondary-100;
+    }
+}
+
+// Focused / active
+.form-control:focus{
+    background-color: $secondary-700;
+    border: none;
+    box-shadow: none;
+    color: $secondary-100;
+}
+.form-control:focus::placeholder {
+  color: $secondary-100;
+  opacity: 1;
+}
+.input-group:focus-within .form-label{
+    color: $secondary-200;
+}
+.btn-check:checked ~ label{
+    background-color: $primary-800;
+}
+.btn-check:checked ~ label .p{
+    color: $primary-500;
+}
+.btn-check:checked ~ label .check-img{
+    background: center center / cover no-repeat url(../../media/icons/check.svg);
+}
+
+// Invalid (error state)
+.form-control.is-invalid::placeholder {
+  color: #F04F4F; // Bootstrap $danger
+  background-color: #4C2424;
+  opacity: 1;
+}
+
+// Disabled
+.form-control:disabled::placeholder {
+  color: #bbb;
+  opacity: 1;
+}
+
+// Autofill Selected
+input:-internal-autofill-selected {
+    background-color: $secondary-850 !important;
+}

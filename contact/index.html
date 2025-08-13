@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS linked -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Lottie Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+    <!-- Meta SEO -->
+    <title>Spotx Studio - Contact</title>
+
+    <!-- Site Name, Title, and Description to be displayed -->
+    <meta property="og:site_name" content="Spotx Studio">
+    <meta property="og:title" content="Spotx Studio | Let's Chat!">
+    <meta property="og:description" content="I’m Gabriel—your design tour guide, turning raw ideas into slick interfaces and pixel-perfect code. No detours, no drama, just smooth sailing.">
+
+    <!-- Image to display -->
+    <meta property="og:image" content="https://spotx.studio/element/icon/logo-dark.png">
+
+    <!-- No need to change anything here -->
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg">
+
+    <!-- Size of image. Has to be less than 300x300px -->
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
+    <!-- Website to visit when clicked in fb or WhatsApp-->
+    <meta property="og:url" content="https://spotx.studio/contact/">
+
+    <!-- Google Recaptcha -->
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <!-- Load the Recaptcha Token -->
+    <script>
+        function onSubmit(token) {
+            document.getElementById("contact-form").submit();
+        }
+    </script>
+    <!-- Header -->
+    <div class="navbar sticky-top p-0">
+        <div class="container p-0 container px-3 py-3 px-sm-6 py-lg-5 px-xl-9 p-0">
+            <a class="navbar-brand d-flex align-items-center flex-grow-1 flex-lg-grow-0" href="/">
+                <img src="../media/logo.svg" alt="" width="30" height="24" class="me-1">
+                <p class="h4 f-700 flex-grow-1 flex-lg-grow-0 text-center">Spotx Studio</p>
+            </a>
+            <ul class="navbar-nav d-none d-lg-flex flex-row">
+                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about/" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="case/" class="nav-link">Works</a></li>
+                <li class="nav-item"><a href="contact/" class="nav-link active">Contact</a></li>
+            </ul>
+            <a class="btn btn-primary d-none d-lg-block" href="#" role="button">Let's Chat</a>
+            <a class="hamburger d-lg-none" href="#"><img src="../media/icons/hamburger.svg" alt=""></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container px-4 px-sm-6 px-lg-9">
+        <div class="welcome-section d-flex flex-column py-8">
+            <div class="headline mb-4 f-700">It <bold>begins</bold> here.</div>
+            <div class="p f-300 mb-6">Whether you’re hiring a UI/UX designer or looking for a design partner, drop me a note and I’ll get back within 24 hours.</div>
+            <a href="#" class="btn btn-secondary">Download CV</a>
+        </div>
+        <form class="mb-10" id="contact-form">
+            <div class="mb-6 input-group d-flex flex-column">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="John" aria-describedby="" required>
+            </div>
+            <div class="mb-6 input-group d-flex flex-column">
+                <label for="company" class="form-label">Company</label>
+                <input type="text" class="form-control" id="company" name="company" placeholder="ABC Ltd." aria-describedby="">
+            </div>
+            <div class="mb-6 input-group d-flex flex-column">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" aria-describedby="emailHelp" required>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-6 input-group d-flex flex-column">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" class="form-control" id="location" name="location" placeholder="Taiwan" aria-describedby="">
+            </div>
+            <div class="input-group d-flex flex-column mb-6">
+                <label class="form-label">Service(s) you need</label>
+                <div class="mb-2 form-check">
+                    <input type="checkbox" class="btn-check" id="UIUX" name="UIUX">
+                    <label class="form-check-label d-flex" for="UIUX">
+                        <div class="check-img me-3"></div>
+                        <div class="p">UIUX Design</div>
+                    </label>
+                </div>
+                <div class="mb-2 form-check">
+                    <input type="checkbox" class="btn-check" id="Dev" name="Dev">
+                    <label class="form-check-label d-flex" for="Dev">
+                        <div class="check-img me-3"></div>
+                        <div class="p">Front-end Web Dev</div>
+                    </label>
+                </div>
+                <div class="mb-2 form-check">
+                    <input type="checkbox" class="btn-check" id="Graphic" name="Graphic">
+                    <label class="form-check-label d-flex" for="Graphic">
+                        <div class="check-img me-3"></div>
+                        <div class="p">Graphic Design</div>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-6 input-group d-flex flex-column">
+                <label for="comments" class="form-label">Always good to have more information!</label>            
+                <textarea class="form-control" placeholder="comments? thoughts?" id="comments" name="comments"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" >Send</button>
+        </form>
+    </div>
+    <!-- Footer -->
+    <div class="footer d-flex">
+        <div class="container d-flex">
+            <span class="caption f-300">2025</span>
+            <img src="../media/icons/copyright.svg" alt="copyright icon" class="icon">
+            <span class="caption f-300">copyright reserved by Spotx Studio</span>
+        </div>
+    </div>
+    <!-- Offcanvas -->
+    <div class="side-menu container">
+        <a href="/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">Home</h4>
+            <img src="../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+        <a href="/about/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">About</h4>
+            <img src="../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+        <a href="/case/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">Work</h4>
+            <img src="../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+        <a href="/contact/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">Contact</h4>
+            <img src="../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+    </div>
+    <!-- Overlay for Offcanvas -->
+    <div class="overlay"></div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="../js/offcanvas-custom.js"></script>
+    <script src="../js/form-submission.js"></script>
+</body>
+</html>

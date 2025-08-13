@@ -7,3 +7,22 @@ $btn-line-height: 1.4;
 $btn-focus-box-shadow: none;
 $btn-focus-width: 0;
 $btn-transition: all 0.2s ease-in-out;
+
+
+// Input button config
+$input-btn-padding-y:         10px;
+$input-btn-padding-x:         10px;
+$input-btn-line-height:       1.25;
+
+$input-btn-focus-width:         0;
+$input-btn-focus-color-opacity: 1;
+$input-btn-focus-color:         $secondary-600;
+$input-btn-focus-blur:          0;
+
+$input-btn-padding-y-sm:      10px;
+$input-btn-padding-x-sm:      10px;
+
+$input-btn-padding-y-lg:      12px;
+$input-btn-padding-x-lg:      12px;
+
+$input-btn-border-width:      0px;
