@@ -4,11 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
+    console.log("Form submitted."); // ✅ This is OK here
+
     grecaptcha.ready(function () {
-      grecaptcha.execute('6Lf3w6QrAAAAAMlB8cAbfqtQi143SGcokERzGlgR', {action: 'submit'})
+      grecaptcha.execute('6Lf3w6QrAAAAAIMB8cAbfqtQ1i43SGcokERzGIgR', {action: 'submit'})
         .then(function (token) {
+          console.log("Token:", token); // ✅ Inside the correct scope
+
           const formData = new FormData(form);
           formData.append('g-recaptcha-response', token);
+
+          console.log("FormData:", [...formData.entries()]); // ✅ Safe here
 
           fetch("https://hook.us2.make.com/niq7cjmg55cxg7s4pgcqd6ddri6g1v1w", {
             method: "POST",
@@ -18,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (response.ok) {
               alert("Form submitted!");
               form.reset();
+              grecaptcha.reset();
             } else {
               alert("Submission failed.");
             }
@@ -30,7 +37,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-console.log("Form submitted.");
-console.log("Token:", token);
-console.log("FormData:", [...formData.entries()]);
