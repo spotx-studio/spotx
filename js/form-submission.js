@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
             if (response.ok) {
               alert("Form submitted!");
               form.reset();
-              grecaptcha.reset();
             } else {
               alert("Submission failed.");
             }
