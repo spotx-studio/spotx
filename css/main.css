@@ -13473,8 +13473,21 @@ form button[type=sumbit] {
   width: 100%;
 }
 
+input.form-control:-webkit-autofill,
+textarea.form-control:-webkit-autofill,
+select.form-control:-webkit-autofill {
+  background-color: #262626 !important;
+  color: #cccccc !important;
+  border: none !important;
+  -webkit-box-shadow: 0 0 0 1000px #262626 inset !important;
+  -webkit-text-fill-color: #cccccc !important;
+  caret-color: #cccccc;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
 .form-check:hover label {
   background-color: #4d4d4d;
+  cursor: pointer;
 }
 .form-check:hover .p {
   color: #e6e6e6;
@@ -14960,6 +14973,16 @@ body.unscrollable {
     height: 48px;
     width: 48px;
   }
+}
+.case-box {
+  position: relative;
+  height: 320px;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.case-box.uneo {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 0.8) 100%), url(../../media/prj-cover-lg-1.png) lightgray 50%/cover no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */

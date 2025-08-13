@@ -39,11 +39,25 @@
 form button[type=sumbit]{
     width: 100%;
 }
+// Reset the history autofill styles
+input.form-control:-webkit-autofill,
+textarea.form-control:-webkit-autofill,
+select.form-control:-webkit-autofill {
+  background-color: $secondary-850 !important; // your dark background
+  color: $secondary-200 !important;  // text color to match your theme
+  border: none !important;  // match your brand accent
+  -webkit-box-shadow: 0 0 0 1000px $secondary-850 inset !important;
+  -webkit-text-fill-color: $secondary-200 !important; // required for Safari
+  caret-color: $secondary-200;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
 
 // Hovering
 .form-check:hover{
     label{
         background-color: $secondary-700;
+        cursor: pointer;
     }
     .p{
         color: $secondary-100;
