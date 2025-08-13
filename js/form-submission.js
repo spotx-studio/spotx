@@ -30,3 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+console.log("Form submitted.");
+console.log("Token:", token);
+console.log("FormData:", [...formData.entries()]);
