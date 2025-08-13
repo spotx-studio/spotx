@@ -15167,6 +15167,51 @@ body.unscrollable {
   border-radius: 4px;
 }
 
+.time {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.case-box .badge {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .case-box.uneo {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 0.8) 100%), url(../../media/prj-cover-lg-1.png) lightgray 50%/cover no-repeat;
+}
+
+@media (min-width: 577px) {
+  .case-box {
+    height: 320px;
+    padding: 20px;
+  }
+  .time {
+    top: 20px;
+    right: 20px;
+  }
+}
+@media (min-width: 769px) {
+  .case-box {
+    height: 360px;
+  }
+  .case-section .section-title h2, .case-section .section-title .h2, .case-section .section-title .p {
+    text-align: center;
+  }
+}
+@media (min-width: 1025px) {
+  .case-box {
+    height: 400px;
+    padding: 24px;
+  }
+  .time {
+    top: 24px;
+    right: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .case-box {
+    height: 480px;
+  }
 }/*# sourceMappingURL=main.css.map */
