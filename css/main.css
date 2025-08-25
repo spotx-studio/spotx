@@ -14035,6 +14035,13 @@ body.unscrollable {
   color: #999999;
 }
 
+.no-hover :where(a:hover, .btn:hover, .card:hover, .nav-link:hover) {
+  background: inherit !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
 .hero-section video {
   width: 100%;
   height: 400px;
@@ -15007,55 +15014,94 @@ body.unscrollable {
   transition: all ease-out 300ms;
 }
 
-.case-box:hover > .btn-box {
-  opacity: 1;
-  transition: all ease-out 300ms;
-  transform: translate(-50%, -50%);
-}
-
-.case-box:hover > .badge-list, .case-box:hover > .time, .case-box:hover > .prj-name {
-  opacity: 0.2;
-  transition: all ease-out 300ms;
-}
-
 .case-box.uneo {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 61.25%, rgba(0, 0, 0, 0.8) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 0.8) 100%), url(../../media/prj-cover-lg-1.png) lightgray 50%/cover no-repeat;
-}
-
-.case-box.uneo:hover {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-1.png) lightgray 50%/cover no-repeat;
 }
 
 .case-box.acrox {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 61.25%, rgba(0, 0, 0, 0.8) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 0.8) 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
 }
 
-.case-box.acrox:hover {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
-}
-
 .case-box.churchplus {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 61.25%, rgba(0, 0, 0, 0.8) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 0.8) 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
-}
-
-.case-box.churchplus:hover {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
 }
 
 .case-box.guider {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 61.25%, rgba(0, 0, 0, 0.8) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 0.8) 100%), url(../../media/prj-cover-lg-1.png) lightgray 50%/cover no-repeat;
 }
 
-.case-box.guider:hover {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
-}
-
 .case-box.tcoc {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 61.25%, rgba(0, 0, 0, 0.8) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 0.8) 100%), url(../../media/prj-cover-lg-3.png) lightgray 50%/cover no-repeat;
 }
 
-.case-box.tcoc:hover {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-3.png) lightgray 50%/cover no-repeat;
+.case-preview {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  background-color: #333333;
+  padding: 24px;
+  border-radius: 4px 4px 0 0;
+  z-index: 9999;
+  transform: translateY(100%);
+  transition: all 300ms ease;
+}
+
+.case-preview.show {
+  transform: translateY(0);
+  transition: all 300ms ease;
+}
+
+.case-preview .gallery {
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 20px;
+}
+
+.case-preview .gallery::-webkit-scrollbar {
+  height: 3px;
+}
+
+.case-preview .gallery picture {
+  height: 168px;
+  min-width: 280px;
+}
+
+.case-preview .gallery img {
+  object-fit: cover;
+}
+
+.case-preview .brief {
+  color: #cccccc;
+}
+
+.case-preview .divider {
+  height: 1.5px;
+  background-image: url(../../media/divider-light.svg);
+}
+
+.case-preview .checklist-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.case-preview .p2 {
+  color: #808080;
+}
+
+.case-preview li.p2 {
+  color: #cccccc;
+}
+
+.case-preview .consultation {
+  color: #cccccc;
+}
+
+.case-preview .btn {
+  flex: 1 1 0;
+  width: auto;
 }
 
 @media (min-width: 577px) {
@@ -15084,6 +15130,30 @@ body.unscrollable {
   .time {
     top: 24px;
     right: 24px;
+  }
+  .case-box:hover > .btn-box {
+    opacity: 1;
+    transition: all ease-out 300ms;
+    transform: translate(-50%, -50%);
+  }
+  .case-box:hover > .badge-list, .case-box:hover > .time, .case-box:hover > .prj-name {
+    opacity: 0.2;
+    transition: all ease-out 300ms;
+  }
+  .case-box.uneo:hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-1.png) lightgray 50%/cover no-repeat;
+  }
+  .case-box.acrox:hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
+  }
+  .case-box.churchplus:hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
+  }
+  .case-box.guider:hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
+  }
+  .case-box.tcoc:hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-3.png) lightgray 50%/cover no-repeat;
   }
 }
 @media (min-width: 1200px) {

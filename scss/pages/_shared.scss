@@ -160,3 +160,10 @@ body.unscrollable{
 .footer .caption{
     color: $secondary-400;
 }
+
+.no-hover :where(a:hover, .btn:hover, .card:hover, .nav-link:hover) {
+  background: inherit !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
