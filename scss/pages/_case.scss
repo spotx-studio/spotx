@@ -67,11 +67,6 @@
     z-index: 9999;
     transform: translateY(100%);
     transition: transform 300ms ease;
-
-    /* 🚀 Force its own compositing layer */
-    will-change: transform;
-    transform: translateY(100%) translateZ(0);
-    backface-visibility: hidden;
 }
 
 .case-preview.show{
