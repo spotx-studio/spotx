@@ -15011,7 +15011,7 @@ body.unscrollable {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
-  transition: all ease-out 300ms;
+  transition: transform ease-out 300ms;
 }
 
 .case-box.uneo {
@@ -15039,23 +15039,26 @@ body.unscrollable {
   left: 0;
   right: 0;
   bottom: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   background-color: #333333;
-  padding: 24px;
+  padding: 32px 24px 24px 24px;
   border-radius: 4px 4px 0 0;
+  max-height: 80vh;
+  height: auto;
   z-index: 9999;
   transform: translateY(100%);
-  transition: all 300ms ease;
+  transition: transform 300ms ease;
 }
 
 .case-preview.show {
   transform: translateY(0);
-  transition: all 300ms ease;
+  transition: transform 300ms ease;
 }
 
 .case-preview .gallery {
   overflow: hidden;
-  overflow-x: scroll;
+  overflow-x: auto;
   gap: 20px;
 }
 
@@ -15087,11 +15090,11 @@ body.unscrollable {
   margin-right: 16px;
 }
 
-.case-preview .p2 {
+.case-preview .brief {
   color: #808080;
 }
 
-.case-preview li.p2 {
+.case-preview li span {
   color: #cccccc;
 }
 
@@ -15102,6 +15105,20 @@ body.unscrollable {
 .case-preview .btn {
   flex: 1 1 0;
   width: auto;
+}
+
+.case-preview .close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  height: 44px;
+  width: 44px;
+  background: center center/cover no-repeat url(../../media/icons/close-gray.svg);
+}
+
+.case-preview .close:hover {
+  cursor: pointer;
+  background: center center/cover no-repeat url(../../media/icons/close-gray-hover.svg);
 }
 
 @media (min-width: 577px) {
@@ -15120,6 +15137,22 @@ body.unscrollable {
   }
   .case-section .section-title h2, .case-section .section-title .h2, .case-section .section-title .p {
     text-align: center;
+  }
+  .case-preview {
+    max-height: 50vh;
+    gap: 40px;
+  }
+  .case-preview .gallery {
+    width: 340px;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .gallery picture {
+    height: auto !important;
+  }
+  .case-preview .btn {
+    flex: 0 0 0;
+    width: fit-content;
   }
 }
 @media (min-width: 1025px) {
@@ -15154,6 +15187,9 @@ body.unscrollable {
   }
   .case-box.tcoc:hover {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-3.png) lightgray 50%/cover no-repeat;
+  }
+  .gallery {
+    width: 540px;
   }
 }
 @media (min-width: 1200px) {

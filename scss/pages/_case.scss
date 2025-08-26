@@ -60,7 +60,7 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     background-color: $secondary-800;
-    padding: 24px;
+    padding: 32px 24px 24px 24px;
     border-radius: 4px 4px 0 0;
     max-height: 80vh;
     height: auto;
@@ -76,7 +76,7 @@
 
 .case-preview .gallery{
     overflow: hidden;
-    overflow-x: scroll;
+    overflow-x: auto;
     gap: 20px;
 }
 
@@ -107,11 +107,11 @@
     height: 24px;
     margin-right: 16px;
 }
-.case-preview .p2{
+.case-preview .brief{
     color: $secondary-500;
 }
 
-.case-preview li.p2{
+.case-preview li span{
     color: $secondary-200;
 }
 
@@ -123,7 +123,18 @@
     flex: 1 1 0;
     width: auto;
 }
-
+.case-preview .close{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    height: 44px;
+    width: 44px;
+    background: center center / cover no-repeat url(../../media/icons/close-gray.svg);
+}
+.case-preview .close:hover{
+    cursor: pointer;
+    background: center center / cover no-repeat url(../../media/icons/close-gray-hover.svg);
+}
 
 @media (min-width:577px) {
     .case-box{
@@ -142,6 +153,22 @@
     }
     .case-section .section-title h2, .case-section .section-title .p{
         text-align: center;
+    }
+    .case-preview{
+        max-height: 50vh;
+        gap:40px;
+    }
+    .case-preview .gallery{
+        width: 340px;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .gallery picture{
+        height: auto !important;
+    }
+    .case-preview .btn{
+        flex: 0 0 0;
+        width: fit-content;
     }
 }
 
@@ -177,6 +204,9 @@
     }
     .case-box.tcoc:hover{    
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, #000 100%), url(../../media/prj-cover-lg-3.png) lightgray 50% / cover no-repeat;
+    }
+    .gallery{
+        width: 540px;
     }
 }
 

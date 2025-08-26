@@ -18,10 +18,16 @@ $(document).ready(function () {
         $("body").toggleClass("unscrollable");
     });
 
+    $(".close").click(function (e) { 
+        e.preventDefault();
+        $(".case-preview, .overlay").removeClass("show");
+    });
+
     // Add Uneo Case Preview Content
     $(".uneo .btn-primary, .uneo").click(function (e) { 
         e.preventDefault();
         $(".project-name").text("Uneo | Pressure Map APP");
+        $(".brief").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-1").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-2").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-3").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
