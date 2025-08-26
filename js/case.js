@@ -21,6 +21,7 @@ $(document).ready(function () {
     $(".close").click(function (e) { 
         e.preventDefault();
         $(".case-preview, .overlay").removeClass("show");
+        $("body").removeClass("unscrollable");
     });
 
     // Add Uneo Case Preview Content
