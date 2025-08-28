@@ -48,6 +48,7 @@ $(document).ready(function () {
     $(".acrox .btn-primary, .acrox").click(function (e) { 
         e.preventDefault();
         $(".project-name").text("Acrox | Official Web Redesign");
+        $(".brief").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-1").text("Acrox's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-2").text("Acrox'sLorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-3").text("Acrox's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
@@ -67,6 +68,7 @@ $(document).ready(function () {
     $(".churchplus .btn-primary, .churchplus").click(function (e) { 
         e.preventDefault();
         $(".project-name").text("Churchplus | Official Web Redesign");
+        $(".brief").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-1").text("Churchplus's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-2").text("Churchplus'sLorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-3").text("Churchplus's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
@@ -86,6 +88,7 @@ $(document).ready(function () {
     $(".guider .btn-primary, .guider").click(function (e) { 
         e.preventDefault();
         $(".project-name").text("Guider | Official Web Redesign");
+        $(".brief").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-1").text("Guider's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-2").text("Guider'sLorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-3").text("Guider's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
@@ -105,6 +108,7 @@ $(document).ready(function () {
     $(".tcoc .btn-primary, .tcoc").click(function (e) { 
         e.preventDefault();
         $(".project-name").text("TCOC | Official Web Redesign");
+        $(".brief").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-1").text("TCOC's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-2").text("TCOC'sLorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-3").text("TCOC's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");

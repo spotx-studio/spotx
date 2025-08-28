@@ -15343,6 +15343,17 @@ body.unscrollable {
     width: -moz-fit-content;
     width: fit-content;
   }
+  .case-preview {
+    overflow: visible;
+    padding: 24px;
+  }
+  .case-preview .project-content {
+    overflow-y: scroll;
+  }
+  .case-preview .close {
+    top: -64px;
+    right: 16px;
+  }
 }
 @media (min-width: 1025px) {
   .case-box {
@@ -15377,12 +15388,34 @@ body.unscrollable {
   .case-box.tcoc:hover {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-3.png) lightgray 50%/cover no-repeat;
   }
-  .gallery {
-    width: 540px;
+  .case-preview {
+    left: 24px;
+    right: 24px;
+    bottom: 16px;
+    max-height: none;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .case-preview .gallery {
+    width: 480px;
+    height: 400px;
+  }
+  .case-preview .close {
+    top: -64px;
+    right: 0px;
   }
 }
 @media (min-width: 1200px) {
   .case-box {
     height: 480px;
+  }
+  .case-preview {
+    gap: 64px;
+    left: 48px;
+    right: 48px;
+  }
+  .case-preview .gallery {
+    width: 540px;
+    height: 440px;
   }
 }/*# sourceMappingURL=main.css.map */
