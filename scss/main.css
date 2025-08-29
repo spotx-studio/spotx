@@ -15418,4 +15418,45 @@ body.unscrollable {
     width: 540px;
     height: 440px;
   }
+}
+.overview-gallery {
+  gap: 24px;
+}
+
+.btn-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.highlight {
+  color: #c8f900;
+}
+
+.case-title h4, .case-title .h4 {
+  color: #cccccc;
+}
+
+.og {
+  position: relative;
+  height: 400px;
+  padding: 16px;
+}
+
+.og picture {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.og .text-box {
+  width: 75%;
+}
+
+.og .p2 {
+  color: #e6e6e6;
 }/*# sourceMappingURL=main.css.map */

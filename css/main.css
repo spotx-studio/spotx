@@ -15229,5 +15229,171 @@ body.unscrollable {
     height: 440px;
   }
 }
+.ogs {
+  gap: 24px;
+}
+
+.btn-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.highlight {
+  color: #c8f900;
+}
+
+.case-title h4, .case-title .h4 {
+  color: #cccccc;
+}
+
+.og {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.og picture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.og img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.og .text-box {
+  padding: 16px;
+  width: 75%;
+}
+
+.og .p2 {
+  color: #e6e6e6;
+}
+
+.ps table {
+  width: 100%;
+}
+
+.ps table tr {
+  padding: 12px 0px;
+  border-bottom: 1px solid var(--700, #4D4D4D);
+}
+
+.ps table .start {
+  border-top: 1px solid var(--700, #4D4D4D);
+}
+
+.ps table .index {
+  min-width: 48px;
+}
+
+.ps .content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px 0px;
+}
+
+.ps .content-box img {
+  width: 24px;
+  height: 24px;
+}
+
+.ps .content-box .p2 {
+  color: #cccccc;
+}
+
+.ps .challenge, .ps .solution {
+  gap: 12px;
+}
+
+.gnms {
+  background-color: #262626;
+}
+
+.gnm {
+  position: relative;
+  padding: 24px;
+  background-color: #333333;
+}
+
+.gnm .badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.gnm .icon {
+  width: 44px;
+  height: 44px;
+}
+
+.gnm .p {
+  color: #b3b3b3;
+}
+
+.uxs h4, .uxs .h4, .dss h4, .dss .h4 {
+  color: #e6e6e6;
+}
+
+.uxs .content, .dss .content {
+  color: #b3b3b3;
+}
+
+.dss {
+  background-color: #262626;
+}
+
+.dss h4, .dss .h4 {
+  color: #f2f2f2;
+}
+
+.its h4, .its .h4 {
+  color: #e6e6e6;
+}
+
+.its .itb {
+  background-color: #333333;
+  padding: 16px;
+  gap: 10px;
+}
+
+.its .details {
+  gap: 10px;
+}
+
+.its .itb .p {
+  color: #e6e6e6;
+}
+
+.its .itb .p2 {
+  color: #cccccc;
+}
+
+.its .category-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.its .snh {
+  gap: 6px;
+}
+
+.its .snh .caption {
+  color: #808080;
+}
+
+.its .snh-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  transform: rotate(90deg);
+}
 
 /*# sourceMappingURL=main.css.map */

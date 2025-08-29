@@ -1,9 +1,9 @@
 $(document).ready(function () {
     $(".hamburger").click(function (e) { 
         e.preventDefault();
-        $(".side-menu").addClass("show");
-        $(".overlay").addClass("show");
-        $("body").addClass("unscrollable")
+        $(".side-menu").toggleClass("show");
+        $(".overlay").toggleClass("show");
+        $("body").toggleClass("unscrollable")
     });
 
     $(".overlay").click(function (e) { 
