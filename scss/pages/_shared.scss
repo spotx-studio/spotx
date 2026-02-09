@@ -167,3 +167,9 @@ body.unscrollable{
   box-shadow: none !important;
   transform: none !important;
 }
+
+// picture html element styles
+picture{
+	width: 100%;
+	height: auto;
+	display: block;}	

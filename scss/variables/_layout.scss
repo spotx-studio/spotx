@@ -51,7 +51,7 @@ $spacers: (
   }
 
   @media (min-width: 1025px) {
-    grid-template-columns: repeat(8, 1fr); //md
+    grid-template-columns: repeat(8, 1fr); //lg
     gap: 20px;
   }
 

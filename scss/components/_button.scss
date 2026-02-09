@@ -44,11 +44,16 @@
 
 .btn-icon-only{
     padding: 8px;
+    border-radius: 100%;
 }
 
 .btn-icon{
     width: 20px;
     height: 20px;
+}
+
+.flip{
+    transform: rotate(180deg);
 }
 
 @media (min-width:1025px) {
