@@ -60,42 +60,6 @@
     color: $secondary-100;
 }
 
-.ogp-1{
-    @media (min-width: 577px) {
-        content: url(../../media/uext_og_1_md.webp);
-    }
-    @media (min-width: 1025px) {
-        content: url(../../media/uext_og_1_lg.webp);
-    }
-    @media (min-width: 1200px) {
-        content: url(../../media/uext_og_1_xl.webp);
-    }
-}
-
-.ogp-2{
-    @media (min-width: 577px) {
-        content: url(../../media/uext_og_2_md.webp);
-    }
-    @media (min-width: 1025px) {
-        content: url(../../media/uext_og_2_lg.webp);
-    }
-    @media (min-width: 1200px) {
-        content: url(../../media/uext_og_2_xl.webp);
-    }
-}
-
-.ogp-3{
-    @media (min-width: 577px) {
-        content: url(../../media/uext_og_3_md.webp);
-    }
-    @media (min-width: 1025px) {
-        content: url(../../media/uext_og_3_lg.webp);
-    }
-    @media (min-width: 1200px) {
-        content: url(../../media/uext_og_3_xl.webp);
-    }
-}
-
 
 // ----------------
 // Problem Statement Section
@@ -345,6 +309,7 @@
 
 .its .photo-list{
     gap: 16px;
+    flex: 1;
 
     @media (min-width:1200px) {
         min-width: 776px;
@@ -353,7 +318,7 @@
 
 .its .photo-list img{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     object-position: top left;
 }
@@ -380,7 +345,7 @@
         flex: 1 1 0;
     }
     @media (min-width:1200px) {
-        flex: 0;
+        flex: 0 0 0;
     }
 }
 

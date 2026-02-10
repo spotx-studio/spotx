@@ -45,7 +45,7 @@
 
 .hero-section .nav-bg-deco{
     position: absolute;
-    top: 50%;
+    top: calc(50% - 2.5px);
     left: -6px;
     transform: rotate(2deg);
     z-index: -1;
@@ -53,6 +53,47 @@
 
 .hero-section .p{
     color: $secondary-200;
+}
+
+// 確保 Swiper 不會因為寬度計算錯誤而壞掉
+.hero-text-swiper {
+    width: 100%;
+    overflow: hidden;
+    min-height: 1px;
+
+    // [關鍵修正] 強制 wrapper 變成橫向排列
+    .swiper-wrapper {
+        display: flex !important; // 讓 slide 並排
+        flex-direction: row !important; // 確保是左右方向
+        box-sizing: content-box; // Swiper 預設需要這個
+    }
+
+    // 這裡保持之前的設定
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        height: auto;
+    }
+}
+
+// 讓每個 slide 的行為跟原本的 div 一樣
+.hero-text-swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; // 靠左對齊
+    height: auto; // 讓高度根據內容自動調整
+}
+
+// 修正原本 nav 的 active 樣式 (確保它只針對 navlink 生效)
+.hero-section .navlink {
+    cursor: pointer; // 讓滑鼠變成手指形狀
+    transition: color 0.3s ease;
+    
+    // 移除原本可能影響 click 的 padding 或 margin 設定，保持乾淨
 }
 
 // sm rwd css

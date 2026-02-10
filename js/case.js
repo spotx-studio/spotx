@@ -24,17 +24,40 @@ $(document).ready(function () {
         $("body").removeClass("unscrollable");
     });
 
+    // Add Zero One Tech Case Preview Content
+    $(".zot .btn-primary, .zot").click(function (e) { 
+        e.preventDefault();
+        $(".project-name").text("ZOT | Official Web Redesign");
+        $(".brief").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+        $(".detail-1").text("zot's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+        $(".detail-2").text("zot'sLorem ipsum dolor sit amet, consectetur adipiscing elit.");
+        $(".detail-3").text("zot's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+        $(".detail-4").text("zot's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+        $(".detail-5").text("zot's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+        
+        // Hide empty list
+        $(".desc-list li").each(function() {
+        let hasText = $.trim($(this).text()) !== "";
+        let hasImgOnly = $(this).children().length > 0 && !hasText;
+        if (!hasText && hasImgOnly) {
+            $(this).addClass("d-none");
+        }});
+    });
+
     // Add Uneo Case Preview Content
     $(".uneo .btn-primary, .uneo").click(function (e) { 
         e.preventDefault();
-        $(".project-name").text("Uneo | Pressure Map APP");
-        $(".brief").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-        $(".detail-1").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-        $(".detail-2").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-        $(".detail-3").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-        $(".detail-4").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-        $(".detail-5").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-        
+        $(".project-name").text("Healthcare Dashboard: Streamlining Patient Monitoring & Response");
+        $(".brief").text("Lead UX/UI Designer | Collaborated with Cross-Functional Team (Backend, PM, Sales)");
+        $(".detail-1").text("Empowered 1,000+ nurses with a real-time alert system, significantly reducing critical response times.");
+        $(".detail-2").text("Redesigned fragmented monitoring into a centralized hub, streamlining daily clinical tasks.");
+        $(".detail-3").text("Cross-browser compatible HTML/CSS/JS for seamless backend integration.");
+        $(".detail-4").text("Achieved zero-revision design handoff by clarifying technical constraints early in the wireframe stage.");
+        $(".detail-5").text("Created task-driven adaptive layouts tailored for both station monitoring and mobile rounds.");
+        $(".cp-1").attr("src", "/media/uext/uext_og_md_1.webp");
+        $(".cp-2").attr("src", "/media/uext/uext_og_md_2.webp");
+        $(".cp-3").attr("src", "/media/uext/uext_og_md_3.webp");
+
         // Hide empty list
         $(".desc-list li").each(function() {
         let hasText = $.trim($(this).text()) !== "";
@@ -74,26 +97,6 @@ $(document).ready(function () {
         $(".detail-3").text("Churchplus's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-4").text("Churchplus's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         $(".detail-5").text("Churchplus's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-        
-        // Hide empty list
-        $(".desc-list li").each(function() {
-        let hasText = $.trim($(this).text()) !== "";
-        let hasImgOnly = $(this).children().length > 0 && !hasText;
-        if (!hasText && hasImgOnly) {
-            $(this).addClass("d-none");
-        }});
-    });
-
-    // Add Guider Case Preview Content
-    $(".guider .btn-primary, .guider").click(function (e) { 
-        e.preventDefault();
-        $(".project-name").text("Guider | Official Web Redesign");
-        $(".brief").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-        $(".detail-1").text("Guider's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-        $(".detail-2").text("Guider'sLorem ipsum dolor sit amet, consectetur adipiscing elit.");
-        $(".detail-3").text("Guider's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-        $(".detail-4").text("Guider's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-        $(".detail-5").text("Guider's Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         
         // Hide empty list
         $(".desc-list li").each(function() {
