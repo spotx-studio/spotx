@@ -14058,6 +14058,18 @@ picture {
   bottom: 12px;
   right: 12px;
 }
+@media (min-width: 769px) {
+  .dropdown {
+    bottom: 16px;
+    right: 8px;
+  }
+}
+@media (min-width: 1025px) {
+  .dropdown {
+    bottom: 20px;
+    right: 12px;
+  }
+}
 
 .dropdown-toggle {
   padding: 6px 8px;
