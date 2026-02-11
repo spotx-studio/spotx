@@ -333,11 +333,11 @@
 }
 
 .its .itb{
-    background-color: $secondary-800;
-    padding: 16px;
+    background-color: $secondary-850;
+    border-left: 2px solid $secondary-700;
+    padding: 16px 16px 20px 16px;
+    align-items: flex-start;
     gap: 10px;
-    align-items: center;
-    transition: transform ease-out 300ms;
 
     @media (min-width:769px) {
         flex-direction: column;
@@ -347,15 +347,6 @@
     @media (min-width:1200px) {
         flex: 0 0 0;
     }
-}
-
-.its .itb.active{
-    align-items: start;
-    transition: transform ease-out 300ms;
-}
-
-.its .details{
-    gap: 10px;
 }
 
 .its .details ul li{
@@ -372,31 +363,14 @@
 }
 
 .its .category-icon{
-    width: 32px;
-    height: 32px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
-}
 
-.its .snh{
-    gap: 6px;
-}
-
-.its .snh .caption{
-    color: $secondary-500;
-}
-
-.its .snh-icon{
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    object-fit: contain;
-    transform: rotate(0deg);
-    transition: transform ease-out 300ms;
-}
-
-.its .snh-icon.active{
-    transform: rotate(180deg);
-    transition: transform ease-out 300ms;
+    @media (min-width:1025px) {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 
@@ -535,45 +509,68 @@
 
 .page-controller-sm{
     position: fixed;
-    bottom: -80px;
+    top: -100px;
     left: 0;
     right: 0;
     width: 100%;
     background-color: $secondary-950;
-    padding: 16px 24px;
-    border-top: 1px solid $secondary-850;
+    padding: 12px 16px;
+    border-bottom: 2px solid $secondary-850;
     gap: 12px;
-    overflow-x: auto;
-    z-index: 999;
+    z-index: 9999;
     transition: all ease-out 300ms;
 }
 
 .page-controller-sm.visible {
-    bottom: 0;
+    top: 0px;
     transition: all ease-out 300ms;
 }
 
+.page-controller-sm .index-box > *, .page-controller-sm .index-box{
+    color: $secondary-400;
+    font-size: 12px;
+}
+
+.page-controller-sm .progress{
+    height: 3px;
+    width: 30%;
+    margin-left: auto;
+}
+
 .page-controller-sm .indicator{
-    padding: 6px 16px;
-    background-color: $secondary-850;
     color: $secondary-500;
+    font-size: 16px;
     border-radius: 1px;
-    font-size: 14px;
     font-weight: 300;
-    width: 33.33%;
     min-width: fit-content;
     text-align: center;
     flex-shrink: 0;
+    display: none;
 }
 
 .page-controller-sm .indicator.active{
-    background-color: $primary-850;
-    color: $primary-500;
+    display: block;
+    color: $secondary-100;
     font-weight: 400;
 }
 
-.page-controller-sm::-webkit-scrollbar{
-    height: 3px;
+.page-controller-sm .progress-bar {
+    /* 讓進度條寬度變化有動畫效果 */
+    transition: width 0.6s ease;
+}
+
+/* 微調文字樣式 */
+.page-controller-sm .current {
+    font-weight: 500;
+}
+.page-controller-sm .total {
+    color: $secondary-500;
+}
+.page-controller-sm .progress-percentage {
+    color: $secondary-100;
+    font-size: 12px;
+    min-width: 32px; /* 固定寬度防止數字變動時造成跳動 */
+    text-align: right;
 }
 
 /* --- Large Controller (Desktop) --- */

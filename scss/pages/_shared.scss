@@ -173,3 +173,40 @@ picture{
 	width: 100%;
 	height: auto;
 	display: block;}	
+
+
+// Language Dropdown
+.dropdown{
+	position: fixed;
+	bottom: 12px;
+	right: 12px;
+	// opacity: 60%;
+}
+
+.dropdown-toggle{
+	padding: 6px 8px;
+}
+
+.dropdown-toggle::after{
+	margin-left: 8px;
+}
+
+.dropdown:hover, .dropdown .btn.show{
+	opacity: 100%;}
+
+.dropdown-menu{
+	background-color: $secondary-900;
+	border: 1px solid $secondary-800;
+}
+
+.dropdown-item{
+	color: $secondary-200;
+	font-weight: 300;
+	border-bottom: 1px solid $secondary-800;
+}	
+
+.dropdown .dropdown-icon{
+	width: 16px;
+	height: 16px;
+	object-fit: contain;
+}

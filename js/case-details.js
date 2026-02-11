@@ -10,14 +10,23 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.dss'),   // 3. Styles
         document.querySelector('.its'),   // 4. Iterations
         document.querySelector('.dsys'),  // 5. Design System
-        document.querySelector('.outcs')   // 6. Outcomes
+        document.querySelector('.outcs')  // 6. Outcomes
     ];
 
-    // Mobile Controller Elements
-    const smIndicators = document.querySelectorAll('.page-controller-sm .indicator');
+    // --- Mobile Controller Elements (New Selectors) ---
     const smContainer = document.querySelector('.page-controller-sm');
+    const smIndicators = document.querySelectorAll('.page-controller-sm .indicator');
+    
+    // 新增：進度條相關元素
+    const smCurrentIndexEl = document.querySelector('.page-controller-sm .current');
+    const smTotalIndexEl = document.querySelector('.page-controller-sm .total');
+    const smProgressBar = document.querySelector('.page-controller-sm .progress-bar');
+    const smProgressText = document.querySelector('.page-controller-sm .progress-percentage');
 
-    // Desktop Controller Elements
+    // 初始化：設定總頁數 (自動計算 sections 長度)
+    if(smTotalIndexEl) smTotalIndexEl.textContent = sections.length;
+
+    // --- Desktop Controller Elements ---
     const lgContainer = document.querySelector('.page-controller-lg');
     const lgIndicators = document.querySelectorAll('.page-controller-lg .indicator');
 
@@ -37,20 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
             $(this).parent(".itb").toggleClass("active");
         });
 
-        // Hover Delay Logic for Large Controller
+        // Hover Logic
         let hoverTimeout; 
-
         $(".page-controller-lg").mouseenter(function () {
             clearTimeout(hoverTimeout); 
             $(".p2").addClass("show");
         });
-
         $(".page-controller-lg").mouseleave(function () {
             hoverTimeout = setTimeout(function() {
                 $(".p2").removeClass("show");
             }, 300); 
         });
-
         $(".page-controller-lg .indicator").hover(
             function () { $(this).children(".p2").addClass("hover"); }, 
             function () { $(this).children(".p2").removeClass("hover"); }
@@ -58,17 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     /* =========================================
-       3. SCROLL SPY & VISIBILITY (Vanilla JS)
+       3. SCROLL SPY & VISIBILITY
        ========================================= */
 
     // A. Observer for Active State
-    // FIX: Changed rootMargin to trigger when section is near the top
     const observerOptions = {
         root: null,
-        // '-20% 0px -60% 0px' means:
-        // Top boundary is 20% down from top of viewport.
-        // Bottom boundary is 60% up from bottom.
-        // This creates a "sweet spot" near the top of the screen.
         rootMargin: '-20% 0px -60% 0px', 
         threshold: 0
     };
@@ -89,36 +90,51 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function updateActiveState(index) {
-        // 1. Update Small Controller
+        // --- 1. Update Small Controller Logic ---
+        
+        // A. Update Active Text Indicator
         smIndicators.forEach(ind => ind.classList.remove('active'));
         if (smIndicators[index]) {
             smIndicators[index].classList.add('active');
-            // Auto scroll SM menu
-            const scrollLeft = smIndicators[index].offsetLeft - (smContainer.offsetWidth / 2) + (smIndicators[index].offsetWidth / 2);
-            smContainer.scrollTo({ left: scrollLeft, behavior: 'smooth' });
         }
 
-        // 2. Update Large Controller (Class + Image Swap)
+        // B. Update Progress & Numbers (New Logic)
+        const currentStep = index + 1;
+        const totalSteps = sections.length;
+        // 計算百分比 (例如: 1/7 * 100 = 14%)
+        const percentage = Math.round((currentStep / totalSteps) * 100);
+
+        // 更新數字: 1 / 7
+        if(smCurrentIndexEl) smCurrentIndexEl.textContent = currentStep;
+        
+        // 更新進度條長度
+        if(smProgressBar) {
+            smProgressBar.style.width = percentage + "%";
+            smProgressBar.setAttribute('aria-valuenow', percentage);
+        }
+
+        // 更新百分比文字: 14%
+        if(smProgressText) smProgressText.textContent = percentage + "%";
+
+
+        // --- 2. Update Large Controller Logic ---
         if (lgIndicators.length > 0) {
             lgIndicators.forEach((ind) => {
                 ind.classList.remove('active');
-                // Reset ALL images to inactive first
                 const img = ind.querySelector('img');
                 if(img) img.src = imgInactive;
             });
 
-            // Set Current to Active
             if (lgIndicators[index]) {
                 const targetInd = lgIndicators[index];
                 targetInd.classList.add('active');
-                
-                // Swap Image to Active
                 const img = targetInd.querySelector('img');
                 if(img) img.src = imgActive;
             }
         }
     }
-// --- B. Visibility Logic (Show/Hide BOTH controllers) ---
+
+    // --- B. Visibility Logic ---
     function toggleControllerVisibility() {
         const firstSection = sections[0]; 
         const lastSection = sections[sections.length - 1]; 
@@ -128,15 +144,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const firstRect = firstSection.getBoundingClientRect();
         const lastRect = lastSection.getBoundingClientRect();
         
-        // ADJUST THIS VALUE to control timing:
-        // 100 = Shows when section hits the top (Late)
-        // 300 = Shows when section is ~1/3 down the screen (Earlier)
-        // 500 = Shows when section is ~1/2 down the screen (Very Early)
         const triggerPoint = 300; 
 
-        // Logic:
-        // 1. Show if the Top of First Section is ABOVE the trigger point ( <= 300 )
-        // 2. Hide if the Bottom of Last Section is ABOVE the trigger point (scrolled past it)
         const isInsideZone = (firstRect.top <= triggerPoint) && (lastRect.bottom > triggerPoint);
 
         if (isInsideZone) {
@@ -154,12 +163,9 @@ document.addEventListener("DOMContentLoaded", function () {
     /* =========================================
        4. CLICK TO SCROLL
        ========================================= */
-    
     function scrollToSection(index) {
         const targetSection = sections[index];
         if (targetSection) {
-            // FIX: Offset needs to be adjusted based on header height
-            // -100px usually clears the sticky navbar and ensures the IntersectionObserver catches it
             const yOffset = -100; 
             const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
             window.scrollTo({top: y, behavior: 'smooth'});
@@ -173,5 +179,4 @@ document.addEventListener("DOMContentLoaded", function () {
     lgIndicators.forEach((indicator, index) => {
         indicator.addEventListener('click', () => scrollToSection(index));
     });
-
 });
