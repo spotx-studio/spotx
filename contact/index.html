@@ -55,8 +55,20 @@
                 <li class="nav-item"><a href="/case/" class="nav-link">Works</a></li>
                 <li class="nav-item"><a href="/contact/" class="nav-link active">Contact</a></li>
             </ul>
-            <a class="btn btn-primary d-none d-lg-block" href="/contact/" role="button">Let's Chat</a>
-            <a class="hamburger d-lg-none" href="#"><img src="../media/icons/hamburger.svg" alt=""></a>
+            <div class="d-flex align-items-center gap-4">
+                <div class="dropdown">    
+                    <a class="btn btn-secondary dropdown-toggle d-flex align-items-center p2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="dropdown-icon me-2" src="../../media/icons/lang.svg" alt="">
+                        <span id="current-lang-text">EN</span> 
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" id="lang-en">English</a></li>
+                        <li><a class="dropdown-item" href="#" id="lang-zh">繁體中文</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-primary d-none d-lg-block" href="/contact/" role="button">Let's Chat</a>
+                <a class="hamburger d-lg-none" href="#"><img src="../media/icons/hamburger.svg" alt=""></a>
+            </div>
         </div>
     </div>
 

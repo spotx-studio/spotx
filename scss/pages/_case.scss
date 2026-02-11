@@ -27,7 +27,6 @@
     transition: transform ease-out 300ms;
 }
 
-
 // Case Cover Photos
 .case-box.uneo{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 61.25%, rgba(0, 0, 0, 0.80) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.15%, rgba(0, 0, 0, 0.80) 100%), 
@@ -42,8 +41,17 @@
     url(../../media/prj-cover-lg-2.png) lightgray 50% / cover no-repeat;
 }
 .case-box.zot{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 61.25%, rgba(0, 0, 0, 0.80) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.15%, rgba(0, 0, 0, 0.80) 100%), 
-    url(../../media/prj-cover-lg-1.png) lightgray 50% / cover no-repeat;
+    background: center center / cover no-repeat url(../../media/case_zot_sm.webp);
+    
+    @media (min-width:577px) {
+        background: center center / cover no-repeat url(../../media/case_zot_md.webp);
+    }
+    @media (min-width:769px) {
+        background: center center / cover no-repeat url(../../media/case_zot_lg.webp);
+    }
+    @media (min-width:1025px) {
+        background: center center / cover no-repeat url(../../media/case_zot_xl.webp);
+    }
 }
 .case-box.tcoc{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 61.25%, rgba(0, 0, 0, 0.80) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.15%, rgba(0, 0, 0, 0.80) 100%), 
@@ -214,7 +222,7 @@
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, #000 100%), url(../../media/prj-cover-lg-2.png) lightgray 50% / cover no-repeat;
     }
     .case-box.zot:hover{    
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, #000 100%), url(../../media/prj-cover-lg-2.png) lightgray 50% / cover no-repeat;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, #000 100%), url(../../media/case_zot_xl.webp) lightgray 50% / cover no-repeat;
     }
     .case-box.tcoc:hover{    
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, #000 100%), url(../../media/prj-cover-lg-3.png) lightgray 50% / cover no-repeat;

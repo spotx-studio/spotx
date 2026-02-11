@@ -46,6 +46,12 @@
 	  font-style: normal;
   }
 
+/* 針對中文頁面的特殊設定 */
+html[lang="zh-TW"] body {
+    font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif !important;
+    letter-spacing: 0.05em; /* 中文通常加一點字距比較有呼吸感 */
+}
+
 body{
     background-color: $secondary-900;
     font-family: 'Sk-modernist', sans-serif;
@@ -176,20 +182,13 @@ picture{
 
 
 // Language Dropdown
-.dropdown{
-	position: fixed;
-	bottom: 12px;
-	right: 12px;
-	// opacity: 60%;
-	@media (min-width:769px) {
-		bottom: 16px;
-		right: 8px;
-	}
-	@media (min-width:1025px) {
-		bottom: 20px;
-		right: 12px;
-	}
 
+.dropdown-icon{
+	display: none;
+
+	@media (min-width:769px) {
+		display: block;
+	}
 }
 
 .dropdown-toggle{
@@ -206,12 +205,14 @@ picture{
 .dropdown-menu{
 	background-color: $secondary-900;
 	border: 1px solid $secondary-800;
+	min-width: 100px;
 }
 
 .dropdown-item{
 	color: $secondary-200;
 	font-weight: 300;
 	border-bottom: 1px solid $secondary-800;
+	padding: 8px 12px;
 }	
 
 .dropdown .dropdown-icon{

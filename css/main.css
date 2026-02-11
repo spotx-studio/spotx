@@ -13930,6 +13930,12 @@ button {
   font-weight: normal;
   font-style: normal;
 }
+/* 針對中文頁面的特殊設定 */
+html[lang=zh-TW] body {
+  font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif !important;
+  letter-spacing: 0.05em; /* 中文通常加一點字距比較有呼吸感 */
+}
+
 body {
   background-color: #1a1a1a;
   font-family: "Sk-modernist", sans-serif;
@@ -14053,21 +14059,12 @@ picture {
   display: block;
 }
 
-.dropdown {
-  position: fixed;
-  bottom: 12px;
-  right: 12px;
+.dropdown-icon {
+  display: none;
 }
 @media (min-width: 769px) {
-  .dropdown {
-    bottom: 16px;
-    right: 8px;
-  }
-}
-@media (min-width: 1025px) {
-  .dropdown {
-    bottom: 20px;
-    right: 12px;
+  .dropdown-icon {
+    display: block;
   }
 }
 
@@ -14086,12 +14083,14 @@ picture {
 .dropdown-menu {
   background-color: #1a1a1a;
   border: 1px solid #333333;
+  min-width: 100px;
 }
 
 .dropdown-item {
   color: #cccccc;
   font-weight: 300;
   border-bottom: 1px solid #333333;
+  padding: 8px 12px;
 }
 
 .dropdown .dropdown-icon {
@@ -14112,6 +14111,8 @@ picture {
 
 .content {
   margin-top: -16px;
+  overflow: visible;
+  min-width: 0;
 }
 
 .toolbox {
@@ -14130,6 +14131,7 @@ picture {
 .hero-section .nav {
   column-gap: 16px;
   position: relative;
+  overflow: visible;
 }
 
 .hero-section .navlink {
@@ -14147,6 +14149,14 @@ picture {
   left: -6px;
   transform: rotate(2deg);
   z-index: -1;
+  width: 64px;
+  object-fit: contain;
+}
+@media (min-width: 769px) {
+  .hero-section .nav-bg-deco {
+    width: auto;
+    left: -12px;
+  }
 }
 
 .hero-section .p {
@@ -15117,7 +15127,22 @@ picture {
 }
 
 .case-box.zot {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 61.25%, rgba(0, 0, 0, 0.8) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 0.8) 100%), url(../../media/prj-cover-lg-1.png) lightgray 50%/cover no-repeat;
+  background: center center/cover no-repeat url(../../media/case_zot_sm.webp);
+}
+@media (min-width: 577px) {
+  .case-box.zot {
+    background: center center/cover no-repeat url(../../media/case_zot_md.webp);
+  }
+}
+@media (min-width: 769px) {
+  .case-box.zot {
+    background: center center/cover no-repeat url(../../media/case_zot_lg.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .case-box.zot {
+    background: center center/cover no-repeat url(../../media/case_zot_xl.webp);
+  }
 }
 
 .case-box.tcoc {
@@ -15287,7 +15312,7 @@ picture {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
   }
   .case-box.zot:hover {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/case_zot_xl.webp) lightgray 50%/cover no-repeat;
   }
   .case-box.tcoc:hover {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-3.png) lightgray 50%/cover no-repeat;

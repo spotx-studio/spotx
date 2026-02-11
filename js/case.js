@@ -57,6 +57,7 @@ $(document).ready(function () {
         $(".cp-1").attr("src", "/media/uext/uext_og_md_1.webp");
         $(".cp-2").attr("src", "/media/uext/uext_og_md_2.webp");
         $(".cp-3").attr("src", "/media/uext/uext_og_md_3.webp");
+        $(".cs-link").attr("href", "/case/uext/");
 
         // Hide empty list
         $(".desc-list li").each(function() {
