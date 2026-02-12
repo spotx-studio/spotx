@@ -15114,39 +15114,107 @@ picture {
   transition: transform ease-out 300ms;
 }
 
+.case-box .prj-name, .case-box .company-name {
+  transition: all ease-out 300ms;
+}
+
+.case-box .company-name {
+  color: #999999;
+}
+
 .case-box.uneo {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 61.25%, rgba(0, 0, 0, 0.8) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 0.8) 100%), url(../../media/prj-cover-lg-1.png) lightgray 50%/cover no-repeat;
+  background: center center/cover no-repeat url(../../media/uext/pc_sm.webp);
+}
+@media (min-width: 577px) {
+  .case-box.uneo {
+    background: center center/cover no-repeat url(../../media/uext/pc_md.webp);
+  }
+}
+@media (min-width: 769px) {
+  .case-box.uneo {
+    background: center center/cover no-repeat url(../../media/uext/pc_lg.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .case-box.uneo {
+    background: center center/cover no-repeat url(../../media/uext/pc_xl_r.webp);
+  }
 }
 
 .case-box.acrox {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 61.25%, rgba(0, 0, 0, 0.8) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 0.8) 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
+  background: center center/cover no-repeat url(../../media/acrox/pc_sm.webp);
+}
+@media (min-width: 577px) {
+  .case-box.acrox {
+    background: center center/cover no-repeat url(../../media/acrox/pc_md.webp);
+  }
+}
+@media (min-width: 769px) {
+  .case-box.acrox {
+    background: center center/cover no-repeat url(../../media/acrox/pc_lg.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .case-box.acrox {
+    background: center center/cover no-repeat url(../../media/acrox/pc_xl_s.webp);
+  }
 }
 
 .case-box.churchplus {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 61.25%, rgba(0, 0, 0, 0.8) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 0.8) 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
+  background: center center/cover no-repeat url(../../media/churchplus/pc_sm.webp);
+}
+@media (min-width: 577px) {
+  .case-box.churchplus {
+    background: center center/cover no-repeat url(../../media/churchplus/pc_md.webp);
+  }
+}
+@media (min-width: 769px) {
+  .case-box.churchplus {
+    background: center center/cover no-repeat url(../../media/churchplus/pc_lg.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .case-box.churchplus {
+    background: center center/cover no-repeat url(../../media/churchplus/pc_xl_s.webp);
+  }
 }
 
 .case-box.zot {
-  background: center center/cover no-repeat url(../../media/case_zot_sm.webp);
+  background: center center/cover no-repeat url(../../media/zot/pc_sm.webp);
 }
 @media (min-width: 577px) {
   .case-box.zot {
-    background: center center/cover no-repeat url(../../media/case_zot_md.webp);
+    background: center center/cover no-repeat url(../../media/zot/pc_md.webp);
   }
 }
 @media (min-width: 769px) {
   .case-box.zot {
-    background: center center/cover no-repeat url(../../media/case_zot_lg.webp);
+    background: center center/cover no-repeat url(../../media/zot/pc_lg.webp);
   }
 }
 @media (min-width: 1025px) {
   .case-box.zot {
-    background: center center/cover no-repeat url(../../media/case_zot_xl.webp);
+    background: center center/cover no-repeat url(../../media/zot/pc_xl_r.webp);
   }
 }
 
 .case-box.tcoc {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 61.25%, rgba(0, 0, 0, 0.8) 116.15%), linear-gradient(180deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 0.8) 100%), url(../../media/prj-cover-lg-3.png) lightgray 50%/cover no-repeat;
+  background: center center/cover no-repeat url(../../media/tcoc/pc_sm.webp);
+}
+@media (min-width: 577px) {
+  .case-box.tcoc {
+    background: center center/cover no-repeat url(../../media/tcoc/pc_md.webp);
+  }
+}
+@media (min-width: 769px) {
+  .case-box.tcoc {
+    background: center center/cover no-repeat url(../../media/tcoc/pc_lg.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .case-box.tcoc {
+    background: center center/cover no-repeat url(../../media/tcoc/pc_xl_r.webp);
+  }
 }
 
 .case-preview {
@@ -15298,24 +15366,24 @@ picture {
     transition: all ease-out 300ms;
     transform: translate(-50%, -50%);
   }
-  .case-box:hover > .badge-list, .case-box:hover > .time, .case-box:hover > .prj-name {
+  .case-box:hover > .badge-list, .case-box:hover > .time, .case-box:hover .prj-name, .case-box:hover .company-name {
     opacity: 0.2;
     transition: all ease-out 300ms;
   }
   .case-box.uneo:hover {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-1.png) lightgray 50%/cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/uext/pc_xl_r.webp) lightgray 50%/cover no-repeat;
   }
   .case-box.acrox:hover {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/acrox/pc_xl_s.webp) lightgray 50%/cover no-repeat;
   }
   .case-box.churchplus:hover {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-2.png) lightgray 50%/cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/churchplus/pc_xl_s.webp) lightgray 50%/cover no-repeat;
   }
   .case-box.zot:hover {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/case_zot_xl.webp) lightgray 50%/cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/zot/pc_xl_r.webp) lightgray 50%/cover no-repeat;
   }
   .case-box.tcoc:hover {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/prj-cover-lg-3.png) lightgray 50%/cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%), url(../../media/tcoc/pc_xl_r.webp) lightgray 50%/cover no-repeat;
   }
   .case-preview {
     left: 24px;
@@ -15606,17 +15674,7 @@ picture {
 
 .dss picture {
   width: 100%;
-  height: 200px;
-}
-@media (min-width: 577px) {
-  .dss picture {
-    height: 280px;
-  }
-}
-@media (min-width: 1025px) {
-  .dss picture {
-    height: 400px;
-  }
+  height: auto;
 }
 
 .dss img {
@@ -16332,6 +16390,310 @@ picture {
 @media (min-width: 1200px) {
   .uext .fscr-img {
     content: url(../../media/uext/uext_fscr_xl.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .ogp-1 {
+    content: url(../../media/acrox/og_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .ogp-1 {
+    content: url(../../media/acrox/og_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .ogp-1 {
+    content: url(../../media/acrox/og_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .ogp-2 {
+    content: url(../../media/acrox/og_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .ogp-2 {
+    content: url(../../media/acrox/og_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .ogp-2 {
+    content: url(../../media/acrox/og_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .ogp-3 {
+    content: url(../../media/acrox/og_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .ogp-3 {
+    content: url(../../media/acrox/og_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .ogp-3 {
+    content: url(../../media/acrox/og_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .uxs-img-1 {
+    content: url(../../media/acrox/uxs_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .uxs-img-1 {
+    content: url(../../media/acrox/uxs_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .uxs-img-1 {
+    content: url(../../media/acrox/uxs_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .uxs-img-2 {
+    content: url(../../media/acrox/uxs_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .uxs-img-2 {
+    content: url(../../media/acrox/uxs_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .uxs-img-2 {
+    content: url(../../media/acrox/uxs_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .uxs-img-3 {
+    content: url(../../media/uext/uxs_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .uxs-img-3 {
+    content: url(../../media/uext/uxs_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .uxs-img-3 {
+    content: url(../../media/uext/uxs_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .dss-img-1 {
+    content: url(../../media/acrox/dss_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .dss-img-1 {
+    content: url(../../media/acrox/dss_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .dss-img-1 {
+    content: url(../../media/acrox/dss_lg_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .dss-img-2 {
+    content: url(../../media/acrox/dss_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .dss-img-2 {
+    content: url(../../media/acrox/dss_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .dss-img-2 {
+    content: url(../../media/acrox/dss_lg_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .dss-img-3 {
+    content: url(../../media/acrox/dss_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .dss-img-3 {
+    content: url(../../media/acrox/dss_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .dss-img-3 {
+    content: url(../../media/acrox/dss_lg_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .its-img-1 {
+    content: url(../../media/acrox/its_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .its-img-1 {
+    content: url(../../media/acrox/its_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .its-img-1 {
+    content: url(../../media/acrox/its_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .its-img-2 {
+    content: url(../../media/acrox/its_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .its-img-2 {
+    content: url(../../media/acrox/its_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .its-img-2 {
+    content: url(../../media/acrox/its_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .its-img-3 {
+    content: url(../../media/acrox/its_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .its-img-3 {
+    content: url(../../media/acrox/its_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .its-img-3 {
+    content: url(../../media/acrox/its_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .its-img-4 {
+    content: url(../../media/acrox/its_md_4.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .its-img-4 {
+    content: url(../../media/acrox/its_lg_4.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .its-img-4 {
+    content: url(../../media/acrox/its_xl_4.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .its-img-5 {
+    content: url(../../media/acrox/its_md_5.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .its-img-5 {
+    content: url(../../media/acrox/its_lg_5.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .its-img-5 {
+    content: url(../../media/acrox/its_xl_5.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .dsys-img-1 {
+    content: url(../../media/acrox/dsys_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .dsys-img-1 {
+    content: url(../../media/acrox/dsys_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .dsys-img-1 {
+    content: url(../../media/acrox/dsys_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .dsys-img-2 {
+    content: url(../../media/acrox/dsys_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .dsys-img-2 {
+    content: url(../../media/acrox/dsys_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .dsys-img-2 {
+    content: url(../../media/acrox/dsys_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .dsys-img-3 {
+    content: url(../../media/acrox/dsys_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .dsys-img-3 {
+    content: url(../../media/acrox/dsys_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .dsys-img-3 {
+    content: url(../../media/acrox/dsys_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .dsys-img-4 {
+    content: url(../../media/acrox/dsys_md_4.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .dsys-img-4 {
+    content: url(../../media/acrox/dsys_lg_4.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .dsys-img-4 {
+    content: url(../../media/acrox/dsys_xl_4.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .fscr-img {
+    content: url(../../media/acrox/fscr_md.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .fscr-img {
+    content: url(../../media/acrox/fscr_lg.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .fscr-img {
+    content: url(../../media/acrox/fscr_xl.webp);
   }
 }
 
