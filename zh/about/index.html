@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+    <title>關於 Gabriel Chiu | 產品設計師與前端開發者 | Spotx Studio</title>
+
+    <meta name="description" content="認識 Gabriel Chiu，一位駐點台北的設計技術專家 (Design Technologist)。專注於結合 UX 策略與前端程式碼，為企業打造可擴展的 B2B 系統與數位產品。">
+    <meta name="keywords" content="Gabriel Chiu, 台北產品設計師, 前端工程師, UI/UX 設計師, Design Technologist, Spotx Studio, 個人履歷">
+
+    <meta property="og:site_name" content="Spotx Studio">
+    <meta property="og:title" content="關於 Gabriel Chiu | 設計技術專家">
+    <meta property="og:description" content="我致力於彌合設計創意與技術實踐之間的鴻溝，將複雜的商業想法轉化為流暢、可立即上線的數位產品。">
+    <meta property="og:image" content="https://spotx.studio/element/icon/logo-dark.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://spotx.studio/zh/about/">
+</head>
+<body>
+    <div class="navbar sticky-top p-0">
+        <div class="container p-0 container px-3 py-3 px-sm-6 py-lg-5 px-xl-9 p-0">
+            <a class="navbar-brand d-flex align-items-center flex-grow-1 flex-lg-grow-0" href="/zh/">
+                <img src="../../media/logo.svg" alt="" width="30" height="24" class="me-2">
+                <p class="h4 f-700 text-center">Spotx Studio</p>
+            </a>
+            <ul class="navbar-nav d-none d-lg-flex flex-row">
+                <li class="nav-item"><a href="/zh/" class="nav-link">首頁</a></li>
+                <li class="nav-item"><a href="/zh/about/" class="nav-link active">關於</a></li>
+                <li class="nav-item"><a href="/zh/case/" class="nav-link">案例</a></li>
+                <li class="nav-item"><a href="/zh/contact/" class="nav-link">聯絡</a></li>
+            </ul>
+            <div class="d-flex align-items-center gap-4">
+                <div class="dropdown">    
+                    <a class="btn btn-secondary dropdown-toggle d-flex align-items-center p2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="dropdown-icon me-2" src="../../media/icons/lang.svg" alt="">
+                        <span id="current-lang-text">ZH</span> 
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/about/" id="lang-en">English</a></li>
+                        <li><a class="dropdown-item" href="/zh/about/" id="lang-zh">繁體中文</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-primary d-none d-lg-block" href="/zh/contact/" role="button">預約諮詢</a>
+                <a class="hamburger d-lg-none" href="#"><img src="../../media/icons/hamburger.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 px-sm-6 px-lg-9">
+        <div class="self-intro-section mt-6 d-flex flex-column align-items-center mb-10 mb-md-11 mb-xl-12 mx-auto">
+            <div class="gallery d-flex mb-6 mb-sm-8 mb-lg-9">
+                <div class="gallery-placeholder gp1"><span class="badge bg-secondary f-300">創意人</span></div>
+                <div class="gallery-placeholder gp2"><span class="badge bg-secondary f-300">攝影師</span></div>
+                <div class="gallery-placeholder gp3"><span class="badge bg-secondary f-300">重視家庭</span></div>
+            </div>
+            <h1 class="text-center f-700 mb-4 mb-sm-5 mb-md-6">與中小企業夥伴並肩同行，共創獨特的設計旅程。</h1>
+            <div class="p text-center f-300 mb-6 mb-sm-8">我是 Gabriel，一位充滿活力、駐點台北的 UI/UX 設計師與前端開發者。</div>
+            <div class="d-flex btn-gp">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gabriel@spotx.studio&su=合作邀約&body=Hi%20Gabriel," target="_blank" class="btn btn-primary">寄信給我</a>
+                <a href="../../media/cv.pdf" target="_blank" class="btn btn-secondary">下載履歷</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="skillset-section mb-10 px-4 px-sm-6 px-lg-9 py-8 pb-md-10">
+        <div class="container">
+        <div class="d-flex flex-column section-title mb-8 mb-md-9 mb-xl-10">
+            <h1 class="f-700 mb-2 text-center">專業技能</h1>
+            <div class="p f-400 text-center">我的核心能力與工具箱</div>
+        </div>
+        <div class="tab-list d-flex align-items-center mx-auto mb-6 mb-md-8">
+            <a class="tab" id="ux" href="#">UX 策略</a>
+            <div class="divider d-none d-sm-block"></div>
+            <a class="tab active" id="visuals" href="#">視覺設計</a>
+            <div class="divider d-none d-sm-block"></div>
+            <a class="tab" id="dev" href="#" >程式開發</a>
+        </div>
+        
+        <div class="tool-list grid visuals active px-2 px-sm-0">
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-1 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">進階</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Figma</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">建立響應式設計、互動原型與即時協作的設計系統。</li>
+                        <li class="d-none d-md-block">運用 Component、Variables 與 Auto-layout 建立可擴充的 UI 系統。</li>
+                        <li class="d-none d-md-block">製作具備條件邏輯的高保真互動原型。</li>
+                        <li class="d-none d-md-block">主持即時的設計審查與協作會議。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-2 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">進階</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Photoshop</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">製作精修、優化的影像與行銷視覺素材。</li>
+                        <li class="d-none d-md-block">針對網頁與印刷進行修圖、合成與校色。</li>
+                        <li class="d-none d-md-block">運用預設集與壓縮技術輸出優化後的資產。</li>
+                        <li class="d-none d-md-block">使用非破壞性工作流設計行銷圖形。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-3 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">基礎</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Lottie</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">打造可擴展、輕量級的網頁互動動畫。</li>
+                        <li class="d-none d-md-block">製作網頁與移動端的輕量 JSON 動畫。</li>
+                        <li class="d-none d-md-block">整合動畫至網站且不影響載入效能。</li>
+                        <li class="d-none d-md-block">客製化 JSON 參數以實現互動播放控制。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-4 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">熟悉</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Illustrator</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">繪製清晰、可縮放的向量圖形與品牌系統。</li>
+                        <li class="d-none d-md-block">設計向量圖示、插畫與品牌資產。</li>
+                        <li class="d-none d-md-block">建立包含色票、符號與字型的品牌規範包。</li>
+                        <li class="d-none d-md-block">輸出乾淨的 SVG 程式碼供網頁開發使用。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-5 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">熟悉</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Premiere Pro</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">剪輯流暢、引人入勝的影片，包含音效與動態。</li>
+                        <li class="d-none d-md-block">多軌影片剪輯、轉場設計與風格調色。</li>
+                        <li class="d-none d-md-block">音訊同步、加入動態圖形與節奏調整。</li>
+                        <li class="d-none d-md-block">輸出優化格式供網頁背景或社群媒體使用。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-6 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">基礎</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Rive</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">設計具備狀態機邏輯的互動式網頁動畫。</li>
+                        <li class="d-none d-md-block">設計基於向量的互動式狀態機動畫。</li>
+                        <li class="d-none d-md-block">輸出極小檔案供 Web 或 App 使用。</li>
+                        <li class="d-none d-md-block">實驗觸發器與邏輯以實現即時游標互動。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tool-list grid dev px-2 px-sm-0">
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-1 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">進階</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Wordpress</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">客製化佈景主題與架構，兼顧效能與更新便利性。</li>
+                        <li class="d-none d-md-block">設定輕量主題、自訂欄位 (ACF) 與文章類型。</li>
+                        <li class="d-none d-md-block">強化安全性與速度：快取、影像 CDN、定期備份。</li>
+                        <li class="d-none d-md-block">建立易於編輯的區塊，讓客戶能安全更新內容。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-2 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">進階</span>
+                <div class="d-flex flex-column d-lg-flex-row">
+                    <h4 class="mb-3">Elementor</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">快速建置響應式網站，將設計概念轉化為流暢體驗。</li>
+                        <li class="d-none d-md-block">使用全域樣式與模板快速建置 Landing Page。</li>
+                        <li class="d-none d-md-block">串接表單至 Mailchimp/Zapier，設定轉換追蹤。</li>
+                        <li class="d-none d-md-block">優化頁面權重（延遲載入、影像壓縮）。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-3 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">進階</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Webflow</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">打造靈活的響應式佈局與精細的互動效果。</li>
+                        <li class="d-none d-md-block">建立 CMS 集合並串接動態內容模板。</li>
+                        <li class="d-none d-md-block">製作通過 Lighthouse 效能檢測的滾動視差互動。</li>
+                        <li class="d-none d-md-block">發布 Webhooks 至 Make 自動化處理潛在客戶名單。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-4 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">熟悉</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Bootstrap</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">運用 Sass 客製化響應式佈局，兼顧開發效率與細節。</li>
+                        <li class="d-none d-md-block">客製化 Grid 系統（斷點、間距）以精確還原設計。</li>
+                        <li class="d-none d-md-block">移除冗餘組件 (Tree-shake) 保持 CSS 輕量化。</li>
+                        <li class="d-none d-md-block">建立 Design Token (顏色、間距) 確保全站一致。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-5 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">基礎</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Shopify</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">客製化商店主題與外掛，優化產品瀏覽體驗。</li>
+                        <li class="d-none d-md-block">使用全域樣式與響應式控制快速建置頁面。</li>
+                        <li class="d-none d-md-block">串接行銷自動化工具與設定轉換追蹤像素。</li>
+                        <li class="d-none d-md-block">優化頁面載入速度與移除多餘程式碼。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-6 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">基礎</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Cyberbiz</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">設定 streamlined 線上商店，整合品牌視覺與後台管理。</li>
+                        <li class="d-none d-md-block">建置符合品牌風格的 Landing Page 與模板。</li>
+                        <li class="d-none d-md-block">串接表單至自動化行銷工具與設定追蹤碼。</li>
+                        <li class="d-none d-md-block">優化圖片壓縮與載入效能。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-7 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">基礎</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">Shopline</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">設計與管理店面視覺，確保購物流程順暢。</li>
+                        <li class="d-none d-md-block">快速建置符合全域樣式的促銷頁面。</li>
+                        <li class="d-none d-md-block">整合 CRM 與自動化行銷工具。</li>
+                        <li class="d-none d-md-block">進行網站效能優化與資源管理。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tool-list grid ux px-2 px-sm-0">
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-1 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">熟悉</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">顧客旅程地圖 (Customer Journey)</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">視覺化完整顧客旅程以識別痛點與機會。</li>
+                        <li class="d-none d-md-block">繪製端到端的顧客體驗地圖，找出阻力點。</li>
+                        <li class="d-none d-md-block">視覺化各個互動階段的情緒起伏。</li>
+                        <li class="d-none d-md-block">將產品功能對應至旅程中的關鍵時刻。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-2 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">熟悉</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">使用者任務分析 (Mission Analysis)</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">將使用者目標轉化為明確的設計行動與功能優先級。</li>
+                        <li class="d-none d-md-block">將抽象目標分解為可執行的設計需求。</li>
+                        <li class="d-none d-md-block">根據關鍵任務來排列功能開發順序。</li>
+                        <li class="d-none d-md-block">確保設計解決方案符合真實的使用動機。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-3 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">熟悉</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">使用者流程圖 (Userflow)</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">規劃並優化操作路徑，打造直覺流暢的任務流程。</li>
+                        <li class="d-none d-md-block">繪製使用者完成任務的詳細步驟路徑。</li>
+                        <li class="d-none d-md-block">識別並簡化不必要的冗餘步驟。</li>
+                        <li class="d-none d-md-block">透過測試驗證流程的清晰度與效率。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-4 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">熟悉</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">資訊架構 (Information Hierarchy)</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">建構內容架構，讓資訊易於查找與理解。</li>
+                        <li class="d-none d-md-block">組織內容以達到最大的清晰度與易讀性。</li>
+                        <li class="d-none d-md-block">運用視覺比重、群組與間距來引導視覺焦點。</li>
+                        <li class="d-none d-md-block">在美感與無障礙性之間取得平衡。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-5 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">熟悉</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">網站地圖 (Sitemap)</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">建立清晰的網站結構，支援流暢導航。</li>
+                        <li class="d-none d-md-block">規劃網站導航與內容群組的邏輯結構。</li>
+                        <li class="d-none d-md-block">規劃內容配置以符合使用者搜尋意圖。</li>
+                        <li class="d-none d-md-block">為設計師、開發者與利害關係人提供藍圖。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tool d-flex flex-column align-items-center flex-sm-row align-items-sm-start px-5 py-6 px-md-6 py-md-7 col-span-xs-4 col-span-sm-2 col-span-md-4 col-span-lg-4">
+                <div class="tool-img tool-6 mb-5 me-sm-5 mb-sm-0"></div>
+                <span class="badge bg-secondary f-300">熟悉</span>
+                <div class="d-flex flex-column">
+                    <h4 class="mb-3">人物誌 (Personas)</h4>
+                    <ul class="p f-300">
+                        <li class="d-md-none">描繪目標用戶輪廓，確保設計符合真實需求。</li>
+                        <li class="d-none d-md-block">根據研究數據建立詳細的用戶檔案。</li>
+                        <li class="d-none d-md-block">捕捉人口統計、動機與行為模式。</li>
+                        <li class="d-none d-md-block">運用人物誌引導產品設計決策。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container px-4 px-sm-6 px-lg-9">
+        <div class="journey-section d-flex flex-column mb-9 mb-sm-10 mb-xl-12">
+            <div class="d-flex align-items-end justify-content-between section-title mb-6 mb-md-8">
+                <div class="d-flex flex-column">
+                    <h2 class="f-700 mb-2">我的旅程</h2>
+                    <div class="p f-300">持續探索，享受過程</div>
+                </div>
+                <div class="d-none d-sm-flex">
+                    <div class="swiper-button-prev me-sm-5"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="journey p-5 p-md-0 d-flex flex-column flex-md-row">
+                            <div class="cover d-flex flex-column me-5 me-md-0 p-md-5">
+                                <div class="photo pier order-md-2"></div>
+                                    <h4 class="mb-1">飯店櫃檯接待</h4>
+                                    <div class="d-flex justify-content-between mb-8 mb-md-6">
+                                        <div class="p f-300">@The Pier, 香港</div>
+                                        <div class="p f-300">2021-2022</div>
+                                    </div>
+                            </div>
+                            <div class="overview mb-3 p-md-5 m-md-0">
+                                <div class="d-flex flex-column">
+                                    <h4 class="d-none d-md-block pb-3 pb-md-2 border-bottom border-2 border-secondary">概覽</h4>
+                                    <div class="d-lg-flex">
+                                        <div class="job-desc d-flex flex-grow-1 flex-lg-column pb-6 pt-md-3 pe-lg-3">
+                                            <div class="icon me-4"></div>
+                                            <div class="d-flex flex-column mt-2">
+                                                <div class="p f-400 mb-2">工作內容</div>
+                                                <ul class="ms-lg-2">
+                                                    <li class="p f-300">每日登記入住與退房作業</li>
+                                                    <li class="p f-300">處理訂房與客戶諮詢</li>
+                                                    <li class="p f-300">解決住客即時需求與客訴</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="achieve d-flex flex-grow-1 flex-lg-column pb-6 pt-md-3 ps-lg-3 mb-6 mb-md-0">
+                                            <div class="icon me-4"></div>
+                                            <div class="d-flex flex-column">
+                                                <div class="p f-400 mb-2 pt-2">技能與成就</div>
+                                                <ul class="ms-lg-2">
+                                                    <li class="p f-300">高壓環境下的即時問題解決能力</li>
+                                                    <li class="p f-300">跨文化溝通與客戶服務技巧</li>
+                                                    <li class="p f-300">細緻的觀察力與同理心</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details d-flex flex-column">
+                                        <div class="show d-flex d-md-none justify-content-center align-items-center">
+                                            <div class="p2 f-300 text-center me-1">顯示詳情</div>
+                                            <div class="icon"></div>
+                                        </div>
+                                        <div class="journey-details flex-column mt-6">
+                                            <h4 class="mb-3 pb-3 pb-md-2 border-bottom border-2 border-secondary">轉捩點</h4>
+                                            <div class="p f-300">
+                                                我很快發現飯店業過於穩定且重複的工作模式並不適合我。我渴望創造與挑戰。這段期間，我利用閒暇時間自學 Photoshop 與 InDesign，並完成了自己的書籍排版設計。
+                                                <br><br>這份案例集讓我獲得了轉職的機會，進入了一家本地食品零售公司擔任平面設計師與文案。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="journey p-5 p-md-0 d-flex flex-column flex-md-row">
+                            <div class="cover d-flex flex-column me-5 me-md-0 p-md-5">
+                                <div class="photo inwell order-md-2"></div>
+                                    <h4 class="mb-1">平面設計師</h4>
+                                    <div class="d-flex justify-content-between mb-8 mb-md-6">
+                                        <div class="p f-300">@In-well Ltd., 香港</div>
+                                        <div class="p f-300">2022-2023</div>
+                                    </div>
+                            </div>
+                            <div class="overview mb-3 p-md-5 m-md-0">
+                                <div class="d-flex flex-column">
+                                    <h4 class="d-none d-md-block pb-3 pb-md-2 border-bottom border-2 border-secondary">概覽</h4>
+                                    <div class="d-lg-flex">
+                                        <div class="job-desc d-flex flex-grow-1 flex-lg-column pb-6 pt-md-3 pe-lg-3">
+                                            <div class="icon me-4"></div>
+                                            <div class="d-flex flex-column mt-2">
+                                                <div class="p f-400 mb-2">工作內容</div>
+                                                <ul class="ms-lg-2">
+                                                    <li class="p f-300">品牌行銷素材與社群圖文設計</li>
+                                                    <li class="p f-300">產品包裝與印刷品設計</li>
+                                                    <li class="p f-300">行銷文案撰寫與活動策劃</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="achieve d-flex flex-grow-1 flex-lg-column pb-6 pt-md-3 ps-lg-3 mb-6 mb-md-0">
+                                            <div class="icon me-4"></div>
+                                            <div class="d-flex flex-column">
+                                                <div class="p f-400 mb-2 pt-2">技能與成就</div>
+                                                <ul>
+                                                    <li class="p f-300">Adobe Creative Suite 實務應用</li>
+                                                    <li class="p f-300">商業印刷與完稿流程</li>
+                                                    <li class="p f-300">品牌視覺一致性管理</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details d-flex flex-column">
+                                        <div class="show d-flex d-md-none justify-content-center align-items-center">
+                                            <div class="p2 f-300 text-center me-1">顯示詳情</div>
+                                            <div class="icon"></div>
+                                        </div>
+                                        <div class="journey-details flex-column mt-6">
+                                            <h4 class="mb-3 pb-3 pb-md-2 border-bottom border-2 border-secondary">轉捩點</h4>
+                                            <div class="p f-300">
+                                                這份工作讓我接觸到了商業設計的實務，但我發現自己對於「使用者體驗」與「數位互動」有更深的興趣。因此我開始進修 UI/UX 與前端程式碼，並決定轉向產品設計領域。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="journey p-5 p-md-0 d-flex flex-column flex-md-row">
+                            <div class="cover d-flex flex-column me-5 me-md-0 p-md-5">
+                                <div class="photo spotx order-md-2"></div>
+                                    <h4 class="mb-1">UI/UX 設計師 (自由接案)</h4>
+                                    <div class="d-flex justify-content-between mb-8 mb-md-6">
+                                        <div class="p f-300">@Spotx Studio, 台北</div>
+                                        <div class="p f-300">2023 至今</div>
+                                    </div>
+                            </div>
+                            <div class="overview mb-3 p-md-5 m-md-0">
+                                <div class="d-flex flex-column">
+                                    <h4 class="d-none d-md-block pb-3 pb-md-2 border-bottom border-2 border-secondary">概覽</h4>
+                                    <div class="d-lg-flex">
+                                        <div class="job-desc d-flex flex-grow-1 flex-lg-column pb-6 pt-md-3 pe-lg-3">
+                                            <div class="icon me-4"></div>
+                                            <div class="d-flex flex-column mt-2">
+                                                <div class="p f-400 mb-2">工作內容</div>
+                                                <ul class="ms-lg-2">
+                                                    <li class="p f-300">B2B 系統與企業網站 UI/UX 設計</li>
+                                                    <li class="p f-300">全端網頁開發 (HTML/CSS/JS/WordPress)</li>
+                                                    <li class="p f-300">與客戶溝通需求並轉化為技術規格</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="achieve d-flex flex-grow-1 flex-lg-column pb-6 pt-md-3 ps-lg-3 mb-6 mb-md-0">
+                                            <div class="icon me-4"></div>
+                                            <div class="d-flex flex-column">
+                                                <div class="p f-400 mb-2 pt-2">技能與成就</div>
+                                                <ul class="ms-lg-2">
+                                                    <li class="p f-300">獨立完成多個從 0 到 1 的產品開發</li>
+                                                    <li class="p f-300">結合 Design Technologist 思維優化交付流程</li>
+                                                    <li class="p f-300">建立可擴充的設計系統與程式碼架構</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details d-flex flex-column">
+                                        <div class="show d-flex d-md-none justify-content-center align-items-center">
+                                            <div class="p2 f-300 text-center me-1">顯示詳情</div>
+                                            <div class="icon"></div>
+                                        </div>
+                                        <div class="journey-details flex-column mt-6">
+                                            <h4 class="mb-3 pb-3 pb-md-2 border-bottom border-2 border-secondary">高潮與挑戰</h4>
+                                            <div class="p f-300">
+                                                轉為自由接案者後，我享受能掌控產品全貌的自由。雖然需獨自面對技術與業務挑戰，但看著設計完美落地並解決客戶問題，帶來的成就感是無可比擬的。這段經歷極大化了我的跨領域整合能力。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="journey p-5 p-md-0 d-flex flex-column flex-md-row">
+                            <div class="cover d-flex flex-column me-5 me-md-0 p-md-5">
+                                <div class="photo tcoc order-md-2"></div>
+                                    <h4 class="mb-1">多媒體組長</h4>
+                                    <div class="d-flex justify-content-between mb-8 mb-md-6">
+                                        <div class="p f-300">@TCOC, 台北</div>
+                                        <div class="p f-300">2023 至今</div>
+                                    </div>
+                            </div>
+                            <div class="overview mb-3 p-md-5 m-md-0">
+                                <div class="d-flex flex-column">
+                                    <h4 class="d-none d-md-block pb-3 pb-md-2 border-bottom border-2 border-secondary">概覽</h4>
+                                    <div class="d-lg-flex">
+                                        <div class="job-desc d-flex flex-grow-1 flex-lg-column pb-6 pt-md-3 pe-lg-3">
+                                            <div class="icon me-4"></div>
+                                            <div class="d-flex flex-column mt-2">
+                                                <div class="p f-400 mb-2">工作內容</div>
+                                                <ul class="ms-lg-2">
+                                                    <li class="p f-300">領導多媒體團隊進行內容產出與專案管理</li>
+                                                    <li class="p f-300">協調跨部門需求，確保設計品質與時程</li>
+                                                    <li class="p f-300">指導團隊成員技術成長與創意發想</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="achieve d-flex flex-grow-1 flex-lg-column pb-6 pt-md-3 ps-lg-3 mb-6 mb-md-0">
+                                            <div class="icon me-4"></div>
+                                            <div class="d-flex flex-column">
+                                                <div class="p f-400 mb-2 pt-2">技能與成就</div>
+                                                <ul class="ms-lg-2">
+                                                    <li class="p f-300">提升團隊專案交付效率與品質一致性</li>
+                                                    <li class="p f-300">跨部門溝通與衝突解決能力</li>
+                                                    <li class="p f-300">多媒體資源整合與流程優化</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details d-flex flex-column">
+                                        <div class="show d-flex d-md-none justify-content-center align-items-center">
+                                            <div class="p2 f-300 text-center me-1">顯示詳情</div>
+                                            <div class="icon"></div>
+                                        </div>
+                                        <div class="journey-details flex-column mt-6">
+                                            <h4 class="mb-3 pb-3 pb-md-2 border-bottom border-2 border-secondary">高潮與挑戰</h4>
+                                            <div class="p f-300">
+                                                從執行者轉變為管理者，我學習如何引導團隊發揮創意。雖然溝通成本增加，但能帶領團隊共同克服困難，並創造出比個人更大的影響力，是這份工作最棒的回饋。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="contact-section mb-9 mb-sm-10 mb-xl-12 d-xl-flex justify-content-xl-between">
+            <div class="d-flex flex-column section-title mb-6">
+                <h2 class="f-700 mb-2">聯絡與社群</h2>
+                <div class="p f-300">追蹤我的最新動態 =)</div>
+            </div>
+            <div class="social-media">
+                <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                    <img src="../../media/icons/ig.svg" alt="" class="icon media-icon"><span class="p flex-grow-1 text-center f-300">spotx_studio</span><img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+                </a>
+                <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                    <img src="../../media/icons/youtube.svg" alt="" class="icon media-icon"><span class="p flex-grow-1 text-center f-300">spotx.studio</span><img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+                </a>
+                <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                    <img src="../../media/icons/behance.svg" alt="" class="icon media-icon"><span class="p flex-grow-1 text-center f-300">spotx.studio</span><img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+                </a>
+                <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                    <img src="../../media/icons/gmail.svg" alt="" class="icon media-icon"><span class="p flex-grow-1 text-center f-300">gabriel@spotx.studio</span><img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer d-flex">
+        <div class="container d-flex">
+            <span class="caption f-300">2025</span>
+            <img src="../../media/icons/copyright.svg" alt="copyright icon" class="icon">
+            <span class="caption f-300">© Spotx Studio 版權所有</span>
+        </div>
+    </div>
+    <div class="side-menu container">
+        <a href="/zh/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">首頁</h4>
+            <img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+        <a href="/zh/about/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">關於</h4>
+            <img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+        <a href="/zh/case/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">案例</h4>
+            <img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+        <a href="/zh/contact/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">聯絡我</h4>
+            <img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+    </div>
+    <div class="overlay"></div>
+    <div class="dropdown">    
+        <a class="btn btn-secondary dropdown-toggle d-flex align-items-center p2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="dropdown-icon me-2" src="../../media/icons/lang.svg" alt="">
+            <span id="current-lang-text">ZH</span> 
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/about/" id="lang-en">English</a></li>
+            <li><a class="dropdown-item" href="/zh/about/" id="lang-zh">繁體中文</a></li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../../js/offcanvas-custom.js"></script>
+    <script src="../../js/skillset.js"></script>
+    <script src="../../js/swiper-custom.js"></script>
+    <script src="../../js/language-switch.js"></script>
+</body>
+</html>

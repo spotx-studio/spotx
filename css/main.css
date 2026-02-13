@@ -14575,7 +14575,7 @@ picture {
   content: "";
   display: inline-block;
   margin-left: 12px;
-  width: 100%;
+  flex-grow: 1;
   height: 44px;
   background: center center/cover no-repeat url(../../media/contact-headline-blk.svg);
 }

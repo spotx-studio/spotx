@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+    <title>Spotx Studio | UI/UX 設計與網頁開發專家 | 台北網頁設計 - Gabriel Chiu</title>
+    
+    <meta name="description"
+        content="Spotx Studio 專注於 B2B 系統介面設計與前端開發。由 Gabriel Chiu 帶領，結合 UI/UX 策略與 Design Technologist 技術背景，為企業打造高效率、可落地的數位產品方案。">
+
+    <meta name="keywords" content="UI/UX設計, 網頁設計, 前端開發, B2B系統設計, Design Technologist, 台北網頁設計, Figma設計, Gabriel Chiu, Spotx Studio">
+
+    <meta property="og:site_name" content="Spotx Studio">
+    <meta property="og:title" content="Spotx Studio | 專業 UI/UX 設計與前端開發顧問">
+    <meta property="og:description"
+        content="我是 Gabriel，一名懂程式的產品設計師。我專注於彌合設計創意與技術實踐之間的鴻溝，將複雜的商業想法轉化為流暢、可立即上線的數位產品介面。">
+
+    <meta property="og:image" content="https://spotx.studio/element/icon/logo-dark.png">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg">
+
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
+    <meta property="og:url" content="https://spotx.studio/zh/">
+</head>
+
+<body>
+    <div class="navbar sticky-top p-0">
+        <div class="container p-0 container px-3 py-3 px-sm-6 py-lg-5 px-xl-9 p-0">
+            <a class="navbar-brand d-flex align-items-center flex-grow-1 flex-lg-grow-0" href="/zh/">
+                <img src="/media/logo.svg" alt="" width="30" height="24" class="me-2">
+                <p class="h4 f-700 text-center">Spotx Studio</p>
+            </a>
+            <ul class="navbar-nav d-none d-lg-flex flex-row">
+                <li class="nav-item"><a href="/zh/" class="nav-link active">首頁</a></li>
+                <li class="nav-item"><a href="/zh/about/" class="nav-link">關於</a></li>
+                <li class="nav-item"><a href="/zh/case/" class="nav-link">案例</a></li>
+                <li class="nav-item"><a href="/zh/contact/" class="nav-link">聯絡</a></li>
+            </ul>
+            <div class="d-flex align-items-center gap-4">
+                <div class="dropdown">    
+                    <a class="btn btn-secondary dropdown-toggle d-flex align-items-center p2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="dropdown-icon me-2" src="../media/icons/lang.svg" alt="">
+                        <span id="current-lang-text">ZH</span> 
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/" id="lang-en">English</a></li>
+                        <li><a class="dropdown-item" href="/zh/" id="lang-zh">繁體中文</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-primary d-none d-lg-block" href="/zh/contact/" role="button">預約諮詢</a>
+                <a class="hamburger d-lg-none" href="#"><img src="../media/icons/hamburger.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="container px-4 px-sm-6 px-lg-9">
+        <div class="hero-section d-flex flex-column flex-sm-row mb-10 mb-md-11 mt-xl-10 align-items-sm-center">
+            <video autoplay loop muted playsinline src="../media/hero-animation.webm" class="order-sm-2"></video>
+
+            <div class="content d-flex flex-column flex-grow-1">
+                <div class="toolbox d-flex mb-6 mb-md-8">
+                    <p class="p2 f-400">創意小夥伴</p>
+                    <div id="lottie-container" class="logo-box"></div>
+                </div>
+                <ul class="nav mb-3 mb-md-4 f-300" id="hero-nav">
+                    <li class="nav-item"><a href="#" class="navlink active p2" data-index="0">一般訪客</a></li>
+                    <li class="nav-item"><a href="#" class="navlink p2" data-index="1">合作夥伴</a></li>
+                    <li class="nav-item"><a href="#" class="navlink p2" data-index="2">招聘經理</a></li>
+                    <img class="nav-bg-deco" src="../media/nav-bg-deco.svg">
+                </ul>
+                <div class="swiper hero-text-swiper w-100">
+                    <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <h1 class="f-700 mb-6 mb-sm-5 mb-md-6">打造邏輯與創意交織的數位體驗。</h1>
+                    <p class="p f-300 mb-7 mb-sm-6 mb-md-9">我是 Gabriel — 一名懂程式的產品設計師。我專注於彌合設計創意與技術實踐之間的鴻溝，將複雜的商業想法轉化為流暢、可立即上線的數位產品介面。</p>
+                    <a class="btn btn-primary btn-suffix" href="/zh/case/">
+                        瀏覽案例
+                        <img class="btn-icon" src="../media/icons/arrow.svg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="f-700 mb-6 mb-sm-5 mb-md-6">完美實踐您的願景，設計與開發零落差。</h1>
+                    <p class="p f-300 mb-7 mb-sm-6 mb-md-9">不再需要擔心「交付斷層」。作為設計技術專家 (Design Technologist)，我從開發第一天就確保技術可行性，為您節省開發成本並加速上線時間。</p>
+                    <a class="btn btn-primary btn-suffix" href="/zh/contact/">
+                        開始合作
+                        <img class="btn-icon" src="../media/icons/arrow.svg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="f-700 mb-6 mb-sm-5 mb-md-6">精通前端開發的全方位產品設計師。</h1>
+                    <p class="p f-300 mb-7 mb-sm-6 mb-md-9">正在尋找跨領域人才？我具備從 UX 策略到 HTML/CSS 實作的全方位技能。減少團隊磨合時間，從第一天起就為您的產品數據帶來正面影響。</p>
+                    <a class="btn btn-primary btn-suffix" href="/履歷（中文）.pdf" target="_blank">
+                        查看履歷
+                        <img class="btn-icon" src="../media/icons/arrow.svg" alt="">
+                    </a>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="boldtext-section d-flex flex-column mb-10 mb-md-11 mb-xl-12 flex-sm-row">
+            <img class="quote" src="../media/icons/format-quote-primary.svg" alt="">
+            <div class="d-sm-flex flex-sm-column">
+                <p class="boldtext f-700 mb-8 mb-sm-9">設計背後的流程與故事，才是產品的核心價值。</p>
+                <div class="grid">
+                    <div class="col-span-xs-2 col-span-md-3 col-span-xl-4 d-flex flex-column">
+                        <h4 class="h4 mb-2">我們是創造者</h4>
+                        <p class="p f-400">我相信設計的價值不只在於美觀或營收，更在於它對使用者與開發團隊帶來的深層意義。</p>
+                    </div>
+                    <div class="col-span-xs-2 col-span-md-3 col-span-xl-4 d-flex flex-column">
+                        <h4 class="h4 mb-2">設計是一場旅程</h4>
+                        <p class="p f-400">很簡單：我們共同創造、交流想法、歡笑，並為我們合力完成的成果感到自豪。</p>
+                    </div>
+                    <div class="btn btn-secondary d-none d-md-block col-span-md-2 col-span-xl-4" onclick="location.href='/zh/about/'">了解更多</div>
+                </div>
+            </div>
+        </div>
+        <div class="case-section d-flex flex-column mb-10 mb-md-11 mb-xl-12">
+            <div class="conatiner case p-4 p-md-6 p-lg-8 mb-10 mb-sm-9 d-md-flex">
+                <div class="d-flex flex-column">
+                    <div class="d-flex mb-6 badge-list flex-wrap">
+                        <span class="badge bg-secondary f-300">客製化設計</span>
+                        <span class="badge bg-secondary f-300">Figma</span>
+                        <span class="badge bg-secondary f-300">數位轉型</span>
+                    </div>
+                    <h2 class="mb-5 mb-md-4 f-700">企業福利系統數位化</h2>
+                    <div class="d-flex flex-wrap prj-overview mb-8 mb-md-11">
+                        <div class="d-flex flex-column ">
+                            <div class="caption f-300 mb-1">客戶</div>
+                            <div class="p">零壹科技</div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="caption f-300 mb-1">角色</div>
+                            <div class="p">主導 UI/UX 設計</div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="caption f-300 mb-1">時間</div>
+                            <div class="p">2025-26</div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column prj-highlights mb-8 mt-4 mt-md-0 flex-sm-row">
+                        <div class="d-flex mb-5 flex-sm-column prj-block">
+                            <span class="f-700 data me-5">+78%</span>
+                            <div class="d-flex flex-column">
+                                <div class="p mb-2">行政效率提升</div>
+                                <div class="p2 f-300">審核流程由原本的 2 週縮短至 3 天，效率顯著提升 78%。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider" alt=""></div>
+                        <div class="d-flex mb-5 flex-sm-column prj-block">
+                            <span class="f-700 data me-5">10+</span>
+                                <div class="d-flex flex-column">
+                                    <div class="p mb-2">設計系統擴充</div>
+                                    <div class="p2 f-300">基於既有品牌設計規範，針對特定模組優化細節並進行深度擴充。</div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="btn btn-primary w-100 d-none d-md-flex" onclick="location.href='/zh/case/zot/'">查看詳情</div>
+                </div>
+                <img class="prj-cover mb-8 mb-md-0" src="../media/zot/pc_xl_r.webp"
+                    alt="零壹科技專案模擬圖">
+                <div class="btn btn-primary w-100 d-md-none" onclick="location.href='/zh/case/zot/'">查看詳情</div>
+            </div>
+            <div class="conatiner case p-4 p-md-6 p-lg-8 mb-10 mb-sm-9 d-md-flex">
+                <div class="d-flex flex-column order-2">
+                    <div class="d-flex mb-6 badge-list flex-wrap">
+                        <span class="badge bg-secondary f-300">介面優化</span>
+                        <span class="badge bg-secondary f-300">Figma</span>
+                        <span class="badge bg-secondary f-300">醫療科技</span>
+                    </div>
+                    <h2 class="mb-5 mb-md-4 f-700">離床警報系統</h2>
+                    <div class="d-flex flex-wrap prj-overview mb-8 mb-md-11">
+                        <div class="d-flex flex-column ">
+                            <div class="caption f-300 mb-1">客戶</div>
+                            <div class="p">優尼科技</div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="caption f-300 mb-1">角色</div>
+                            <div class="p">Lead UI/UX, 前端開發</div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="caption f-300 mb-1">時間</div>
+                            <div class="p">2024-25</div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column prj-highlights mb-8 mt-4 mt-md-0 flex-sm-row">
+                        <div class="d-flex mb-5 flex-sm-column prj-block">
+                            <span class="f-700 data me-5">1k+</span>
+                            <div class="d-flex flex-column">
+                                <div class="p mb-2">協助醫護人員</div>
+                                <div class="p2 f-300">成功協助超過 1,000 名護理人員更高效地監控病職狀況。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider" alt=""></div>
+                        <div class="d-flex mb-5 flex-sm-column prj-block">
+                            <span class="f-700 data me-5">
+                                < 2 </span>
+                                    <div class="d-flex flex-column">
+                                        <div class="p mb-2">極少修圖紀錄</div>
+                                        <div class="p2 f-300">透過精確的工作流規劃，僅經過一次修正即完成最終定稿。</div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="btn btn-primary w-100 d-none d-md-flex" onclick="location.href='/zh/case/uext/'"> 查看詳情</div>
+                </div>
+                <img class="prj-cover mb-8 mb-md-0" src="../media/uext/pc_lg.webp"
+                    alt="優尼科技專案模擬圖">
+                <div class="btn btn-primary w-100 d-md-none" onclick="location.href='/zh/case/uext/'">查看詳情</div>
+            </div>
+            <div class="conatiner case p-4 p-md-6 p-lg-8 d-md-flex">
+                <div class="d-flex flex-column">
+                    <div class="d-flex mb-6 badge-list flex-wrap">
+                        <span class="badge bg-secondary f-300">0-to-1 產品開發</span>
+                        <span class="badge bg-secondary f-300">App 設計</span>
+                        <span class="badge bg-secondary f-300">AI 整合</span>
+                    </div>
+                    <h2 class="mb-5 mb-md-4 f-700">電競設備客製化 App</h2>
+                    <div class="d-flex flex-wrap prj-overview mb-8 mb-md-11">
+                        <div class="d-flex flex-column ">
+                            <div class="caption f-300 mb-1">客戶</div>
+                            <div class="p">Acrox Ltd.</div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="caption f-300 mb-1">角色</div>
+                            <div class="p">主導產品設計</div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="caption f-300 mb-1">時間</div>
+                            <div class="p">2024-25</div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-column prj-highlights mb-8 mt-4 mt-md-0 flex-sm-row">
+                        <div class="d-flex mb-5 flex-sm-column prj-block">
+                            <span class="f-700 data me-5">80%</span>
+                            <div class="d-flex flex-column">
+                                <div class="p mb-2">從零定義產品範疇</div>
+                                <div class="p2 f-300">將模糊的想法轉化為具體的藍圖，定義了 80% 的產品核心功能。</div>
+                            </div>
+                        </div>
+                        <div class="divider" alt=""></div>
+                        <div class="d-flex mb-5 flex-sm-column prj-block">
+                            <span class="f-700 data me-5">混合式</span>
+                            <div class="d-flex flex-column">
+                                <div class="p mb-2">系統邏輯架構</div>
+                                <div class="p2 f-300">以混合覆蓋系統成功解決「全域同步」與「單一設定」的權限衝突。</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="btn btn-primary w-100 d-none d-md-flex" onclick="location.href='/zh/case/acrox/'">查看詳情</div>
+                </div>
+                <img class="prj-cover mb-8 mb-md-0" src="../media/acrox/pc_lg.webp"
+                    alt="Acrox 專案模擬圖">
+                <div class="btn btn-primary w-100 d-md-none" onclick="location.href='/zh/case/acrox/'">查看詳情</div>
+            </div>
+        </div>
+
+        <div class="service-section mb-10 mb-xl-12">
+            <div class="d-flex flex-column section-title mb-6 mb-md-9 mb-xl-10">
+                <h1 class="f-700 mb-2">服務細節</h1>
+                <div class="p f-400">這是我們即將合作的流程與方案</div>
+            </div>
+            <div class="d-lg-flex package-container mb-xl-5">
+                <div class="container package mb-5">
+                    <div class="badge bg-secondary f-400 mb-6 mb-sm-8">基礎方案</div>
+                    <div class="d-flex align-items-end mb-2 mb-md-4 mb-lg-5">
+                        <h1 class="f-700 me-2 me-lg-3">50,000</h1>
+                        <h4 class="f-700">TWD</h4>
+                    </div>
+                    <p class="f-300 mb-6 mb-sm-8 target p">適合需要快速建立專業品牌官網的初創團隊，捷足先登。
+                    </p>
+                    <div class="btn btn-primary w-100 mb-6 mb-lg-8" onclick="location.href='/zh/contact/'">立即預約</div>
+                    <img src="../media/divider.svg" alt="" class="divider w-100 mb-3">
+                    <div class="d-flex flex-column">
+                        <div class="p2 mb-2 mb-sm-3">包含內容：</div>
+                        <ul>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/check.svg" alt="">網站結構與內容規劃</li>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/check.svg" alt="">視覺風格探索與 Moodboard</li>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/check.svg" alt="">設計定稿 (含 3 次修正)</li>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/check.svg" alt="">網域、SEO 設定與上線</li>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/check.svg" alt="">一年維護支援與諮詢</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container package mb-5">
+                    <div class="badge bg-primary f-400 mb-6 mb-sm-8">熱門方案</div>
+                    <div class="d-flex align-items-end mb-2 mb-md-4 mb-lg-5">
+                        <h1 class="f-700 me-2 me-lg-3">100,000+</h1>
+                        <h4 class="f-700">TWD</h4>
+                    </div>
+                    <p class="f-300 mb-6 target mb-sm-8 p">適合需要系統化、具備完整介面風格的成長型團隊。
+                    </p>
+                    <div class="btn btn-primary w-100 mb-6 mb-lg-8" onclick="location.href='/zh/contact/'">立即預約</div>
+                    <img src="../media/divider.svg" alt="" class="divider w-100 mb-3">
+                    <div class="d-flex flex-column">
+                        <div class="p2 mb-2 mb-sm-3">包含基礎方案內容，外加：</div>
+                        <ul>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/plus.svg" alt="">使用者任務分析</li>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/plus.svg" alt="">使用者流程與線稿 (3 次修正)</li>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/plus.svg" alt="">全站 Figma 高保真原型</li>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/plus.svg" alt="">客製化圖標與動態效果</li>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/plus.svg" alt="">SEO 深度優化與流量追蹤</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container package mb-5">
+                    <div class="badge bg-secondary f-400 mb-6 mb-sm-8">進階方案</div>
+                    <div class="d-flex align-items-end mb-2 mb-md-4 mb-lg-5">
+                        <h1 class="f-700 me-2 me-lg-3">150,000+</h1>
+                        <h4 class="f-700">TWD</h4>
+                    </div>
+                    <p class="f-300 mb-6 target mb-sm-8 p">適合需要從前端開發到設計系統完整落地的產品負責人。</p>
+                    <div class="btn btn-primary w-100 mb-6 mb-lg-8" onclick="location.href='/zh/contact/'">立即預約</div>
+                    <img src="../media/divider.svg" alt="" class="divider w-100 mb-3">
+                    <div class="d-flex flex-column">
+                        <div class="p2 mb-2 mb-sm-3">包含基礎與熱門方案內容，外加：</div>
+                        <ul>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/plus.svg" alt="">用戶研究與可用性測試</li>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/plus.svg" alt="">設計系統與 UI 組件庫建立</li>
+                            <li class="p2 d-flex align-items-center f-300 mb-1 mb-sm-2"><img class="checklist-icon"
+                                    src="../media/icons/plus.svg" alt="">客製化前端程式碼開發</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="consultation p2 text-center f-400 ">如果您不確定該選擇哪種方案，歡迎預約 <a href="/zh/contact/" class="f-700 text-highlight">免費 30 分鐘諮詢</a></div>
+        </div>
+        <div class="contact-section mb-9 mb-sm-10 mb-xl-12 d-xl-flex justify-content-xl-between">
+            <div class="d-flex flex-column section-title mb-6">
+                <h2 class="f-700 mb-2">聯絡與社群</h2>
+                <div class="p f-300">追蹤我的最新動態 =)</div>
+            </div>
+            <div class="social-media">
+                <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                    <img src="/media/icons/ig.svg" alt="" class="icon media-icon"><span
+                        class="p flex-grow-1 text-center f-300">spotx_studio</span><img src="../media/icons/arrow-grey.svg"
+                        alt="" class="icon">
+                </a>
+                <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                    <img src="../media/icons/youtube.svg" alt="" class="icon media-icon"><span
+                        class="p flex-grow-1 text-center f-300">spotx.studio</span><img src="../media/icons/arrow-grey.svg"
+                        alt="" class="icon">
+                </a>
+                <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                    <img src="../media/icons/behance.svg" alt="" class="icon media-icon"><span
+                        class="p flex-grow-1 text-center f-300">spotx.studio</span><img src="../media/icons/arrow-grey.svg"
+                        alt="" class="icon">
+                </a>
+                <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                    <img src="../media/icons/gmail.svg" alt="" class="icon media-icon"><span
+                        class="p flex-grow-1 text-center f-300">gabriel@spotx.studio</span><img
+                        src="../media/icons/arrow-grey.svg" alt="" class="icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer d-flex">
+        <div class="container d-flex">
+            <span class="caption f-300">2025</span>
+            <img src="../media/icons/copyright.svg" alt="copyright icon" class="icon">
+            <span class="caption f-300">© Spotx Studio 版權所有</span>
+        </div>
+    </div>
+    <div class="side-menu container">
+        <a href="/zh/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">首頁</h4>
+            <img src="../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+        <a href="/zh/about/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">關於</h4>
+            <img src="../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+        <a href="/zh/case/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">案例</h4>
+            <img src="../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+        <a href="/zh/contact/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">聯絡我</h4>
+            <img src="../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+    </div>
+    <div class="overlay"></div>
+    <div class="dropdown">    
+        <a class="btn btn-secondary dropdown-toggle d-flex align-items-center p2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="dropdown-icon me-2" src="../media/icons/lang.svg" alt="">
+            <span id="current-lang-text">ZH</span> 
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/" id="lang-en">English</a></li>
+            <li><a class="dropdown-item" href="/zh/" id="lang-zh">繁體中文</a></li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/hero-section-swiper.js"></script>
+    <script src="../js/offcanvas-custom.js"></script>
+    <script src="../js/lottie-animation.js"></script>
+    <script src="../js/language-switch.js"></script>
+</body>
+
+</html>

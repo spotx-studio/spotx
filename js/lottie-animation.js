@@ -3,5 +3,5 @@ var animation = lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: './media/tool-animation.json' // replace with your JSON file path
+    path: '../media/tool-animation.json' // replace with your JSON file path
   });
