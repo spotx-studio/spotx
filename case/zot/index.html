@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <title>Spotx Studio - ZOT Case Study</title>
+
+    <meta property="og:site_name" content="Spotx Studio">
+    <meta property="og:title" content="Spotx Studio | ZOT Employee Benefit System Case Study">
+    <meta property="og:description"
+        content="Digitizing enterprise employee benefits: Reducing processing time from 2 weeks to 3 days with a systemized rule engine.">
+
+    <meta property="og:image" content="https://spotx.studio/element/icon/logo-dark.png">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg">
+
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
+    <meta property="og:url" content="https://spotx.studio/case/zot/">
+</head>
+<body class="zot">
+    <div class="navbar sticky-top p-0">
+        <div class="container p-0 container px-3 py-3 px-sm-6 py-lg-5 px-xl-9 p-0">
+            <a class="navbar-brand d-flex align-items-center flex-grow-1 flex-lg-grow-0" href="/">
+                <img src="../../media/logo.svg" alt="" width="30" height="24" class="me-2">
+                <p class="h4 f-700 text-center">Spotx Studio</p>
+            </a>
+            <ul class="navbar-nav d-none d-lg-flex flex-row">
+                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="/case/" class="nav-link active">Works</a></li>
+                <li class="nav-item"><a href="/contact/" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="d-flex align-items-center gap-4">
+                <div class="dropdown">    
+                    <a class="btn btn-secondary dropdown-toggle d-flex align-items-center p2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="dropdown-icon me-2" src="../../media/icons/lang.svg" alt="">
+                        <span id="current-lang-text">EN</span> 
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" id="lang-en">English</a></li>
+                        <li><a class="dropdown-item" href="#" id="lang-zh">繁體中文</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-primary d-none d-lg-block" href="/contact/" role="button">Let's Chat</a>
+                <a class="hamburger d-lg-none" href="#"><img src="../../media/icons/hamburger.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="grid container px-4 mt-6 px-sm-6 px-lg-9">
+        <div class="case-title col-span-xs-4 col-span-sm-8 col-span-xl-12">
+            <h1 class="mb-6 f-700">Enterprise Employee Benefit System</h1>
+            <h4 class="f-300 mb-9">Lead Product Designer | Collaborated with PM, Front-end Dev., Backend Dev.</h4>
+            <div class="btn-list mb-9">
+                <a href="" class="btn btn-secondary btn-prefix">
+                    <img class="btn-icon" src="../../media/icons/time.svg" alt="">
+                    <span>3 months</span>
+                </a>
+                <a href="" class="btn btn-secondary btn-prefix">
+                    <img class="btn-icon" src="../../media/icons/figma.png" alt="">
+                    <span>Figma</span>
+                </a>
+                <a href="" class="btn btn-secondary btn-prefix">
+                    <img class="btn-icon" src="../../media/icons/skills.svg" alt="">
+                    <span>B2B Web System</span>
+                </a>
+            </div>
+        </div>
+        <div class="ogs col-span-xs-4 col-span-sm-8 col-span-xl-12 grid flex-column mb-10">
+            <div class="og col-span-xs-4 col-span-sm-8 col-span-xl-12">
+                <picture>
+                    <img class="ogp-1" src="../../media/zot/og_sm_1.webp" alt="">
+                </picture>
+                <div class="text-box">
+                    <h3 class="mb-1">Rapid Digital Workflow</h3>
+                    <div class="p2 f-300">Reducing processing time from 2 weeks to 3 days with real-time tracking.</div>
+                </div>
+            </div>
+            <div class="og col-span-xs-4 col-span-sm-8 col-span-md-4 col-span-xl-8 og-sm">
+                <picture>
+                    <img class="ogp-2" src="../../media/zot/og_sm_2.webp" alt="">
+                </picture>
+                <div class="text-box">
+                    <h3 class="mb-1">Automated Rule Engine</h3>
+                    <div class="p2 f-300">Systemized logic filters out ineligible applications, preventing human errors.</div>
+                </div>
+            </div>
+            <div class="og col-span-xs-4 col-span-sm-8 col-span-md-4 col-span-xl-4 og-sm">
+                <picture>
+                    <img class="ogp-3" src="../../media/zot/og_sm_3.webp" alt="">
+                </picture>
+                <div class="text-box">
+                    <h3 class="mb-1">One-Click Financial Export</h3>
+                    <div class="p2 f-300">Automated generation of bank transfer and tax filing documents.</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ps col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-10 ">
+            <h2 class="f-700 mb-6">Problem Statement</h2>
+            <table>
+                <th class="d-none d-md-flex gap-5 align-items-center">
+                    <h2 style="color: transparent; width: 89px;">01</h2>
+                    <p class="w-50 fw-normal">Problem/Challenge</p>
+                    <p class="w-50 fw-normal">Solution</p>
+                </th>
+                <tr class="d-flex start align-items-center">
+                    <td class="index pe-md-8">
+                        <h2 style="min-width: 48px;">01</h2>
+                    </td>
+                    <td class="content-box flex-grow-1">
+                        <div class="challenge d-flex align-items-center">
+                            <img src="../../media/icons/alert.svg" alt="">
+                            <div class="p2 f-300">Slow & Opaque Paper Process (2 Weeks)</div>
+                        </div>
+                        <div class="solution d-flex align-items-center">
+                            <img src="../../media/icons/check-grey.svg" alt="">
+                            <div class="p2 f-300">Digitized the entire workflow, cutting processing time to 3 days with real-time status tracking.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="d-flex align-items-center">
+                    <td class="index pe-md-8">
+                        <h2 style="min-width: 48px;">02</h2>
+                    </td>
+                    <td class="content-box flex-grow-1">
+                        <div class="challenge d-flex align-items-center">
+                            <img src="../../media/icons/alert.svg" alt="">
+                            <div class="p2 f-300">Complex Eligibility Errors</div>
+                        </div>
+                        <div class="solution d-flex align-items-center">
+                            <img src="../../media/icons/check-grey.svg" alt="">
+                            <div class="p2 f-300">Implemented a Systemized Rule Engine that automatically filters eligibility, preventing unqualified applications.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="d-flex align-items-center">
+                    <td class="index pe-md-8">
+                        <h2 style="min-width: 48px;">03</h2>
+                    </td>
+                    <td class="content-box flex-grow-1">
+                        <div class="challenge d-flex align-items-center">
+                            <img src="../../media/icons/alert.svg" alt="">
+                            <div class="p2 f-300">High-Risk Financial Reconciliation</div>
+                        </div>
+                        <div class="solution d-flex align-items-center">
+                            <img src="../../media/icons/check-grey.svg" alt="">
+                            <div class="p2 f-300">Automated data recording and export for "Bank Transfer" and "Tax Filing" files, ensuring 100% accuracy.</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="gnms mb-10">
+        <div class="container grid pt-6 py-md-9 px-4 px-sm-6 px-lg-9 pt-6">
+            <h2 class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 f-700 mb-6">Goals & Metrics</h2>
+            <div class="gmn-list d-lg-flex gap-4 col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11">
+                <div class="gnm d-flex flex-column mb-5">
+                    <div class="badge bg-primary f-300">UX Strategy</div>
+                    <img src="/media/icons/workflow.svg" alt="" class="icon mb-6">
+                    <h4 class="mb-2 mb-xl-4">Complex Permission Architecture</h4>
+                    <div class="p f-300">Classified intricate user roles and conditional flows early to ensure a secure and logical user experience for different departments.</div>
+                </div>
+                <div class="gnm d-flex flex-column mb-5">
+                    <div class="badge bg-primary f-300">Design System</div>
+                    <img src="/media/icons/rwd.svg" alt="" class="icon mb-6">
+                    <h4 class="mb-2 mb-xl-4">System Scalability & Extension</h4>
+                    <div class="p f-300">Optimized and extended the client's existing Design System to support new functional requirements while maintaining visual consistency.</div>
+                </div>
+                <div class="gnm d-flex flex-column mb-5">
+                    <div class="badge bg-primary f-300">Dev Collaboration</div>
+                    <img src="/media/icons/web.svg" alt="" class="icon mb-6">
+                    <h4 class="mb-2 mb-xl-4">Feasibility-First Development</h4>
+                    <div class="p f-300">Balanced UI aesthetics with backend capabilities, avoiding over-engineering to keep the API structure efficient and manageable.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uxs grid container px-4 px-sm-6 px-lg-9 mt-6 mb-10">
+        <div class="section-title d-flex flex-column col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-9">
+            <h2 class="f-700 mb-2">UX Planning</h2>
+            <div class="p subtitle">Stage 1: Requirement Alignment & Logic Definition</div>
+        </div>
+        <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
+            <div>
+                <h4 class="content-title mb-4 mb-md-2 mb-xl-6">Refining all the elements and details in core pages</h4>
+                <div class="p content f-300 mb-3 mb-md-0 mb-xl-4">Recognizing the client struggled with abstract UX concepts, I introduced Low-fi Wireframes early, accelerating decision-making and alignment.</div>
+            </div>
+            <picture class="d-flex flex-column flex-xl-column gap-4">
+                <img class="uxs-img-1" src="../../media/zot/uxs_sm_1.webp" alt="">
+            </picture>
+        </div>
+        <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
+            <div class="w-xl-75">
+                <h4 class="content-title mb-4 mb-md-2 mb-xl-6">Defining the Logic Architecture</h4>
+                <div class="p content f-300 mb-3 mb-md-0 mb-xl-4">We mapped out the "Shared Quota Logic" for benefits (e.g., Funeral Subsidy limits shared across kin degrees) to simplify backend complexity.</div>
+            </div>
+            <picture
+                class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 d-flex flex-column flex-xl-column gap-4">
+                <img class="uxs-img-2" src="../../media/zot/uxs_sm_2.webp" alt="">
+                
+            </picture>
+        </div>
+        <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
+            <div>
+                <h4 class="content-title mb-4 mb-md-2 mb-xl-6">Communication via Low-fi Wireframes</h4>
+                <div class="p content f-300 mb-3 mb-md-0 mb-xl-4">Recognizing the client struggled with abstract UX concepts, I introduced Low-fi Wireframes early, accelerating decision-making and alignment.</div>
+            </div>
+            <picture class="d-flex flex-column flex-xl-column gap-4">
+                <img class="uxs-img-3" src="../../media/zot/uxs_sm_3.webp" alt="">
+                <img class="uxs-img-4" src="../../media/zot/uxs_sm_4.webp" alt="">
+            </picture>
+        </div>
+    </div>
+    <!-- <div class="dss mb-10">
+        <div class="container grid px-4 px-sm-6 px-lg-9 pt-6">
+            <div class="section-title d-flex flex-column col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-6">
+                <h2 class="f-700 mb-2">Design Style</h2>
+                <div class="p subtitle">Visual Identity: Stylescapes & UI Elements</div>
+            </div>
+            <picture class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-4 h-auto">
+                <img src="../../media/zot/dss_sm_1.webp" class="dss-img-1 w-100 h-100" alt="">
+            </picture>
+            <picture class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-4 h-auto">
+                <img src="../../media/zot/dss_sm_2.webp" class="dss-img-2 w-100 h-100" alt="">
+            </picture>
+            <picture class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-4 h-auto">
+                <img src="../../media/zot/dss_sm_3.webp" class="dss-img-3 w-100 h-100" alt="">
+            </picture>
+        </div>
+    </div> -->
+    <div class="its grid container px-4 px-sm-6 px-lg-9 pt-6 mb-10 mb-md-9">
+        <div class="section-title d-flex flex-column col-span-xs-4 col-span-md-7 col-span-xl-11 mb-6 mb-md-9">
+            <h2 class="f-700 mb-2">Iterations</h2>
+            <div class="p subtitle">Share how I adjust my design to better fit users’ expectation</div>
+        </div>
+        <div class="version col-span-xs-4 col-span-md-7 col-span-xl-11">
+            <h4 class="version-title mb-4">Iteration 1: From "Over-Flexible" to "Pragmatic Logic"</h4>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4 mb-lg-6">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture>
+                        <img class="its-img-1" src="../../media/zot/its_sm_1.webp" alt="">
+                    </picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/alert.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">Backend Complexity</div>
+                            <div class="p2 f-300">I initially designed a highly customizable module. However, the client's rules were static, and high flexibility increased backend complexity without adding value.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4 mb-lg-6">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture>
+                        <img class="its-img-2" src="../../media/zot/its_sm_2.webp" alt="">
+                    </picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/adjustments.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">Introduce Independent Customization</div>
+                            <div class="p2 f-300">We shifted to specific settings. For example, "Funeral Subsidy" categories (Self, 1st/2nd Degree Relative) share a single annual cap, simplifying the backend workload.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture>
+                        <img class="its-img-3" src="../../media/zot/its_sm_3.webp" alt="">
+                    </picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/check-grey.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">Shared Quota Logic</div>
+                            <div class="p2 f-300">We shifted to specific settings. For example, "Funeral Subsidy" categories (Self, 1st/2nd Degree Relative) share a single annual cap, simplifying the backend workload.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="version col-span-xs-4 col-span-md-7 col-span-xl-11">
+            <h4 class="version-title mb-4">Iteration 2: Streamlining the Approval Workflow</h4>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4 mb-lg-6">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture>
+                        <img class="its-img-4" src="../../media/zot/its_sm_4.webp" alt="">
+                    </picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/alert.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">Fragmentation</div>
+                            <div class="p2 f-300">Originally, a dedicated "Approval Page" provided a comprehensive view but required frequent tab-switching to check application details.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture>
+                        <img class="its-img-5" src="../../media/zot/its_sm_5.webp" alt="">
+                    </picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/adjustments.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">Contextual Sticky Action</div>
+                            <div class="p2 f-300">I replaced the separate page with a sticky action bar. Reviewers can scroll through details and approve instantly without leaving the context, significantly boosting efficiency.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dsys">
+        <div class="container grid px-4 px-sm-6 px-lg-9 pt-6 mb-10">
+            <div class="section-title d-flex flex-column col-span-xs-4 col-span-md-7 col-span-xl-11 mb-6">
+                <h2 class="f-700 mb-2">Design System</h2>
+                <div class="p subtitle">Color Palette, Typography, UI Elements</div>
+            </div>
+            <div class="picture-list grid col-span-xs-4 col-span-md-7 col-span-xl-11">
+                <picture class="col-span-xs-4 col-span-xl-6">
+                    <img src="../../media/zot/dsys_sm_1.webp" alt="" class="dsys-img-1 w-100">
+                    <span class="badge bg-primary f-300">Upload Modals</span>
+                </picture>
+                <picture class="col-span-xs-4 col-span-xl-6">
+                    <img src="../../media/zot/dsys_sm_2.webp" alt="" class="dsys-img-2 w-100">
+                    <span class="badge bg-primary f-300">Tables</span>
+                </picture>
+                <picture class="col-span-xs-4 col-span-xl-6">
+                    <img src="../../media/zot/dsys_sm_3.webp" alt="" class="dsys-img-3 w-100">
+                    <span class="badge bg-primary f-300">Grids</span>
+                </picture>
+                <picture class="col-span-xs-4 col-span-xl-6">
+                    <img src="../../media/zot/dsys_sm_4.webp" alt="" class="dsys-img-4 w-100">
+                    <span class="badge bg-primary f-300">Menus</span>
+
+                </picture>
+            </div>
+
+        </div>
+    </div>
+    <div class="outcs grid container px-4 px-sm-6 px-lg-9 pt-6 mb-10 mb-md-9 mb-lg-12">
+        <div class="section-title d-flex flex-column col-span-xs-4 col-span-md-7 col-span-xl-11 mb-2 mb-md-6">
+            <h2 class="f-700 mb-2">Outcomes</h2>
+            <div class="p subtitle">What did we achieve?</div>
+        </div>
+        <div class="d-flex flex-column flex-lg-row outcs-list col-span-xs-4 col-span-md-7 col-span-xl-11">
+            <div class="d-flex flex-column gap-4 w-100">
+                <div class="outcs-box d-flex flex-column flex-md-row">
+                    <img src="../../media/icons/happy-face.svg" alt="" class="category-icon">
+                    <div class="details d-flex flex-column flex-grow-1">
+                        <div class="p mb-2">Workflow Facilitation</div>
+                        <div class="p2 f-300">Introduced low-fi wireframes early to accelerate decision-making for clients unfamiliar with abstract UX concepts.</div>
+                    </div>
+                </div>
+                <div class="outcs-box d-flex flex-column flex-md-row">
+                    <img src="../../media/icons/happy-face.svg" alt="" class="category-icon">
+                    <div class="details d-flex flex-column flex-grow-1">
+                        <div class="p">Design System Extension</div>
+                        <div class="p2 f-300">Did not just "use" the client's design system but "evolved" it, delivering a comprehensive UI kit optimized for scalability.</div>
+                    </div>
+                </div>                
+            </div>
+            
+            <div class="d-flex flex-column gap-4 w-100">
+                <div class="outcs-box d-flex flex-column flex-md-row">
+                    <img src="../../media/icons/happy-face.svg" alt="" class="category-icon">
+                    <div class="details d-flex flex-column flex-grow-1">
+                        <div class="p mb-2">Pragmatic Customization</div>
+                        <div class="p2 f-300">Converged broad requirements into focused features, steering the product away from "flashy UI" towards a practical, system-driven design.</div>
+                    </div>
+                </div>
+                <div class="outcs-box d-flex flex-column flex-md-row">
+                    <img src="../../media/icons/happy-face.svg" alt="" class="category-icon">
+                    <div class="details d-flex flex-column flex-grow-1">
+                        <div class="p mb-2">Balanced Development</div>
+                        <div class="p2 f-300">Achieved high-efficiency delivery by balancing UI ambition with backend constraints, ensuring the product shipped on time without technical debt.</div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="fsrc mb-9">
+        <h1 class="f-700">Final Screen</h1>
+        <picture>
+            <img class="fsrc-img" src="../../media/zot/fsrc_xl.webp" alt="Final screen - Dashboard">
+        </picture>
+    </div>
+    <div class="contact-section container mb-9 mb-sm-10 mb-xl-12 px-lg-9 d-xl-flex justify-content-xl-between ">
+        <div class="d-flex flex-column section-title mb-6">
+            <h2 class="f-700 mb-2">Contact & Social</h2>
+            <div class="p f-300">Follow for more =)</div>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                <img src="../../media/icons/ig.svg" alt="" class="icon media-icon"><span
+                    class="p flex-grow-1 text-center f-300">spotx_studio</span><img
+                    src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+            </a>
+            <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                <img src="../../media/icons/youtube.svg" alt="" class="icon media-icon"><span
+                    class="p flex-grow-1 text-center f-300">spotx.studio</span><img
+                    src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+            </a>
+            <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                <img src="../../media/icons/behance.svg" alt="" class="icon media-icon"><span
+                    class="p flex-grow-1 text-center f-300">spotx.studio</span><img
+                    src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+            </a>
+            <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                <img src="../../media/icons/gmail.svg" alt="" class="icon media-icon"><span
+                    class="p flex-grow-1 text-center f-300">gabriel@spotx.studio</span><img
+                    src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+            </a>
+        </div>
+    </div>
+    <div class="footer d-flex">
+        <div class="container d-flex">
+            <span class="caption f-300">2025</span>
+            <img src="../../media/icons/copyright.svg" alt="copyright icon" class="icon">
+            <span class="caption f-300">copyright reserved by Spotx Studio</span>
+        </div>
+    </div>
+    <div class="page-controller-sm d-flex d-md-none align-items-center">
+        <div class="d-flex flex-column">
+            <div class="index-box d-flex gap-0"><p class="current">1</p>/<div class="total">6</div></div>
+            <div class="indicator active">Problem Statement</div>
+            <div class="indicator">Goals & Metrics</div>
+            <div class="indicator">UX Planning</div>
+            <div class="indicator">Styles</div>
+            <div class="indicator">Iterations</div>
+            <div class="indicator">Design System</div>
+            <div class="indicator">Outcomes</div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 25%"></div>
+        </div>
+        <div class="progress-percentage">0%</div>
+    </div>
+    <div class="page-controller-lg">
+        <div class="indicator active">
+            <img src="/media/icons/indication-dot-active.svg" alt="">
+            <p class="p2">Problems</p>
+        </div>
+        <div class="indicator">
+            <img src="/media/icons/indication-dot.svg" alt="">
+            <p class="p2">Metrics</p>
+        </div>
+        <div class="indicator">
+            <img src="/media/icons/indication-dot.svg" alt="">
+            <p class="p2">UX Planning</p>
+        </div>
+        <div class="indicator d-none">
+            <img src="/media/icons/indication-dot.svg" alt="">
+            <p class="p2">Styles</p>
+        </div>
+        <div class="indicator">
+            <img src="/media/icons/indication-dot.svg" alt="">
+            <p class="p2">Iterations</p>
+        </div>
+        <div class="indicator">
+            <img src="/media/icons/indication-dot.svg" alt="">
+            <p class="p2">Design System</p>
+        </div>
+        <div class="indicator">
+            <img src="/media/icons/indication-dot.svg" alt="">
+            <p class="p2">Outcomes</p>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="side-menu container">
+        <a href="/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">Home</h4>
+            <img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+        <a href="/about/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">About</h4>
+            <img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+        <a href="/case/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">Work</h4>
+            <img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+        <a href="/contact/" class="d-flex p-6 align-items-center">
+            <h4 class="f-300 flex-grow-1">Contact</h4>
+            <img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../../js/offcanvas-custom.js"></script>
+    <script src="../../js/case-details.js"></script>
+    <script src="../../js/prototype.js"></script>
+    <script src="../../js/language-switch.js"></script>
+</body>
+
+</html>

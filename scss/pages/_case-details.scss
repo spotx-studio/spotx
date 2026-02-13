@@ -395,7 +395,9 @@
     width: 100%;
     height: 240px;
     position: relative;
-
+    @media (min-width:1025px) {
+        height: 320px;
+    }
     @media (min-width:1200px) {
         height: 400px;
     }
@@ -468,18 +470,18 @@
 // Final Screen Section
 // ----------------
 
-.fscr{
+.fsrc{
     position: relative;
 }
 
-.fscr h1{
+.fsrc h1{
     color: $secondary-50;
     position: absolute;
     top: 24px;
     left: 24px;
 }
 
-.fscr picture{
+.fsrc picture{
     width: 100%;
     height: 640px;
     @media (min-width:1200px) {
@@ -487,19 +489,19 @@
     }
 }
 
-.fscr img{
+.fsrc img{
     object-fit: cover;
     width: 100%;
     height: 100%;
 
     @media (min-width:577px) {
-        content: url(../../media/fscr-md.webp);
+        content: url(../../media/fsrc-md.webp);
     }
     @media (min-width:1025px) {
-        content: url(../../media/fscr-lg.webp);
+        content: url(../../media/fsrc-lg.webp);
     }
     @media (min-width:1200px) {
-        content: url(../../media/fscr-xl.webp);
+        content: url(../../media/fsrc-xl.webp);
     }
 }
 

@@ -15797,6 +15797,11 @@ picture {
   height: 240px;
   position: relative;
 }
+@media (min-width: 1025px) {
+  .dsys picture {
+    height: 320px;
+  }
+}
 @media (min-width: 1200px) {
   .dsys picture {
     height: 400px;
@@ -15863,45 +15868,45 @@ picture {
   line-height: 140%; /* 22.4px */
 }
 
-.fscr {
+.fsrc {
   position: relative;
 }
 
-.fscr h1, .fscr .h1 {
+.fsrc h1, .fsrc .h1 {
   color: #f2f2f2;
   position: absolute;
   top: 24px;
   left: 24px;
 }
 
-.fscr picture {
+.fsrc picture {
   width: 100%;
   height: 640px;
 }
 @media (min-width: 1200px) {
-  .fscr picture {
+  .fsrc picture {
     height: 1200px;
   }
 }
 
-.fscr img {
+.fsrc img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 @media (min-width: 577px) {
-  .fscr img {
-    content: url(../../media/fscr-md.webp);
+  .fsrc img {
+    content: url(../../media/fsrc-md.webp);
   }
 }
 @media (min-width: 1025px) {
-  .fscr img {
-    content: url(../../media/fscr-lg.webp);
+  .fsrc img {
+    content: url(../../media/fsrc-lg.webp);
   }
 }
 @media (min-width: 1200px) {
-  .fscr img {
-    content: url(../../media/fscr-xl.webp);
+  .fsrc img {
+    content: url(../../media/fsrc-xl.webp);
   }
 }
 
@@ -16091,305 +16096,305 @@ picture {
 
 @media (min-width: 577px) {
   .uext .ogp-1 {
-    content: url(../../media/uext/uext_og_md_1.webp);
+    content: url(../../media/uext/og_md_1.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .ogp-1 {
-    content: url(../../media/uext/uext_og_lg_1.webp);
+    content: url(../../media/uext/og_lg_1.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .ogp-1 {
-    content: url(../../media/uext/uext_og_xl_1.webp);
+    content: url(../../media/uext/og_xl_1.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .ogp-2 {
-    content: url(../../media/uext/uext_og_md_2.webp);
+    content: url(../../media/uext/og_md_2.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .ogp-2 {
-    content: url(../../media/uext/uext_og_lg_2.webp);
+    content: url(../../media/uext/og_lg_2.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .ogp-2 {
-    content: url(../../media/uext/uext_og_xl_2.webp);
+    content: url(../../media/uext/og_xl_2.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .ogp-3 {
-    content: url(../../media/uext/uext_og_md_3.webp);
+    content: url(../../media/uext/og_md_3.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .ogp-3 {
-    content: url(../../media/uext/uext_og_lg_3.webp);
+    content: url(../../media/uext/og_lg_3.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .ogp-3 {
-    content: url(../../media/uext/uext_og_xl_3.webp);
+    content: url(../../media/uext/og_xl_3.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .uxs-img-1 {
-    content: url(../../media/uext/uext_uxs_md_1.webp);
+    content: url(../../media/uext/uxs_md_1.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .uxs-img-1 {
-    content: url(../../media/uext/uext_uxs_lg_1.webp);
+    content: url(../../media/uext/uxs_lg_1.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .uxs-img-1 {
-    content: url(../../media/uext/uext_uxs_xl_1.webp);
+    content: url(../../media/uext/uxs_xl_1.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .uxs-img-2 {
-    content: url(../../media/uext/uext_uxs_md_2.webp);
+    content: url(../../media/uext/uxs_md_2.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .uxs-img-2 {
-    content: url(../../media/uext/uext_uxs_lg_2.webp);
+    content: url(../../media/uext/uxs_lg_2.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .uxs-img-2 {
-    content: url(../../media/uext/uext_uxs_xl_2.webp);
+    content: url(../../media/uext/uxs_xl_2.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .uxs-img-3 {
-    content: url(../../media/uext/uext_uxs_md_3.webp);
+    content: url(../../media/uext/uxs_md_3.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .uxs-img-3 {
-    content: url(../../media/uext/uext_uxs_lg_3.webp);
+    content: url(../../media/uext/uxs_lg_3.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .uxs-img-3 {
-    content: url(../../media/uext/uext_uxs_xl_3.webp);
+    content: url(../../media/uext/uxs_xl_3.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .dss-img-1 {
-    content: url(../../media/uext/uext_dss_md_1.webp);
+    content: url(../../media/uext/dss_md_1.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .dss-img-1 {
-    content: url(../../media/uext/uext_dss_lg_1.webp);
+    content: url(../../media/uext/dss_lg_1.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .dss-img-1 {
-    content: url(../../media/uext/uext_dss_xl_1.webp);
+    content: url(../../media/uext/dss_xl_1.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .dss-img-2 {
-    content: url(../../media/uext/uext_dss_md_2.webp);
+    content: url(../../media/uext/dss_md_2.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .dss-img-2 {
-    content: url(../../media/uext/uext_dss_lg_2.webp);
+    content: url(../../media/uext/dss_lg_2.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .dss-img-2 {
-    content: url(../../media/uext/uext_dss_xl_2.webp);
+    content: url(../../media/uext/dss_xl_2.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .dss-img-3 {
-    content: url(../../media/uext/uext_dss_md_3.webp);
+    content: url(../../media/uext/dss_md_3.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .dss-img-3 {
-    content: url(../../media/uext/uext_dss_lg_3.webp);
+    content: url(../../media/uext/dss_lg_3.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .dss-img-3 {
-    content: url(../../media/uext/uext_dss_xl_3.webp);
+    content: url(../../media/uext/dss_xl_3.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .its-img-1 {
-    content: url(../../media/uext/uext_its_md_1.webp);
+    content: url(../../media/uext/its_md_1.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .its-img-1 {
-    content: url(../../media/uext/uext_its_lg_1.webp);
+    content: url(../../media/uext/its_lg_1.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .its-img-1 {
-    content: url(../../media/uext/uext_its_xl_1.webp);
+    content: url(../../media/uext/its_xl_1.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .its-img-2 {
-    content: url(../../media/uext/uext_its_md_2.webp);
+    content: url(../../media/uext/its_md_2.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .its-img-2 {
-    content: url(../../media/uext/uext_its_lg_2.webp);
+    content: url(../../media/uext/its_lg_2.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .its-img-2 {
-    content: url(../../media/uext/uext_its_xl_2.webp);
+    content: url(../../media/uext/its_xl_2.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .its-img-3 {
-    content: url(../../media/uext/uext_its_md_3.webp);
+    content: url(../../media/uext/its_md_3.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .its-img-3 {
-    content: url(../../media/uext/uext_its_lg_3.webp);
+    content: url(../../media/uext/its_lg_3.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .its-img-3 {
-    content: url(../../media/uext/uext_its_xl_3.webp);
+    content: url(../../media/uext/its_xl_3.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .its-img-4 {
-    content: url(../../media/uext/uext_its_md_4.webp);
+    content: url(../../media/uext/its_md_4.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .its-img-4 {
-    content: url(../../media/uext/uext_its_lg_4.webp);
+    content: url(../../media/uext/its_lg_4.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .its-img-4 {
-    content: url(../../media/uext/uext_its_xl_4.webp);
+    content: url(../../media/uext/its_xl_4.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .its-img-5 {
-    content: url(../../media/uext/uext_its_md_5.webp);
+    content: url(../../media/uext/its_md_5.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .its-img-5 {
-    content: url(../../media/uext/uext_its_lg_5.webp);
+    content: url(../../media/uext/its_lg_5.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .its-img-5 {
-    content: url(../../media/uext/uext_its_xl_5.webp);
+    content: url(../../media/uext/its_xl_5.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .dsys-img-1 {
-    content: url(../../media/uext/uext_dsys_md_1.webp);
+    content: url(../../media/uext/dsys_md_1.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .dsys-img-1 {
-    content: url(../../media/uext/uext_dsys_lg_1.webp);
+    content: url(../../media/uext/dsys_lg_1.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .dsys-img-1 {
-    content: url(../../media/uext/uext_dsys_xl_1.webp);
+    content: url(../../media/uext/dsys_xl_1.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .dsys-img-2 {
-    content: url(../../media/uext/uext_dsys_md_2.webp);
+    content: url(../../media/uext/dsys_md_2.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .dsys-img-2 {
-    content: url(../../media/uext/uext_dsys_lg_2.webp);
+    content: url(../../media/uext/dsys_lg_2.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .dsys-img-2 {
-    content: url(../../media/uext/uext_dsys_xl_2.webp);
+    content: url(../../media/uext/dsys_xl_2.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .dsys-img-3 {
-    content: url(../../media/uext/uext_dsys_md_3.webp);
+    content: url(../../media/uext/dsys_md_3.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .dsys-img-3 {
-    content: url(../../media/uext/uext_dsys_lg_3.webp);
+    content: url(../../media/uext/dsys_lg_3.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .dsys-img-3 {
-    content: url(../../media/uext/uext_dsys_xl_3.webp);
+    content: url(../../media/uext/dsys_xl_3.webp);
   }
 }
 
 @media (min-width: 577px) {
   .uext .dsys-img-4 {
-    content: url(../../media/uext/uext_dsys_md_4.webp);
+    content: url(../../media/uext/dsys_md_4.webp);
   }
 }
 @media (min-width: 1025px) {
   .uext .dsys-img-4 {
-    content: url(../../media/uext/uext_dsys_lg_4.webp);
+    content: url(../../media/uext/dsys_lg_4.webp);
   }
 }
 @media (min-width: 1200px) {
   .uext .dsys-img-4 {
-    content: url(../../media/uext/uext_dsys_xl_4.webp);
+    content: url(../../media/uext/dsys_xl_4.webp);
   }
 }
 
 @media (min-width: 577px) {
-  .uext .fscr-img {
-    content: url(../../media/uext/uext_fscr_md.webp);
+  .uext .fsrc-img {
+    content: url(../../media/uext/fsrc_md.webp);
   }
 }
 @media (min-width: 1025px) {
-  .uext .fscr-img {
-    content: url(../../media/uext/uext_fscr_lg.webp);
+  .uext .fsrc-img {
+    content: url(../../media/uext/fsrc_lg.webp);
   }
 }
 @media (min-width: 1200px) {
-  .uext .fscr-img {
-    content: url(../../media/uext/uext_fscr_xl.webp);
+  .uext .fsrc-img {
+    content: url(../../media/uext/fsrc_xl.webp);
   }
 }
 
@@ -16475,17 +16480,49 @@ picture {
 
 @media (min-width: 577px) {
   .acrox .uxs-img-3 {
-    content: url(../../media/uext/uxs_md_3.webp);
+    content: url(../../media/acrox/uxs_md_3.webp);
   }
 }
 @media (min-width: 1025px) {
   .acrox .uxs-img-3 {
-    content: url(../../media/uext/uxs_lg_3.webp);
+    content: url(../../media/acrox/uxs_lg_3.webp);
   }
 }
 @media (min-width: 1200px) {
   .acrox .uxs-img-3 {
-    content: url(../../media/uext/uxs_xl_3.webp);
+    content: url(../../media/acrox/uxs_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .uxs-img-4 {
+    content: url(../../media/acrox/uxs_md_4.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .uxs-img-4 {
+    content: url(../../media/acrox/uxs_lg_4.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .uxs-img-4 {
+    content: url(../../media/acrox/uxs_xl_4.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .uxs-img-5 {
+    content: url(../../media/acrox/uxs_md_5.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .uxs-img-5 {
+    content: url(../../media/acrox/uxs_lg_5.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .uxs-img-5 {
+    content: url(../../media/acrox/uxs_xl_5.webp);
   }
 }
 
@@ -16618,6 +16655,38 @@ picture {
 }
 
 @media (min-width: 577px) {
+  .acrox .its-img-6 {
+    content: url(../../media/acrox/its_md_6.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .its-img-6 {
+    content: url(../../media/acrox/its_lg_6.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .its-img-6 {
+    content: url(../../media/acrox/its_xl_6.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .acrox .its-img-7 {
+    content: url(../../media/acrox/its_md_7.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .acrox .its-img-7 {
+    content: url(../../media/acrox/its_lg_7.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .acrox .its-img-7 {
+    content: url(../../media/acrox/its_xl_7.webp);
+  }
+}
+
+@media (min-width: 577px) {
   .acrox .dsys-img-1 {
     content: url(../../media/acrox/dsys_md_1.webp);
   }
@@ -16682,18 +16751,386 @@ picture {
 }
 
 @media (min-width: 577px) {
-  .acrox .fscr-img {
-    content: url(../../media/acrox/fscr_md.webp);
+  .acrox .fsrc-img {
+    content: url(../../media/acrox/fsrc_md.webp);
   }
 }
 @media (min-width: 1025px) {
-  .acrox .fscr-img {
-    content: url(../../media/acrox/fscr_lg.webp);
+  .acrox .fsrc-img {
+    content: url(../../media/acrox/fsrc_lg.webp);
   }
 }
 @media (min-width: 1200px) {
-  .acrox .fscr-img {
-    content: url(../../media/acrox/fscr_xl.webp);
+  .acrox .fsrc-img {
+    content: url(../../media/acrox/fsrc_xl.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .ogp-1 {
+    content: url(../../media/zot/og_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .ogp-1 {
+    content: url(../../media/zot/og_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .ogp-1 {
+    content: url(../../media/zot/og_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .ogp-2 {
+    content: url(../../media/zot/og_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .ogp-2 {
+    content: url(../../media/zot/og_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .ogp-2 {
+    content: url(../../media/zot/og_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .ogp-3 {
+    content: url(../../media/zot/og_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .ogp-3 {
+    content: url(../../media/zot/og_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .ogp-3 {
+    content: url(../../media/zot/og_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .uxs-img-1 {
+    content: url(../../media/zot/uxs_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .uxs-img-1 {
+    content: url(../../media/zot/uxs_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .uxs-img-1 {
+    content: url(../../media/zot/uxs_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .uxs-img-2 {
+    content: url(../../media/zot/uxs_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .uxs-img-2 {
+    content: url(../../media/zot/uxs_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .uxs-img-2 {
+    content: url(../../media/zot/uxs_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .uxs-img-3 {
+    content: url(../../media/zot/uxs_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .uxs-img-3 {
+    content: url(../../media/zot/uxs_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .uxs-img-3 {
+    content: url(../../media/zot/uxs_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .uxs-img-4 {
+    content: url(../../media/zot/uxs_md_4.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .uxs-img-4 {
+    content: url(../../media/zot/uxs_lg_4.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .uxs-img-4 {
+    content: url(../../media/zot/uxs_xl_4.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .uxs-img-5 {
+    content: url(../../media/zot/uxs_md_5.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .uxs-img-5 {
+    content: url(../../media/zot/uxs_lg_5.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .uxs-img-5 {
+    content: url(../../media/zot/uxs_xl_5.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .dss-img-1 {
+    content: url(../../media/zot/dss_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .dss-img-1 {
+    content: url(../../media/zot/dss_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .dss-img-1 {
+    content: url(../../media/zot/dss_lg_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .dss-img-2 {
+    content: url(../../media/zot/dss_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .dss-img-2 {
+    content: url(../../media/zot/dss_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .dss-img-2 {
+    content: url(../../media/zot/dss_lg_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .dss-img-3 {
+    content: url(../../media/zot/dss_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .dss-img-3 {
+    content: url(../../media/zot/dss_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .dss-img-3 {
+    content: url(../../media/zot/dss_lg_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .its-img-1 {
+    content: url(../../media/zot/its_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .its-img-1 {
+    content: url(../../media/zot/its_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .its-img-1 {
+    content: url(../../media/zot/its_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .its-img-2 {
+    content: url(../../media/zot/its_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .its-img-2 {
+    content: url(../../media/zot/its_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .its-img-2 {
+    content: url(../../media/zot/its_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .its-img-3 {
+    content: url(../../media/zot/its_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .its-img-3 {
+    content: url(../../media/zot/its_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .its-img-3 {
+    content: url(../../media/zot/its_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .its-img-4 {
+    content: url(../../media/zot/its_md_4.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .its-img-4 {
+    content: url(../../media/zot/its_lg_4.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .its-img-4 {
+    content: url(../../media/zot/its_xl_4.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .its-img-5 {
+    content: url(../../media/zot/its_md_5.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .its-img-5 {
+    content: url(../../media/zot/its_lg_5.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .its-img-5 {
+    content: url(../../media/zot/its_xl_5.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .its-img-6 {
+    content: url(../../media/zot/its_md_6.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .its-img-6 {
+    content: url(../../media/zot/its_lg_6.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .its-img-6 {
+    content: url(../../media/zot/its_xl_6.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .its-img-7 {
+    content: url(../../media/zot/its_md_7.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .its-img-7 {
+    content: url(../../media/zot/its_lg_7.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .its-img-7 {
+    content: url(../../media/zot/its_xl_7.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .dsys-img-1 {
+    content: url(../../media/zot/dsys_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .dsys-img-1 {
+    content: url(../../media/zot/dsys_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .dsys-img-1 {
+    content: url(../../media/zot/dsys_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .dsys-img-2 {
+    content: url(../../media/zot/dsys_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .dsys-img-2 {
+    content: url(../../media/zot/dsys_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .dsys-img-2 {
+    content: url(../../media/zot/dsys_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .dsys-img-3 {
+    content: url(../../media/zot/dsys_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .dsys-img-3 {
+    content: url(../../media/zot/dsys_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .dsys-img-3 {
+    content: url(../../media/zot/dsys_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .dsys-img-4 {
+    content: url(../../media/zot/dsys_md_4.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .dsys-img-4 {
+    content: url(../../media/zot/dsys_lg_4.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .dsys-img-4 {
+    content: url(../../media/zot/dsys_xl_4.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .fsrc-img {
+    content: url(../../media/zot/fsrc_md.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .fsrc-img {
+    content: url(../../media/zot/fsrc_lg.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .fsrc-img {
+    content: url(../../media/zot/fsrc_xl.webp);
   }
 }
 

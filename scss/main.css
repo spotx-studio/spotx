@@ -15614,12 +15614,12 @@ body.unscrollable {
   transition: transform ease-out 300ms;
 }
 
-.fscr {
+.fsrc {
   background-color: #1a1a1a;
   padding: 60px 0;
 }
 
-.fscr h1, .fscr .h1 {
+.fsrc h1, .fsrc .h1 {
   color: #f2f2f2;
 }
 

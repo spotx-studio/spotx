@@ -50,11 +50,11 @@ document.addEventListener("DOMContentLoaded", function () {
         let hoverTimeout; 
         $(".page-controller-lg").mouseenter(function () {
             clearTimeout(hoverTimeout); 
-            $(".p2").addClass("show");
+            $(".page-controller-lg .p2").addClass("show");
         });
         $(".page-controller-lg").mouseleave(function () {
             hoverTimeout = setTimeout(function() {
-                $(".p2").removeClass("show");
+                $(".page-controller-lg .p2").removeClass("show");
             }, 300); 
         });
         $(".page-controller-lg .indicator").hover(
