@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="icon" href="/logo.png" sizes="192x192">
+
+    <title> Churchplus App Redesign | Case Study | Spotx Studio </title>
+    <meta name="description" content="Cross-platform community app redesign case study. Streamlined information architecture by 40% and established a unified design system tailored for iOS and Android.">
+    <meta name="keywords" content="Churchplus, App Redesign, Cross-Platform UI, iOS Design, Android Design, Information Architecture, Stakeholder Management, Gabriel Chiu, UI/UX Case Study">
+
+    <meta property="og:site_name" content="Spotx Studio">
+    <meta property="og:title" content="Churchplus: Cross-Platform Community App Redesign">
+    <meta property="og:description" content="Revamped a fragmented community app into a cohesive, cross-platform experience, streamlining the architecture by 40%.">
+    <meta property="og:image" content="https://spotx.studio/logo.png">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://spotx.studio/case/churchplus/">
+</head>
+
+<body class="churchplus">
+    <div class="navbar sticky-top p-0">
+        <div class="container p-0 container px-3 py-3 px-sm-6 py-lg-5 px-xl-9 p-0">
+            <a class="navbar-brand d-flex align-items-center flex-grow-1 flex-lg-grow-0" href="/">
+                <img src="../../media/logo.svg" alt="" width="30" height="24" class="me-2">
+                <p class="h4 f-700 text-center">Spotx Studio</p>
+            </a>
+            <ul class="navbar-nav d-none d-lg-flex flex-row">
+                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="/case/" class="nav-link active">Works</a></li>
+                <li class="nav-item"><a href="/contact/" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="d-flex align-items-center gap-4">
+                <div class="dropdown">    
+                    <a class="btn btn-secondary dropdown-toggle d-flex align-items-center p2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="dropdown-icon me-2" src="../../media/icons/lang.svg" alt="">
+                        <span id="current-lang-text">EN</span> 
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" id="lang-en">English</a></li>
+                        <li><a class="dropdown-item" href="/zh/case/churchplus/" id="lang-zh">繁體中文</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-primary d-none d-lg-block" href="/contact/" role="button">Let's Chat</a>
+                <a class="hamburger d-lg-none" href="#"><img src="../../media/icons/hamburger.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid container px-4 mt-6 px-sm-6 px-lg-9">
+        <div class="case-title col-span-xs-4 col-span-sm-8 col-span-xl-12">
+            <h1 class="mb-6 f-700">Churchplus: Modernizing Community Interaction</h1>
+            <h4 class="f-300 mb-9">Lead Product Designer | Collaborated with PM, App Developers & 8+ Stakeholders</h4>
+            <div class="btn-list mb-9">
+                <a href="#" class="btn btn-secondary btn-prefix">
+                    <img class="btn-icon" src="../../media/icons/time.svg" alt="">
+                    <span>5 months</span>
+                </a>
+                <a href="#" class="btn btn-secondary btn-prefix">
+                    <img class="btn-icon" src="../../media/icons/figma.png" alt="">
+                    <span>Figma</span>
+                </a>
+                <a href="#" class="btn btn-secondary btn-prefix">
+                    <img class="btn-icon" src="../../media/icons/app.png" alt="">
+                    <span>App Redesign</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="ogs col-span-xs-4 col-span-sm-8 col-span-xl-12 grid flex-column mb-10">
+            <div class="og col-span-xs-4 col-span-sm-8 col-span-xl-12">
+                <picture>
+                    <img class="ogp-1" src="../../media/churchplus/og_sm_1.webp" alt="Information Architecture Optimization">
+                </picture>
+                <div class="text-box">
+                    <h3 class="mb-1">Information Architecture</h3>
+                    <div class="p2 f-300">Streamlined 9 scattered modules into 5 intuitive core pages, reducing structural complexity by 40%.</div>
+                </div>
+            </div>
+            <div class="og col-span-xs-4 col-span-sm-8 col-span-md-4 col-span-xl-8 og-sm">
+                <picture>
+                    <img class="ogp-2" src="../../media/churchplus/og_sm_2.webp" alt="Cross-Platform UI Design">
+                </picture>
+                <div class="text-box">
+                    <h3 class="mb-1">Cross-Platform UI</h3>
+                    <div class="p2 f-300">Designed OS-specific interfaces tailored for iOS and Android native behaviors.</div>
+                </div>
+            </div>
+            <div class="og col-span-xs-4 col-span-sm-8 col-span-md-4 col-span-xl-4 og-sm">
+                <picture>
+                    <img class="ogp-3" src="../../media/churchplus/og_sm_3.webp" alt="Modular Scalability">
+                </picture>
+                <div class="text-box">
+                    <h3 class="mb-1">Modular Scalability</h3>
+                    <div class="p2 f-300">Created a flexible UI structure to cater to the varying feature needs of 100+ branches.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ps col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-10 ">
+            <h2 class="f-700 mb-6">Problem Statement</h2>
+            <table>
+                <th class="d-none d-md-flex gap-5 align-items-center">
+                    <h2 style="color: transparent; width: 89px;">01</h2>
+                    <p class="w-50 fw-normal">Problem/Challenge</p>
+                    <p class="w-50 fw-normal">Solution</p>
+                </th>
+                <tr class="d-flex start align-items-center">
+                    <td class="index pe-md-8">
+                        <h2 style="min-width: 48px;">01</h2>
+                    </td>
+                    <td class="content-box flex-grow-1">
+                        <div class="challenge d-flex align-items-center">
+                            <img src="../../media/icons/alert.svg" alt="">
+                            <div class="p2 f-300">Cluttered Information Architecture</div>
+                        </div>
+                        <div class="solution d-flex align-items-center">
+                            <img src="../../media/icons/check-grey.svg" alt="">
+                            <div class="p2 f-300">Conducted a comprehensive feature audit to purge redundant functions and consolidate related tools.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="d-flex align-items-center">
+                    <td class="index pe-md-8">
+                        <h2 style="min-width: 48px;">02</h2>
+                    </td>
+                    <td class="content-box flex-grow-1">
+                        <div class="challenge d-flex align-items-center">
+                            <img src="../../media/icons/alert.svg" alt="">
+                            <div class="p2 f-300">Outdated & Platform-Agnostic UI</div>
+                        </div>
+                        <div class="solution d-flex align-items-center">
+                            <img src="../../media/icons/check-grey.svg" alt="">
+                            <div class="p2 f-300">Modernized the visual identity and implemented OS-specific refinements (iOS/Android) for headers and menus.</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="d-flex align-items-center">
+                    <td class="index pe-md-8">
+                        <h2 style="min-width: 48px;">03</h2>
+                    </td>
+                    <td class="content-box flex-grow-1">
+                        <div class="challenge d-flex align-items-center">
+                            <img src="../../media/icons/alert.svg" alt="">
+                            <div class="p2 f-300">Multi-Tenant Permission Complexity</div>
+                        </div>
+                        <div class="solution d-flex align-items-center">
+                            <img src="../../media/icons/check-grey.svg" alt="">
+                            <div class="p2 f-300">Designed a modular UI synced with a flexible backend, allowing 100+ branches to toggle features independently.</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="gnms mb-10">
+        <div class="container grid pt-6 py-md-9 px-4 px-sm-6 px-lg-9 pt-6">
+            <h2 class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 f-700 mb-6">Goals & Metrics</h2>
+            <div class="gmn-list d-lg-flex gap-4 col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11">
+                <div class="gnm d-flex flex-column mb-5">
+                    <div class="badge bg-primary f-300">UX Strategy</div>
+                    <img src="../../media/icons/workflow.svg" alt="" class="icon mb-6">
+                    <h4 class="mb-2 mb-xl-4">Intuitive Mental Models</h4>
+                    <div class="p f-300">Lower the users' learning curve by reorganizing feature categorizations, drawing inspiration from modern social platforms.</div>
+                </div>
+                <div class="gnm d-flex flex-column mb-5">
+                    <div class="badge bg-primary f-300">Tech & UI</div>
+                    <img src="../../media/icons/rwd.svg" alt="" class="icon mb-6">
+                    <h4 class="mb-2 mb-xl-4">Cross-Platform Consistency</h4>
+                    <div class="p f-300">Balance visual unity with native OS guidelines. Designed dual header variants anchored by a floating navigation menu.</div>
+                </div>
+                <div class="gnm d-flex flex-column mb-5">
+                    <div class="badge bg-primary f-300">Collaboration</div>
+                    <img src="../../media/icons/web.svg" alt="" class="icon mb-6">
+                    <h4 class="mb-2 mb-xl-4">Stakeholder Alignment</h4>
+                    <div class="p f-300">Acted as the central facilitator for an 8-person committee, guiding them through conflicting opinions to reach a design consensus.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uxs grid container px-4 px-sm-6 px-lg-9 mt-6 mb-10">
+        <div class="section-title d-flex flex-column col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-9">
+            <h2 class="f-700 mb-2">UX Planning</h2>
+            <div class="p subtitle">Stage 1: Feature Audit & Stakeholder Consensus</div>
+        </div>
+        <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
+            <div>
+                <h4 class="content-title mb-4 mb-md-2 mb-xl-6">Analyzing User Feedbacks</h4>
+                <div class="p content f-300 mb-3 mb-md-0 mb-xl-4">Based on the collected data, we identified 2 key pain points that needed addressing in the app's design and functionality.</div>
+                <div class="p content f-300 mb-3 mb-md-0 mb-xl-4">The first one is emotional accessibility — most users mentioned "the APP is difficult to use". It suggested that users felt disconnected from the app's core purpose.</div>
+                <div class="p content f-300 mb-3 mb-md-0 mb-xl-4">The second one is functional disorder — users mentioned that the app's navigation and layout were confusing and inconsistent. They often get lost in the app.</div>
+            </div>
+            <picture class="d-flex flex-column flex-xl-column gap-4">
+                <img class="uxs-img-1" src="../../media/churchplus/uxs_sm_1.webp" alt="Information Architecture Map">
+            </picture>
+        </div>
+        <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
+            <div>
+                <h4 class="content-title mb-4 mb-md-2 mb-xl-6">Auditing the Information Architecture</h4>
+                <div class="p content f-300 mb-3 mb-md-0 mb-xl-4">Re-evaluated the entire app ecosystem from the ground up. By mapping out existing features against actual user needs, we successfully condensed 9 redundant modules into 5 primary functions.</div>
+            </div>
+            <picture class="d-flex flex-column flex-xl-column gap-4">
+                <img class="uxs-img-1" src="../../media/churchplus/uxs_sm_1.webp" alt="Information Architecture Map">
+            </picture>
+        </div>
+        <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
+            <div class="w-xl-75">
+                <h4 class="content-title mb-4 mb-md-2 mb-xl-6">Aligning Diverse Stakeholders</h4>
+                <div class="p content f-300 mb-3 mb-md-0 mb-xl-4">With over 8 committee members contributing different visions, I utilized low-fi wireframes to ground the discussion, translating subjective organizational politics into objective, user-centric solutions.</div>
+            </div>
+            <picture class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 d-flex flex-column flex-xl-column gap-4">
+                <img class="uxs-img-2" src="../../media/churchplus/uxs_sm_2.webp" alt="Stakeholder Wireframing Session">
+            </picture>
+        </div>
+    </div>
+
+    <div class="its grid container px-4 px-sm-6 px-lg-9 pt-6 mb-10 mb-md-9">
+        <div class="section-title d-flex flex-column col-span-xs-4 col-span-md-7 col-span-xl-11 mb-6 mb-md-9">
+            <h2 class="f-700 mb-2">Design Iterations</h2>
+            <div class="p subtitle">Share how I adapt the design to solve cross-platform issues</div>
+        </div>
+        
+        <div class="version col-span-xs-4 col-span-md-7 col-span-xl-11">
+            <h4 class="version-title mb-4">Iteration 1: Reachability & Ergonomics</h4>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture><img class="its-img-1" src="../../media/churchplus/its_sm_1.webp" alt="Reachability adjustment"></picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/alert.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">The iOS Dynamic Island Issue</div>
+                            <div class="p2 f-300">Originally, core navigation icons were placed at the very top of the screen. On newer iOS devices, the Dynamic Island rendered them nearly unclickable.</div>
+                        </div>
+                    </div>
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/check-grey.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">Thumb-Friendly Tab Bar</div>
+                            <div class="p2 f-300">Relocated core navigation to a bottom tab bar and expanded tap targets to standard OS guidelines (44px), significantly improving thumb reachability.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="version col-span-xs-4 col-span-md-7 col-span-xl-11">
+            <h4 class="version-title mb-4">Iteration 2: Visual Differentiation for Content Density</h4>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture><img class="its-img-2" src="../../media/churchplus/its_sm_2.webp" alt="Content Differentiation"></picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/alert.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">Disorienting Layouts</div>
+                            <div class="p2 f-300">Videos, sermons, and social posts all shared an identical, monotonous layout, leaving users disoriented in the structural mess.</div>
+                        </div>
+                    </div>
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/adjustments.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">Media Library & Distinct Patterns</div>
+                            <div class="p2 f-300">Introduced distinct UI patterns. Created a structured "Media Library" to separate Hymns and Sermons, integrating a quick-filter tag system for rapid browsing.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="version col-span-xs-4 col-span-md-7 col-span-xl-11">
+            <h4 class="version-title mb-4">Iteration 3: The "Prayer Request" Interaction Loop</h4>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture><img class="its-img-3" src="../../media/churchplus/its_sm_3.webp" alt="Prayer Request Loop"></picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/alert.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">Lack of Ritual & Closure</div>
+                            <div class="p2 f-300">Prayer requests looked like standard posts. Users wanted to actively participate and be notified when a prayer was answered.</div>
+                        </div>
+                    </div>
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/check-grey.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">Dedicated Interactive Board</div>
+                            <div class="p2 f-300">Designed a board with a "Start/End Praying" toggle to create a sense of ritual. Added a status tracker where creators can leave gratitude messages, triggering push notifications to participants upon completion.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="version col-span-xs-4 col-span-md-7 col-span-xl-11">
+            <h4 class="version-title mb-4">Iteration 4: Progressive Disclosure in Bible Reader</h4>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture><img class="its-img-4" src="../../media/churchplus/its_sm_4.webp" alt="Bible Reader UX"></picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/adjustments.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">Decluttering the Interface</div>
+                            <div class="p2 f-300">Applied Progressive Disclosure. Extracted "Devotion Plans" into a separate tab and surfaced essential reading tools (Translation, Book) as distinct buttons.</div>
+                        </div>
+                    </div>
+                    <div class="itb d-flex">
+                        <img src="../../media/icons/check-grey.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">Contextual Deep-Dives</div>
+                            <div class="p2 f-300">Deep-dive content, like "Related Sermons" or notes, was relegated to a contextual bottom-sheet modal triggered only when a user taps a specific verse.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dsys">
+        <div class="container grid px-4 px-sm-6 px-lg-9 pt-6 mb-10">
+            <div class="section-title d-flex flex-column col-span-xs-4 col-span-md-7 col-span-xl-11 mb-6">
+                <h2 class="f-700 mb-2">Design System</h2>
+                <div class="p subtitle">Color Palette, Typography, UI Elements</div>
+            </div>
+            <div class="picture-list grid col-span-xs-4 col-span-md-7 col-span-xl-11">
+                <picture class="col-span-xs-4 col-span-xl-6"><img src="../../media/churchplus/dsys_sm_1.webp" alt="" class="w-100"></picture>
+                <picture class="col-span-xs-4 col-span-xl-6"><img src="../../media/churchplus/dsys_sm_2.webp" alt="" class="w-100"></picture>
+                <picture class="col-span-xs-4 col-span-xl-6"><img src="../../media/churchplus/dsys_sm_3.webp" alt="" class="w-100"></picture>
+                <picture class="col-span-xs-4 col-span-xl-6"><img src="../../media/churchplus/dsys_sm_4.webp" alt="" class="w-100"></picture>
+            </div>
+        </div>
+    </div>
+
+    <div class="outcs grid container px-4 px-sm-6 px-lg-9 pt-6 mb-10 mb-md-9 mb-lg-12">
+        <div class="section-title d-flex flex-column col-span-xs-4 col-span-md-7 col-span-xl-11 mb-2 mb-md-6">
+            <h2 class="f-700 mb-2">Outcomes</h2>
+            <div class="p subtitle">What did we achieve?</div>
+        </div>
+        <div class="d-flex flex-column flex-lg-row outcs-list col-span-xs-4 col-span-md-7 col-span-xl-11">
+            <div class="d-flex flex-column gap-4 w-100">
+                <div class="outcs-box d-flex flex-column flex-md-row">
+                    <img src="../../media/icons/happy-face.svg" alt="" class="category-icon">
+                    <div class="details d-flex flex-column flex-grow-1">
+                        <div class="p mb-2">40% Efficiency Gain in IA</div>
+                        <div class="p2 f-300">Successfully restructured the app's ecosystem, condensing 9 fragmented modules into 5 intuitive core pages, drastically reducing user cognitive load.</div>
+                    </div>
+                </div>
+                <div class="outcs-box d-flex flex-column flex-md-row">
+                    <img src="../../media/icons/happy-face.svg" alt="" class="category-icon">
+                    <div class="details d-flex flex-column flex-grow-1">
+                        <div class="p">Deep Feature Connectivity</div>
+                        <div class="p2 f-300">Created a cohesive ecosystem by cross-linking relevant functions, such as seamlessly connecting Bible verses with sermons and personal notes within the reading flow.</div>
+                    </div>
+                </div>                
+            </div>
+            
+            <div class="d-flex flex-column gap-4 w-100">
+                <div class="outcs-box d-flex flex-column flex-md-row">
+                    <img src="../../media/icons/happy-face.svg" alt="" class="category-icon">
+                    <div class="details d-flex flex-column flex-grow-1">
+                        <div class="p mb-2">Cross-Platform UI Delivery</div>
+                        <div class="p2 f-300">Delivered a scalable Design System that accommodated both iOS and Android native behaviors, ensuring a unified aesthetic without sacrificing OS-specific usability.</div>
+                    </div>
+                </div>
+                <div class="outcs-box d-flex flex-column flex-md-row">
+                    <img src="../../media/icons/happy-face.svg" alt="" class="category-icon">
+                    <div class="details d-flex flex-column flex-grow-1">
+                        <div class="p mb-2">Stakeholder Consensus</div>
+                        <div class="p2 f-300">Successfully navigated complex organizational politics by consolidating feedback from an 8-person committee into objective, user-centric design solutions.</div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="fsrc mb-9">
+        <h1 class="f-700 text-center mb-6">Final Screen</h1>
+        <picture>
+            <img class="fsrc-img w-100" src="../../media/churchplus/fsrc_xl.webp" alt="Final screen - App Design">
+        </picture>
+    </div>
+
+    <div class="contact-section container mb-9 mb-sm-10 mb-xl-12 px-lg-9 d-xl-flex justify-content-xl-between ">
+        <div class="d-flex flex-column section-title mb-6">
+            <h2 class="f-700 mb-2">Contact & Social</h2>
+            <div class="p f-300">Follow for more =)</div>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                <img src="../../media/icons/ig.svg" alt="" class="icon media-icon"><span class="p flex-grow-1 text-center f-300">spotx_studio</span><img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+            </a>
+            <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                <img src="../../media/icons/youtube.svg" alt="" class="icon media-icon"><span class="p flex-grow-1 text-center f-300">spotx.studio</span><img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+            </a>
+            <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                <img src="../../media/icons/behance.svg" alt="" class="icon media-icon"><span class="p flex-grow-1 text-center f-300">spotx.studio</span><img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+            </a>
+            <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                <img src="../../media/icons/gmail.svg" alt="" class="icon media-icon"><span class="p flex-grow-1 text-center f-300">gabriel@spotx.studio</span><img src="../../media/icons/arrow-grey.svg" alt="" class="icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer d-flex">
+        <div class="container d-flex">
+            <span class="caption f-300">2026</span>
+            <img src="../../media/icons/copyright.svg" alt="copyright icon" class="icon">
+            <span class="caption f-300">copyright reserved by Spotx Studio</span>
+        </div>
+    </div>
+
+    <div class="page-controller-sm d-flex d-md-none align-items-center">
+        <div class="d-flex flex-column">
+            <div class="index-box d-flex gap-0"><p class="current">1</p>/<div class="total">6</div></div>
+            <div class="indicator active">Problem Statement</div>
+            <div class="indicator">Goals & Metrics</div>
+            <div class="indicator">UX Planning</div>
+            <div class="indicator">Iterations</div>
+            <div class="indicator">Design System</div>
+            <div class="indicator">Outcomes</div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 16%"></div>
+        </div>
+        <div class="progress-percentage">0%</div>
+    </div>
+
+    <div class="page-controller-lg">
+        <div class="indicator active"><img src="../../media/icons/indication-dot-active.svg" alt=""><p class="p2">Problems</p></div>
+        <div class="indicator"><img src="../../media/icons/indication-dot.svg" alt=""><p class="p2">Metrics</p></div>
+        <div class="indicator"><img src="../../media/icons/indication-dot.svg" alt=""><p class="p2">UX Planning</p></div>
+        <div class="indicator"><img src="../../media/icons/indication-dot.svg" alt=""><p class="p2">Iterations</p></div>
+        <div class="indicator"><img src="../../media/icons/indication-dot.svg" alt=""><p class="p2">Design System</p></div>
+        <div class="indicator"><img src="../../media/icons/indication-dot.svg" alt=""><p class="p2">Outcomes</p></div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="side-menu container">
+        <a href="/" class="d-flex p-6 align-items-center"><h4 class="f-300 flex-grow-1">Home</h4><img src="../../media/icons/arrow-grey.svg" alt="" class="icon"></a>
+        <a href="/about/" class="d-flex p-6 align-items-center"><h4 class="f-300 flex-grow-1">About</h4><img src="../../media/icons/arrow-grey.svg" alt="" class="icon"></a>
+        <a href="/case/" class="d-flex p-6 align-items-center"><h4 class="f-300 flex-grow-1">Work</h4><img src="../../media/icons/arrow-grey.svg" alt="" class="icon"></a>
+        <a href="/contact/" class="d-flex p-6 align-items-center"><h4 class="f-300 flex-grow-1">Contact</h4><img src="../../media/icons/arrow-grey.svg" alt="" class="icon"></a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../../js/offcanvas-custom.js"></script>
+    <script src="../../js/case-details.js"></script>
+    <script src="../../js/prototype.js"></script>
+    <script src="../../js/language-switch.js"></script>
+</body>
+
+</html>
