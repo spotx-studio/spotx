@@ -1038,4 +1038,372 @@
   }
 }
 
+@media (min-width: 577px) {
+  .churchplus .ogp-1 {
+    content: url(../../media/churchplus/og_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .ogp-1 {
+    content: url(../../media/churchplus/og_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .ogp-1 {
+    content: url(../../media/churchplus/og_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .ogp-2 {
+    content: url(../../media/churchplus/og_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .ogp-2 {
+    content: url(../../media/churchplus/og_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .ogp-2 {
+    content: url(../../media/churchplus/og_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .ogp-3 {
+    content: url(../../media/churchplus/og_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .ogp-3 {
+    content: url(../../media/churchplus/og_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .ogp-3 {
+    content: url(../../media/churchplus/og_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .uxs-img-1 {
+    content: url(../../media/churchplus/uxs_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .uxs-img-1 {
+    content: url(../../media/churchplus/uxs_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .uxs-img-1 {
+    content: url(../../media/churchplus/uxs_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .uxs-img-2 {
+    content: url(../../media/churchplus/uxs_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .uxs-img-2 {
+    content: url(../../media/churchplus/uxs_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .uxs-img-2 {
+    content: url(../../media/churchplus/uxs_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .uxs-img-3 {
+    content: url(../../media/churchplus/uxs_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .uxs-img-3 {
+    content: url(../../media/churchplus/uxs_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .uxs-img-3 {
+    content: url(../../media/churchplus/uxs_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .uxs-img-4 {
+    content: url(../../media/churchplus/uxs_md_4.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .uxs-img-4 {
+    content: url(../../media/churchplus/uxs_lg_4.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .uxs-img-4 {
+    content: url(../../media/churchplus/uxs_xl_4.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .uxs-img-5 {
+    content: url(../../media/churchplus/uxs_md_5.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .uxs-img-5 {
+    content: url(../../media/churchplus/uxs_lg_5.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .uxs-img-5 {
+    content: url(../../media/churchplus/uxs_xl_5.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .dss-img-1 {
+    content: url(../../media/churchplus/dss_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .dss-img-1 {
+    content: url(../../media/churchplus/dss_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .dss-img-1 {
+    content: url(../../media/churchplus/dss_lg_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .dss-img-2 {
+    content: url(../../media/churchplus/dss_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .dss-img-2 {
+    content: url(../../media/churchplus/dss_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .dss-img-2 {
+    content: url(../../media/churchplus/dss_lg_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .dss-img-3 {
+    content: url(../../media/churchplus/dss_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .dss-img-3 {
+    content: url(../../media/churchplus/dss_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .dss-img-3 {
+    content: url(../../media/churchplus/dss_lg_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .its-img-1 {
+    content: url(../../media/churchplus/its_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-1 {
+    content: url(../../media/churchplus/its_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-1 {
+    content: url(../../media/churchplus/its_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .its-img-2 {
+    content: url(../../media/churchplus/its_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-2 {
+    content: url(../../media/churchplus/its_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-2 {
+    content: url(../../media/churchplus/its_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .its-img-3 {
+    content: url(../../media/churchplus/its_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-3 {
+    content: url(../../media/churchplus/its_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-3 {
+    content: url(../../media/churchplus/its_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .its-img-4 {
+    content: url(../../media/churchplus/its_md_4.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-4 {
+    content: url(../../media/churchplus/its_lg_4.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-4 {
+    content: url(../../media/churchplus/its_xl_4.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .its-img-5 {
+    content: url(../../media/churchplus/its_md_5.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-5 {
+    content: url(../../media/churchplus/its_lg_5.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-5 {
+    content: url(../../media/churchplus/its_xl_5.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .its-img-6 {
+    content: url(../../media/churchplus/its_md_6.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-6 {
+    content: url(../../media/churchplus/its_lg_6.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-6 {
+    content: url(../../media/churchplus/its_xl_6.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .its-img-7 {
+    content: url(../../media/churchplus/its_md_7.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-7 {
+    content: url(../../media/churchplus/its_lg_7.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-7 {
+    content: url(../../media/churchplus/its_xl_7.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .dsys-img-1 {
+    content: url(../../media/churchplus/dsys_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .dsys-img-1 {
+    content: url(../../media/churchplus/dsys_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .dsys-img-1 {
+    content: url(../../media/churchplus/dsys_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .dsys-img-2 {
+    content: url(../../media/churchplus/dsys_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .dsys-img-2 {
+    content: url(../../media/churchplus/dsys_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .dsys-img-2 {
+    content: url(../../media/churchplus/dsys_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .dsys-img-3 {
+    content: url(../../media/churchplus/dsys_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .dsys-img-3 {
+    content: url(../../media/churchplus/dsys_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .dsys-img-3 {
+    content: url(../../media/churchplus/dsys_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .dsys-img-4 {
+    content: url(../../media/churchplus/dsys_md_4.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .dsys-img-4 {
+    content: url(../../media/churchplus/dsys_lg_4.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .dsys-img-4 {
+    content: url(../../media/churchplus/dsys_xl_4.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .fsrc-img {
+    content: url(../../media/churchplus/fsrc_md.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .fsrc-img {
+    content: url(../../media/churchplus/fsrc_lg.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .fsrc-img {
+    content: url(../../media/churchplus/fsrc_xl.webp);
+  }
+}
+
 /*# sourceMappingURL=case-details-img.css.map */
