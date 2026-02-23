@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/logo.png" sizes="192x192">
+
+    <title>TCOC 官方網站重新設計 | 品牌策略與網頁開發 | Gabriel Chiu</title>
+    <meta name="description" content="協助國際教會重塑數位品牌形象。設計具備長青架構的官方網站，不僅是網路門面，更是化解危機與無阻力溝通的戰略樞紐。">
+    <meta name="keywords" content="TCOC, 網站改版, 品牌識別, 前端開發, 危機處理設計, UI/UX 案例, Gabriel Chiu, Spotx Studio">
+
+    <meta property="og:site_name" content="Spotx Studio">
+    <meta property="og:title" content="TCOC：重塑數位品牌形象與官方網站">
+    <meta property="og:description" content="設計一個不受時間限制的長青網站，建立可靠的品牌門面與無痛的聯絡窗口。">
+    <meta property="og:image" content="https://spotx.studio/logo.png">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://spotx.studio/zh/case/tcoc/">
+</head>
+
+<body class="tcoc">
+    <div class="navbar sticky-top p-0">
+        <div class="container p-0 container px-3 py-3 px-sm-6 py-lg-5 px-xl-9 p-0">
+            <a class="navbar-brand d-flex align-items-center flex-grow-1 flex-lg-grow-0" href="/zh/">
+                <img src="/media/logo.svg" alt="" width="30" height="24" class="me-2">
+                <p class="h4 f-700 text-center">Spotx Studio</p>
+            </a>
+            <ul class="navbar-nav d-none d-lg-flex flex-row">
+                <li class="nav-item"><a href="/zh/" class="nav-link">首頁</a></li>
+                <li class="nav-item"><a href="/zh/about/" class="nav-link">關於</a></li>
+                <li class="nav-item"><a href="/zh/case/" class="nav-link active">作品</a></li>
+                <li class="nav-item"><a href="/zh/contact/" class="nav-link">聯絡</a></li>
+            </ul>
+            <div class="d-flex align-items-center gap-4">
+                <div class="dropdown">    
+                    <a class="btn btn-secondary dropdown-toggle d-flex align-items-center p2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="dropdown-icon me-2" src="/media/icons/lang.svg" alt="">
+                        <span id="current-lang-text">ZH</span> 
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/case/tcoc/" id="lang-en">English</a></li>
+                        <li><a class="dropdown-item" href="/zh/case/tcoc/" id="lang-zh">繁體中文</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-primary d-none d-lg-block" href="/zh/contact/" role="button">預約諮詢</a>
+                <a class="hamburger d-lg-none" href="#"><img src="/media/icons/hamburger.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid container px-4 mt-6 px-sm-6 px-lg-9">
+        <div class="case-title col-span-xs-4 col-span-sm-8 col-span-xl-12">
+            <h1 class="mb-6 f-700">TCOC：官方網站與品牌形象重新設計</h1>
+            <h4 class="f-300 mb-9">主導產品設計 & 前端開發 | 與教會利害關係人及後端工程師協作</h4>
+            <div class="btn-list mb-9">
+                <a href="#" class="btn btn-secondary btn-prefix">
+                    <img class="btn-icon" src="/media/icons/time.svg" alt="">
+                    <span>3 個月</span>
+                </a>
+                <a href="#" class="btn btn-secondary btn-prefix">
+                    <img class="btn-icon" src="/media/icons/figma.png" alt="">
+                    <span>Figma</span>
+                </a>
+                <a href="#" class="btn btn-secondary btn-prefix">
+                    <img class="btn-icon" src="/media/icons/html.png" alt="">
+                    <span>HTML/CSS/JS</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="ogs col-span-xs-4 col-span-sm-8 col-span-xl-12 grid flex-column mb-10">
+            <div class="og col-span-xs-4 col-span-sm-8 col-span-xl-12">
+                <picture>
+                    <img class="ogp-1" src="/media/tcoc/og_sm_1.webp" alt="長青資訊架構">
+                </picture>
+                <div class="text-box">
+                    <h3 class="mb-1">不受時間限制的長青架構</h3>
+                    <div class="p2 f-300">從「活動導向」轉為「價值導向」的資訊架構，徹底解決網站內容過時且難以維護的負擔。</div>
+                </div>
+            </div>
+            <div class="og col-span-xs-4 col-span-sm-8 col-span-md-4 col-span-xl-8 og-sm">
+                <picture>
+                    <img class="ogp-2" src="/media/tcoc/og_sm_2.webp" alt="用設計解決公關危機">
+                </picture>
+                <div class="text-box">
+                    <h3 class="mb-1">用設計解決公關危機</h3>
+                    <div class="p2 f-300">敏捷調整 UI 策略，建立專屬的「透明度專區」展示財務與神學基礎，正面回應網路謠言。</div>
+                </div>
+            </div>
+            <div class="og col-span-xs-4 col-span-sm-8 col-span-md-4 col-span-xl-4 og-sm">
+                <picture>
+                    <img class="ogp-3" src="/media/tcoc/og_sm_3.webp" alt="無阻力聯絡窗口">
+                </picture>
+                <div class="text-box">
+                    <h3 class="mb-1">無阻力聯絡窗口</h3>
+                    <div class="p2 f-300">整合 LINE 官方帳號入口，半年內成功順暢處理超過 100 件查詢。</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ps col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-10 ">
+            <h2 class="f-700 mb-6">專案挑戰</h2>
+            <table>
+                <th class="d-none d-md-flex gap-5 align-items-center">
+                    <h2 style="color: transparent; width: 89px;">01</h2>
+                    <p class="w-50 fw-normal">面臨的問題</p>
+                    <p class="w-50 fw-normal">解決方案</p>
+                </th>
+                <tr class="d-flex start align-items-center">
+                    <td class="index pe-md-8">
+                        <h2 style="min-width: 48px;">01</h2>
+                    </td>
+                    <td class="content-box flex-grow-1">
+                        <div class="challenge d-flex align-items-center">
+                            <img src="/media/icons/alert.svg" alt="">
+                            <div class="p2 f-300">傳統視覺嚴重損害品牌信任感</div>
+                        </div>
+                        <div class="solution d-flex align-items-center">
+                            <img src="/media/icons/check-grey.svg" alt="">
+                            <div class="p2 f-300">打造全新的現代化品牌視覺，用充滿活力、友善且專業的設計重新建立使用者信任。</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="d-flex align-items-center">
+                    <td class="index pe-md-8">
+                        <h2 style="min-width: 48px;">02</h2>
+                    </td>
+                    <td class="content-box flex-grow-1">
+                        <div class="challenge d-flex align-items-center">
+                            <img src="/media/icons/alert.svg" alt="">
+                            <div class="p2 f-300">內容久未更新，網站形同虛設</div>
+                        </div>
+                        <div class="solution d-flex align-items-center">
+                            <img src="/media/icons/check-grey.svg" alt="">
+                            <div class="p2 f-300">轉向「長青內容策略」，強調核心價值與長期社群模式，取代容易過時的短期活動資訊。</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="d-flex align-items-center">
+                    <td class="index pe-md-8">
+                        <h2 style="min-width: 48px;">03</h2>
+                    </td>
+                    <td class="content-box flex-grow-1">
+                        <div class="challenge d-flex align-items-center">
+                            <img src="/media/icons/alert.svg" alt="">
+                            <div class="p2 f-300">填表單的聯絡方式阻力太高</div>
+                        </div>
+                        <div class="solution d-flex align-items-center">
+                            <img src="/media/icons/check-grey.svg" alt="">
+                            <div class="p2 f-300">在 UI 中巧妙整合 LINE 官方帳號入口，提供猶豫不決的訪客一個「軟著陸」的諮詢管道。</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="gnms mb-10">
+        <div class="container grid pt-6 py-md-9 px-4 px-sm-6 px-lg-9 pt-6">
+            <h2 class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 f-700 mb-6">目標與指標</h2>
+            <div class="gmn-list d-lg-flex gap-4 col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11">
+                <div class="gnm d-flex flex-column mb-5">
+                    <div class="badge bg-primary f-300">UX 與商業策略</div>
+                    <img src="/media/icons/workflow.svg" alt="" class="icon mb-6">
+                    <h4 class="mb-2 mb-xl-4">長青資訊架構 (Evergreen IA)</h4>
+                    <div class="p f-300">用品牌邏輯梳理網站結構，專注於傳遞信仰價值與運作模式，建立不受時間限制的內容基底，大幅降低後續維護成本。</div>
+                </div>
+                <div class="gnm d-flex flex-column mb-5">
+                    <div class="badge bg-primary f-300">技術與介面</div>
+                    <img src="/media/icons/rwd.svg" alt="" class="icon mb-6">
+                    <h4 class="mb-2 mb-xl-4">動態且引人入勝的網頁互動</h4>
+                    <div class="p f-300">發揮前端開發專長，運用 HTML/CSS/JS 實作滾動視差與開場動畫，營造出活潑且專業的品牌形象。</div>
+                </div>
+                <div class="gnm d-flex flex-column mb-5">
+                    <div class="badge bg-primary f-300">轉換率優化</div>
+                    <img src="/media/icons/web.svg" alt="" class="icon mb-6">
+                    <h4 class="mb-2 mb-xl-4">優化諮詢漏斗</h4>
+                    <div class="p f-300">設計顯眼的 LINE OA 入口搭配結構化的常見問題 (FAQ) 區塊，即時解答訪客疑慮，有效提升詢問意願。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uxs grid container px-4 px-sm-6 px-lg-9 mt-6 mb-10">
+        <div class="section-title d-flex flex-column col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-9">
+            <h2 class="f-700 mb-2">UX 規劃</h2>
+            <div class="p subtitle">第一階段：品牌邏輯與資訊架構重組</div>
+        </div>
+        <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
+            <div>
+                <h4 class="content-title mb-4 mb-md-2 mb-xl-6">定義品牌邏輯與長青架構</h4>
+                <div class="p content f-300 mb-3 mb-md-0 mb-xl-4">我們捨棄了容易過時的「活動導向」架構，重新盤點並提煉出教會的核心價值。將零散的資訊收斂為具備延續性的「團契」與「理念」分類，大幅降低未來的維護成本。</div>
+            </div>
+            <picture class="d-flex flex-column flex-xl-column gap-4">
+                <img class="uxs-img-1" src="/media/tcoc/uxs_sm_1.webp" alt="資訊架構與品牌邏輯">
+            </picture>
+        </div>
+        <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
+            <div>
+                <h4 class="content-title mb-4 mb-md-2 mb-xl-6">梳理無阻力的使用者旅程</h4>
+                <div class="p content f-300 mb-3 mb-md-0 mb-xl-4">針對「婚姻輔導」這類高門檻的轉換目標，我們重新規劃了使用者的瀏覽動線。從建立心理安全感的空間照片，到解除疑慮的 FAQ，最後順暢引導至 LINE OA 進行軟性諮詢。</div>
+            </div>
+            <picture class="d-flex flex-column flex-xl-column gap-4">
+                <img class="uxs-img-2" src="/media/tcoc/uxs_sm_2.webp" alt="使用者旅程與轉換漏斗">
+                <img class="uxs-img-3" src="/media/tcoc/uxs_sm_3.webp" alt="UI 流程圖">
+            </picture>
+        </div>
+        <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
+            <div class="w-xl-75">
+                <h4 class="content-title mb-4 mb-md-2 mb-xl-6">透過線稿凝聚持份者共識</h4>
+                <div class="p content f-300 mb-3 mb-md-0 mb-xl-4">面對多方利害關係人，我們在初期運用低保真 (Low-fi) 線稿聚焦討論，不僅確保了品牌形象的共識，也為後續面對公關危機時的「敏捷設計調整」打下了穩固的基礎。</div>
+            </div>
+            <picture class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 d-flex flex-column flex-xl-column gap-4">
+                <img class="uxs-img-4" src="/media/tcoc/uxs_sm_4.webp" alt="線稿與共識會議">
+            </picture>
+        </div>
+    </div>
+
+    <div class="dss mb-10">
+        <div class="container grid px-4 px-sm-6 px-lg-9 pt-6">
+            <div class="section-title d-flex flex-column col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-6">
+                <h2 class="f-700 mb-2">設計風格</h2>
+                <div class="p subtitle">視覺識別：風格定調與 UI 元素</div>
+            </div>
+            <picture class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-4 h-auto">
+                <img src="/media/tcoc/dss_sm_1.webp" class="dss-img-1 w-100 h-100" alt="">
+            </picture>
+            <picture class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-4 h-auto">
+                <img src="/media/tcoc/dss_sm_2.webp" class="dss-img-2 w-100 h-100" alt="">
+            </picture>
+            <picture class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-4 h-auto">
+                <img src="/media/tcoc/dss_sm_3.webp" class="dss-img-3 w-100 h-100" alt="">
+            </picture>
+        </div>
+    </div>
+
+    <div class="its grid container px-4 px-sm-6 px-lg-9 pt-6 mb-10 mb-md-9">
+        <div class="section-title d-flex flex-column col-span-xs-4 col-span-md-7 col-span-xl-11 mb-6 mb-md-9">
+            <h2 class="f-700 mb-2">設計迭代</h2>
+            <div class="p subtitle">如何透過設計建立信任感、降低維護成本，並應對公關危機</div>
+        </div>
+        
+        <div class="version col-span-xs-4 col-span-md-7 col-span-xl-11">
+            <h4 class="version-title mb-4">迭代 1：從「活動導向」轉為「價值導向」</h4>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture><img class="its-img-1" src="/media/tcoc/its_sm_1.webp" alt="Value-driven IA"></picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="/media/icons/alert.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">內容老化的死胡同</div>
+                            <div class="p2 f-300">舊網站上寫滿了早已不存在的過往活動與團契細節。這不僅與現況脫節，更無法向新訪客傳達組織真正的核心價值。</div>
+                        </div>
+                    </div>
+                    <div class="itb d-flex">
+                        <img src="/media/icons/check-grey.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">長青內容的重新歸類</div>
+                            <div class="p2 f-300">我將活動收斂至更宏觀的「團契」分類下。捨棄流水帳般的活動清單，改用第一人稱對話式的文案來強調這些群體「在乎什麼價值」，建立主動且具溫度的溝通。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="version col-span-xs-4 col-span-md-7 col-span-xl-11">
+            <h4 class="version-title mb-4">迭代 2：為「高門檻服務」建立心理安全感</h4>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture><img class="its-img-2" src="/media/tcoc/its_sm_2.webp" alt="Marriage Counseling Page"></picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="/media/icons/alert.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">看得到但不敢報名</div>
+                            <div class="p2 f-300">「婚姻輔導」頁面擁有很好的 Google SEO 排名，但落伍的設計與缺乏理念說明，讓帶有防備心的使用者望而卻步。</div>
+                        </div>
+                    </div>
+                    <div class="itb d-flex">
+                        <img src="/media/icons/adjustments.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">運用漸進式揭露建立信任</div>
+                            <div class="p2 f-300">除了視覺翻新，我放上了真實輔導空間的照片來降低心理門檻。在主頁直觀展示基本資訊與 FAQ，並將深度的「輔導理念」收納至次級頁面，讓有需求的人能自主深入了解。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="version col-span-xs-4 col-span-md-7 col-span-xl-11">
+            <h4 class="version-title mb-4">迭代 3：為「公關危機」進行的敏捷設計</h4>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture><img class="its-img-3" src="/media/tcoc/its_sm_3.webp" alt="Crisis Communication Design"></picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="/media/icons/alert.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">突發的網路謠言攻擊</div>
+                            <div class="p2 f-300">在開發期間，組織遭到惡意的網路謠言攻擊。客戶急需一個官方管道來澄清其神學背景與財務的透明度。</div>
+                        </div>
+                    </div>
+                    <div class="itb d-flex">
+                        <img src="/media/icons/check-grey.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2">打造專屬透明度防線</div>
+                            <div class="p2 f-300">我立刻調整「關於我們」的設計策略。將原先的故事拿掉，換上「神學基礎」卡片；更關鍵的是，設計了專屬的「透明度區塊」，清晰列出外部會計師認證、理監事名單與財務報表連結，並利用跑馬燈展示全球分支，在視覺上強力背書其國際可靠度。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dsys">
+        <div class="container grid px-4 px-sm-6 px-lg-9 pt-6 mb-10">
+            <div class="section-title d-flex flex-column col-span-xs-4 col-span-md-7 col-span-xl-11 mb-6">
+                <h2 class="f-700 mb-2">設計系統</h2>
+                <div class="p subtitle">色彩計畫、排版字體與 UI 元素</div>
+            </div>
+            <div class="picture-list grid col-span-xs-4 col-span-md-7 col-span-xl-11">
+                <picture class="col-span-xs-4 col-span-xl-6"><img src="/media/tcoc/dsys_sm_1.webp" alt="" class="w-100"></picture>
+                <picture class="col-span-xs-4 col-span-xl-6"><img src="/media/tcoc/dsys_sm_2.webp" alt="" class="w-100"></picture>
+                <picture class="col-span-xs-4 col-span-xl-6"><img src="/media/tcoc/dsys_sm_3.webp" alt="" class="w-100"></picture>
+                <picture class="col-span-xs-4 col-span-xl-6"><img src="/media/tcoc/dsys_sm_4.webp" alt="" class="w-100"></picture>
+            </div>
+        </div>
+    </div>
+
+    <div class="outcs grid container px-4 px-sm-6 px-lg-9 pt-6 mb-10 mb-md-9 mb-lg-12">
+        <div class="section-title d-flex flex-column col-span-xs-4 col-span-md-7 col-span-xl-11 mb-2 mb-md-6">
+            <h2 class="f-700 mb-2">專案成果</h2>
+            <div class="p subtitle">我們達成了什麼？</div>
+        </div>
+        <div class="d-flex flex-column flex-lg-row outcs-list col-span-xs-4 col-span-md-7 col-span-xl-11">
+            <div class="d-flex flex-column gap-4 w-100">
+                <div class="outcs-box d-flex flex-column flex-md-row">
+                    <img src="/media/icons/happy-face.svg" alt="" class="category-icon">
+                    <div class="details d-flex flex-column flex-grow-1">
+                        <div class="p mb-2">無阻力的支援管道</div>
+                        <div class="p2 f-300">新整合的 LINE OA 成功在半年內柔性處理了超過 100 件查詢，成為化解訪客疑慮與正面回應網路謠言的最佳第一線。</div>
+                    </div>
+                </div>
+                <div class="outcs-box d-flex flex-column flex-md-row">
+                    <img src="/media/icons/happy-face.svg" alt="" class="category-icon">
+                    <div class="details d-flex flex-column flex-grow-1">
+                        <div class="p">自然流量的實質轉換</div>
+                        <div class="p2 f-300">在「零行銷預算」的情況下，單靠有機 SEO 與充滿信任感的網頁設計，成功帶來多起全新的婚姻輔導預約個案。</div>
+                    </div>
+                </div>                
+            </div>
+            
+            <div class="d-flex flex-column gap-4 w-100">
+                <div class="outcs-box d-flex flex-column flex-md-row">
+                    <img src="/media/icons/happy-face.svg" alt="" class="category-icon">
+                    <div class="details d-flex flex-column flex-grow-1">
+                        <div class="p mb-2">免維護的長青網站</div>
+                        <div class="p2 f-300">長青資訊架構 (Evergreen IA) 策略大獲成功；網站上線後，除了因應危機處理更新了「關於我們」，主要內容幾乎無需再花心力維護更新。</div>
+                    </div>
+                </div>
+                <div class="outcs-box d-flex flex-column flex-md-row">
+                    <img src="/media/icons/happy-face.svg" alt="" class="category-icon">
+                    <div class="details d-flex flex-column flex-grow-1">
+                        <div class="p mb-2">零失真的全端交付</div>
+                        <div class="p2 f-300">親自將 UI/UX 設計手刻轉化為響應式的 HTML/CSS/JS，確保網站上的活潑動畫在各種裝置上都能流暢運行。</div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="fsrc mb-9">
+        <h1 class="f-700 text-center mb-6">最終成品</h1>
+        <picture>
+            <img class="fsrc-img w-100" src="/media/tcoc/fsrc_xl.webp" alt="Final screen - Website Design">
+        </picture>
+    </div>
+
+    <div class="contact-section container mb-9 mb-sm-10 mb-xl-12 px-lg-9 d-xl-flex justify-content-xl-between ">
+        <div class="d-flex flex-column section-title mb-6">
+            <h2 class="f-700 mb-2">聯絡與社群</h2>
+            <div class="p f-300">追蹤我的最新動態 =)</div>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                <img src="/media/icons/ig.svg" alt="" class="icon media-icon"><span class="p flex-grow-1 text-center f-300">spotx_studio</span><img src="/media/icons/arrow-grey.svg" alt="" class="icon">
+            </a>
+            <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                <img src="/media/icons/youtube.svg" alt="" class="icon media-icon"><span class="p flex-grow-1 text-center f-300">spotx.studio</span><img src="/media/icons/arrow-grey.svg" alt="" class="icon">
+            </a>
+            <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                <img src="/media/icons/behance.svg" alt="" class="icon media-icon"><span class="p flex-grow-1 text-center f-300">spotx.studio</span><img src="/media/icons/arrow-grey.svg" alt="" class="icon">
+            </a>
+            <a href="#" class="social d-flex align-items-center px-3 px-md-4 py-4 mb-3 mb-xl-0">
+                <img src="/media/icons/gmail.svg" alt="" class="icon media-icon"><span class="p flex-grow-1 text-center f-300">gabriel@spotx.studio</span><img src="/media/icons/arrow-grey.svg" alt="" class="icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer d-flex">
+        <div class="container d-flex">
+            <span class="caption f-300">2026</span>
+            <img src="/media/icons/copyright.svg" alt="copyright icon" class="icon">
+            <span class="caption f-300">© Spotx Studio 版權所有</span>
+        </div>
+    </div>
+
+    <div class="page-controller-sm d-flex d-md-none align-items-center">
+        <div class="d-flex flex-column">
+            <div class="index-box d-flex gap-0"><p class="current">1</p>/<div class="total">7</div></div>
+            <div class="indicator active">專案挑戰</div>
+            <div class="indicator">目標與指標</div>
+            <div class="indicator">UX 規劃</div>
+            <div class="indicator">設計風格</div>
+            <div class="indicator">設計迭代</div>
+            <div class="indicator">設計系統</div>
+            <div class="indicator">專案成果</div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 14%"></div>
+        </div>
+        <div class="progress-percentage">0%</div>
+    </div>
+
+    <div class="page-controller-lg">
+        <div class="indicator active"><img src="/media/icons/indication-dot-active.svg" alt=""><p class="p2">專案挑戰</p></div>
+        <div class="indicator"><img src="/media/icons/indication-dot.svg" alt=""><p class="p2">目標與指標</p></div>
+        <div class="indicator"><img src="/media/icons/indication-dot.svg" alt=""><p class="p2">UX 規劃</p></div>
+        <div class="indicator"><img src="/media/icons/indication-dot.svg" alt=""><p class="p2">設計風格</p></div>
+        <div class="indicator"><img src="/media/icons/indication-dot.svg" alt=""><p class="p2">設計迭代</p></div>
+        <div class="indicator"><img src="/media/icons/indication-dot.svg" alt=""><p class="p2">設計系統</p></div>
+        <div class="indicator"><img src="/media/icons/indication-dot.svg" alt=""><p class="p2">專案成果</p></div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="side-menu container">
+        <a href="/zh/" class="d-flex p-6 align-items-center"><h4 class="f-300 flex-grow-1">首頁</h4><img src="/media/icons/arrow-grey.svg" alt="" class="icon"></a>
+        <a href="/zh/about/" class="d-flex p-6 align-items-center"><h4 class="f-300 flex-grow-1">關於</h4><img src="/media/icons/arrow-grey.svg" alt="" class="icon"></a>
+        <a href="/zh/case/" class="d-flex p-6 align-items-center"><h4 class="f-300 flex-grow-1">作品</h4><img src="/media/icons/arrow-grey.svg" alt="" class="icon"></a>
+        <a href="/zh/contact/" class="d-flex p-6 align-items-center"><h4 class="f-300 flex-grow-1">聯絡</h4><img src="/media/icons/arrow-grey.svg" alt="" class="icon"></a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/js/offcanvas-custom.js"></script>
+    <script src="/js/case-details.js"></script>
+    <script src="/js/prototype.js"></script>
+    <script src="/js/language-switch.js"></script>
+</body>
+
+</html>
