@@ -14135,7 +14135,7 @@ picture {
 }
 
 .hero-section .navlink {
-  color: #4d4d4d !important;
+  color: #666666 !important;
 }
 
 .hero-section .navlink.active {
@@ -14305,9 +14305,20 @@ picture {
 }
 
 .case-section .data {
-  font-size: 40px;
+  font-size: 32px;
   color: #c8f900;
   line-height: 125%;
+  min-width: 40%;
+}
+@media (min-width: 400px) {
+  .case-section .data {
+    min-width: 30%;
+  }
+}
+@media (min-width: 480px) {
+  .case-section .data {
+    min-width: 25%;
+  }
 }
 
 .case-section .prj-overview {
@@ -15623,7 +15634,7 @@ picture {
 
 .uxs img {
   object-fit: cover;
-  object-position: top;
+  object-position: top left;
   width: 100%;
   height: 200px;
 }
@@ -15700,6 +15711,10 @@ picture {
 
 .its .version {
   margin-bottom: 48px;
+}
+
+.its .version.end {
+  margin-bottom: 0px;
 }
 
 .its .version-title {
@@ -15812,7 +15827,7 @@ picture {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  object-position: left;
+  object-position: top left;
 }
 
 .dsys .badge {
@@ -17423,6 +17438,102 @@ picture {
 }
 
 @media (min-width: 577px) {
+  .churchplus .its-img-8 {
+    content: url(../../media/churchplus/its_md_8.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-8 {
+    content: url(../../media/churchplus/its_lg_8.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-8 {
+    content: url(../../media/churchplus/its_xl_8.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .its-img-9 {
+    content: url(../../media/churchplus/its_md_9.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-9 {
+    content: url(../../media/churchplus/its_lg_9.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-9 {
+    content: url(../../media/churchplus/its_xl_9.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .its-img-10 {
+    content: url(../../media/churchplus/its_md_10.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-10 {
+    content: url(../../media/churchplus/its_lg_10.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-10 {
+    content: url(../../media/churchplus/its_xl_10.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .its-img-11 {
+    content: url(../../media/churchplus/its_md_11.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-11 {
+    content: url(../../media/churchplus/its_lg_11.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-11 {
+    content: url(../../media/churchplus/its_xl_11.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .its-img-12 {
+    content: url(../../media/churchplus/its_md_12.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-12 {
+    content: url(../../media/churchplus/its_lg_12.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-12 {
+    content: url(../../media/churchplus/its_xl_12.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .churchplus .its-img-13 {
+    content: url(../../media/churchplus/its_md_13.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .churchplus .its-img-13 {
+    content: url(../../media/churchplus/its_lg_13.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .churchplus .its-img-13 {
+    content: url(../../media/churchplus/its_xl_13.webp);
+  }
+}
+
+@media (min-width: 577px) {
   .churchplus .dsys-img-1 {
     content: url(../../media/churchplus/dsys_md_1.webp);
   }
@@ -17499,6 +17610,470 @@ picture {
 @media (min-width: 1200px) {
   .churchplus .fsrc-img {
     content: url(../../media/churchplus/fsrc_xl.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .ogp-1 {
+    content: url(../../media/tcoc/og_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .ogp-1 {
+    content: url(../../media/tcoc/og_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .ogp-1 {
+    content: url(../../media/tcoc/og_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .ogp-2 {
+    content: url(../../media/tcoc/og_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .ogp-2 {
+    content: url(../../media/tcoc/og_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .ogp-2 {
+    content: url(../../media/tcoc/og_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .ogp-3 {
+    content: url(../../media/tcoc/og_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .ogp-3 {
+    content: url(../../media/tcoc/og_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .ogp-3 {
+    content: url(../../media/tcoc/og_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .uxs-img-1 {
+    content: url(../../media/tcoc/uxs_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .uxs-img-1 {
+    content: url(../../media/tcoc/uxs_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .uxs-img-1 {
+    content: url(../../media/tcoc/uxs_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .uxs-img-2 {
+    content: url(../../media/tcoc/uxs_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .uxs-img-2 {
+    content: url(../../media/tcoc/uxs_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .uxs-img-2 {
+    content: url(../../media/tcoc/uxs_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .uxs-img-3 {
+    content: url(../../media/tcoc/uxs_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .uxs-img-3 {
+    content: url(../../media/tcoc/uxs_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .uxs-img-3 {
+    content: url(../../media/tcoc/uxs_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .uxs-img-4 {
+    content: url(../../media/tcoc/uxs_md_4.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .uxs-img-4 {
+    content: url(../../media/tcoc/uxs_lg_4.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .uxs-img-4 {
+    content: url(../../media/tcoc/uxs_xl_4.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .uxs-img-5 {
+    content: url(../../media/tcoc/uxs_md_5.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .uxs-img-5 {
+    content: url(../../media/tcoc/uxs_lg_5.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .uxs-img-5 {
+    content: url(../../media/tcoc/uxs_xl_5.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .dss-img-1 {
+    content: url(../../media/tcoc/dss_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .dss-img-1 {
+    content: url(../../media/tcoc/dss_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .dss-img-1 {
+    content: url(../../media/tcoc/dss_lg_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .dss-img-2 {
+    content: url(../../media/tcoc/dss_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .dss-img-2 {
+    content: url(../../media/tcoc/dss_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .dss-img-2 {
+    content: url(../../media/tcoc/dss_lg_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .dss-img-3 {
+    content: url(../../media/tcoc/dss_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .dss-img-3 {
+    content: url(../../media/tcoc/dss_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .dss-img-3 {
+    content: url(../../media/tcoc/dss_lg_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-1 {
+    content: url(../../media/tcoc/its_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-1 {
+    content: url(../../media/tcoc/its_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-1 {
+    content: url(../../media/tcoc/its_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-2 {
+    content: url(../../media/tcoc/its_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-2 {
+    content: url(../../media/tcoc/its_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-2 {
+    content: url(../../media/tcoc/its_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-3 {
+    content: url(../../media/tcoc/its_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-3 {
+    content: url(../../media/tcoc/its_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-3 {
+    content: url(../../media/tcoc/its_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-4 {
+    content: url(../../media/tcoc/its_md_4.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-4 {
+    content: url(../../media/tcoc/its_lg_4.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-4 {
+    content: url(../../media/tcoc/its_xl_4.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-5 {
+    content: url(../../media/tcoc/its_md_5.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-5 {
+    content: url(../../media/tcoc/its_lg_5.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-5 {
+    content: url(../../media/tcoc/its_xl_5.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-6 {
+    content: url(../../media/tcoc/its_md_6.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-6 {
+    content: url(../../media/tcoc/its_lg_6.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-6 {
+    content: url(../../media/tcoc/its_xl_6.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-7 {
+    content: url(../../media/tcoc/its_md_7.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-7 {
+    content: url(../../media/tcoc/its_lg_7.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-7 {
+    content: url(../../media/tcoc/its_xl_7.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-8 {
+    content: url(../../media/tcoc/its_md_8.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-8 {
+    content: url(../../media/tcoc/its_lg_8.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-8 {
+    content: url(../../media/tcoc/its_xl_8.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-9 {
+    content: url(../../media/tcoc/its_md_9.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-9 {
+    content: url(../../media/tcoc/its_lg_9.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-9 {
+    content: url(../../media/tcoc/its_xl_9.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-10 {
+    content: url(../../media/tcoc/its_md_10.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-10 {
+    content: url(../../media/tcoc/its_lg_10.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-10 {
+    content: url(../../media/tcoc/its_xl_10.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-11 {
+    content: url(../../media/tcoc/its_md_11.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-11 {
+    content: url(../../media/tcoc/its_lg_11.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-11 {
+    content: url(../../media/tcoc/its_xl_11.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-12 {
+    content: url(../../media/tcoc/its_md_12.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-12 {
+    content: url(../../media/tcoc/its_lg_12.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-12 {
+    content: url(../../media/tcoc/its_xl_12.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .its-img-13 {
+    content: url(../../media/tcoc/its_md_13.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .its-img-13 {
+    content: url(../../media/tcoc/its_lg_13.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .its-img-13 {
+    content: url(../../media/tcoc/its_xl_13.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .dsys-img-1 {
+    content: url(../../media/tcoc/dsys_md_1.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .dsys-img-1 {
+    content: url(../../media/tcoc/dsys_lg_1.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .dsys-img-1 {
+    content: url(../../media/tcoc/dsys_xl_1.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .dsys-img-2 {
+    content: url(../../media/tcoc/dsys_md_2.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .dsys-img-2 {
+    content: url(../../media/tcoc/dsys_lg_2.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .dsys-img-2 {
+    content: url(../../media/tcoc/dsys_xl_2.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .dsys-img-3 {
+    content: url(../../media/tcoc/dsys_md_3.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .dsys-img-3 {
+    content: url(../../media/tcoc/dsys_lg_3.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .dsys-img-3 {
+    content: url(../../media/tcoc/dsys_xl_3.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .dsys-img-4 {
+    content: url(../../media/tcoc/dsys_md_4.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .dsys-img-4 {
+    content: url(../../media/tcoc/dsys_lg_4.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .dsys-img-4 {
+    content: url(../../media/tcoc/dsys_xl_4.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .tcoc .fsrc-img {
+    content: url(../../media/tcoc/fsrc_md.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .tcoc .fsrc-img {
+    content: url(../../media/tcoc/fsrc_lg.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .tcoc .fsrc-img {
+    content: url(../../media/tcoc/fsrc_xl.webp);
   }
 }
 

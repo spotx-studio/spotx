@@ -216,7 +216,7 @@
 
 .uxs img{
     object-fit: cover;
-    object-position: top;
+    object-position: top left;
     width: 100%;
     height: 200px;
 
@@ -301,6 +301,10 @@
 
 .its .version{
     margin-bottom: 48px;
+}
+
+.its .version.end{
+    margin-bottom: 0px;
 }
 
 .its .version-title{
@@ -407,7 +411,7 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
-    object-position: left;
+    object-position: top left;
 }
 
 .dsys .badge{
