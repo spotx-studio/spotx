@@ -15426,6 +15426,10 @@ picture {
     height: 440px;
   }
 }
+.overview-section .p {
+  color: #cccccc;
+}
+
 .ogs {
   gap: 24px;
 }
