@@ -1,0 +1,31 @@
+/* 1. 全域隱藏原生游標 */
+*, *::before, *::after {
+    cursor: none !important;
+}
+
+/* 2. 定義虛擬游標樣式 */
+.fake-cursor {
+    position: fixed; /* 相對於 Viewport 定位，避免捲動影響 */
+    top: 0;
+    left: 0;
+    width: 20px; 
+    height: 20px;
+    background: url(/media/cursor.svg) center center / cover no-repeat; /* 使用自定義游標圖片 */
+    pointer-events: none; /* 關鍵：確保游標不會擋住下方的點擊事件 */
+    z-index: 9999;
+    
+    /* 讓中心點對齊滑鼠座標 */
+    transform: translate(-50%, -50%);
+    
+    /* 增加平滑縮放動畫 */
+    transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+/* 3. 當滑鼠移到互動元素時的變化 */
+.fake-cursor.hover {
+    width: 32px; /* 動態變大 */
+    height: 32px;
+    mix-blend-mode: difference;
+    /* 增加平滑縮放動畫 */
+    transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
