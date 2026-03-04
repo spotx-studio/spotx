@@ -236,6 +236,9 @@
     color: $primary-500;
     line-height: 125%;
     min-width: 40%;
+    @media (min-width:360px) {
+        min-width: 32%;
+    }
     @media (min-width:400px) {
         min-width: 30%;
     }
