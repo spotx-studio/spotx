@@ -5,6 +5,7 @@
 
 /* 2. 定義虛擬游標樣式 */
 .fake-cursor {
+    display: none;
     position: fixed; /* 相對於 Viewport 定位，避免捲動影響 */
     top: 0;
     left: 0;
@@ -16,7 +17,6 @@
     
     /* 讓中心點對齊滑鼠座標 */
     transform: translate(-50%, -50%);
-    
     /* 增加平滑縮放動畫 */
     transition: width 0.2s, height 0.2s, background-color 0.2s;
 }
@@ -28,4 +28,17 @@
     mix-blend-mode: difference;
     /* 增加平滑縮放動畫 */
     transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+/* 只有在「支援 Hover 且使用滑鼠」的裝置上，才啟動自訂游標魔法 */
+@media (hover: hover) and (pointer: fine) {
+    /* 顯示虛擬游標 */
+    .fake-cursor {
+        display: block;
+    }
+    
+    /* 隱藏原生游標 */
+    *, *::before, *::after {
+        cursor: none !important;
+    }
 }
