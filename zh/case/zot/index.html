@@ -78,13 +78,13 @@
         </div>
 
         <div class="overview-section col-span-xs-4 col-span-sm-8 col-span-xl-12 mb-10 pb-4 border-bottom border-1 border-secondary">
-            <div class="d-md-flex gap-5">
-                <div class="w-100 mb-4 mb-md-0">
-                    <h4 class="f-400 mb-4">災難與痛點</h4>
+            <div class="d-md-flex gap-8">
+                <div class="w-100 mb-6 mb-md-0">
+                    <h4 class="f-400 mb-lg-4 mb-3">災難與痛點</h4>
                     <p class="p f-300">原本企業內部的福利金申請高度依賴紙本作業。不僅財務部門耗費大量時間溝通與收集資料，委員在人工審核的過程中也極易產生人為錯漏。</p>
                 </div>
                 <div class="w-100">
-                    <h4 class="f-400 mb-4">核心策略</h4>
+                    <h4 class="f-400 mb-lg-4 mb-3">核心策略</h4>
                     <p class="p f-300">透過系統化的 UI/UX 重構將線下流程轉移至線上，並建立一套具備嚴謹「狀態管理 (State Management)」且「高度對齊 React 前端開發」的企業級系統架構。</p>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                 </picture>
                 <div class="text-box">
                     <h3 class="mb-1">極速數位化工作流</h3>
-                    <div class="p2 f-300">將紙本審核流程從 2 週狂降至 3 天，且進度即時追蹤不漏接。</div>
+                    <div class="p2 f-300">將紙本審核流程從 2 週狂降至 3-5 天，且進度即時追蹤不漏接。</div>
                 </div>
             </div>
             <div class="og col-span-xs-4 col-span-sm-8 col-span-md-4 col-span-xl-8 og-sm">
@@ -139,7 +139,7 @@
                         </div>
                         <div class="solution d-flex align-items-center">
                             <img src="/media/icons/check-grey.svg" alt="">
-                            <div class="p2 f-300">流程全面數位化，將處理時間砍到剩 3 天，申請人也能隨時掌握最新進度，並直接在線上補件。</div>
+                            <div class="p2 f-300">流程全面數位化，將處理時間砍到剩 3-5 天，申請人也能隨時掌握最新進度，並直接在線上補件。</div>
                         </div>
                     </td>
                 </tr>
@@ -211,7 +211,9 @@
         <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
             <div>
                 <h4 class="content-title mb-3 mb-md-2 mb-xl-6">釐清邊界：用「使用者任務」收斂核心模組</h4>
-                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">客戶初期僅提供了一份基於想像的功能清單。我沒有直接畫 Wireframe，而是先繪製了「使用者任務分析圖」。透過視覺化地圖，引導利害關係人釐清必要與不必要功能（如捨棄系統內建即時通訊），成功收斂出核心模組。</div>
+                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">客戶初期僅提供了一份基於想像的功能清單，列出了他們所規劃的功能和需求。但這樣的結構並不足以支撐整個系統的介面細節和流程，因為功能裡面的權限歸屬以及範圍尚未定義清楚，故此先繪製「使用者任務分析圖」。</div>
+                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">透過視覺化地圖，我列出了所有頁面之下，不同使用者會進行的操作，包含基礎的CRUD（Create, Read, Update, Delete），以及引導利害關係人釐清必要與不必要功能，收斂出核心模組。</div>
+                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">例如：我們刪除了系統的線上對話功能，因為公司希望主要的溝通還是以Email為主，也儘量讓審核的流程保持效率，不用處理太多額外的溝通成本。</div>
             </div>
             <picture class="d-flex flex-column flex-xl-column gap-4 mb-9">
                 <img class="uxs-img-1" src="/media/zot/uxs_sm_1.webp" alt="">
@@ -220,9 +222,10 @@
         <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
             <div class="w-xl-75">
                 <h4 class="content-title mb-3 mb-md-2 mb-xl-6">解決極端情境：化解「狀態機」與權限衝突</h4>
-                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">當案件已進入審核，申請人若需要「編輯修改」，會引發嚴重的狀態機 (State Machine) 衝突。我導入了「撤回 (Withdraw) 機制」，統一了雙方眼中的狀態，並讓系統能精準串接通知邏輯，徹底解決 Edge Cases 模糊地帶。</div>
+                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">接著在設計主要流程的過程中，發現當案件已進入審核，申請人若需要「編輯修改」，有可能會引發嚴重的衝突，因為在審核的當下，如果申請人同時進行了編輯，會造成資訊的同步落差，也會影響審核的準確性。</div>
+                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">所以我們導入了新的狀態（撤回），限制申請人必須先撤回案件才能進行編輯，統一了系統中的案件狀態，同時能精準串接通知邏輯，解決狀態與同步衝突的問題。</div>
             </div>
-            <picture class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 d-flex flex-column flex-xl-column gap-4">
+            <picture class="d-flex flex-column flex-xl-column gap-4 mb-9">
                 <img class="uxs-img-2" src="/media/zot/uxs_sm_2.webp" alt="">
             </picture>
         </div>
@@ -231,7 +234,7 @@
                 <h4 class="content-title mb-3 mb-md-2 mb-xl-6">混合式 UX 提案：透過線稿建立溝通共識</h4>
                 <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">發現客戶對抽象的純 UX 流程圖較難有畫面感，我提早引入低保真 (Low-fi) 線稿輔助說明。這種「混合式 UX 規劃」大幅加速了雙方的討論與決策效率，為後續合作奠定了極佳的信任基礎。</div>
             </div>
-            <picture class="d-flex flex-column flex-xl-column gap-4 mb-9">
+            <picture class="d-flex flex-column flex-xl-column gap-4">
                 <img class="uxs-img-3" src="/media/zot/uxs_sm_3.webp" alt="">
                 <img class="uxs-img-4" src="/media/zot/uxs_sm_4.webp" alt="">
             </picture>
@@ -244,7 +247,7 @@
             <div class="p subtitle">在 UX 彈性與工程成本間取得完美平衡</div>
         </div>
         <div class="version col-span-xs-4 col-span-md-7 col-span-xl-11">
-            <h4 class="version-title mb-4">迭代 1：從「過度彈性的通用驗證」回歸「務實獨立頁面」</h4>
+            <h4 class="version-title mb-4">迭代1：從「過度彈性」回歸「務實獨立頁面」</h4>
             <div class="version-content d-flex flex-column flex-xl-row gap-4 mb-8 mb-xl-6">
                 <div class="photo-list d-flex flex-column w-100">
                     <picture>
@@ -294,7 +297,7 @@
                 </div>
             </div>
         </div>
-        <div class="version end col-span-xs-4 col-span-md-7 col-span-xl-11">
+        <div class="version col-span-xs-4 col-span-md-7 col-span-xl-11">
             <h4 class="version-title mb-4">迭代 2：打造行雲流水的審核體驗</h4>
             <div class="version-content d-flex flex-column flex-xl-row gap-4 mb-8 mb-xl-6">
                 <div class="photo-list d-flex flex-column w-100">
@@ -334,12 +337,12 @@
     <div class="dsys">
         <div class="container grid px-4 px-sm-6 px-lg-9 pt-6 mb-10">
             <div class="section-title d-flex flex-column col-span-xs-4 col-span-md-7 col-span-xl-11 mb-6">
-                <h2 class="f-700 mb-2">DesignOps 落地：零摩擦的工程交付</h2>
-                <div class="p subtitle">1:1 對接 React 開發邏輯，全面導入 Semantic Tokens 打造高擴充性系統。</div>
+                <h2 class="f-700 mb-2">設計系統與交付</h2>
+                <div class="p subtitle">對接開發邏輯，導入 Semantic Tokens 打造高擴充性系統。</div>
             </div>
             <div class="picture-list grid col-span-xs-4 col-span-md-7 col-span-xl-11">
                 <picture class="col-span-xs-4 col-span-xl-6">
-                    <img src="/media/zot/dsys_sm_1.webp" alt="" class="dsys-img-1 w-100">
+                    <img src="/media/zot/dsys_sm_5.webp" alt="" class="dsys-img-1 w-100">
                     <span class="badge bg-primary f-300">上傳彈跳視窗</span>
                 </picture>
                 <picture class="col-span-xs-4 col-span-xl-6">
