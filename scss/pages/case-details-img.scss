@@ -750,6 +750,50 @@
         content: url(../../media/zot/dsys_xl_4.webp);
     }
 }
+.zot .dsys-img-5{
+    @media (min-width: 577px) {
+        content: url(../../media/zot/dsys_md_5.webp);
+    }
+    @media (min-width: 1025px) {
+        content: url(../../media/zot/dsys_lg_5.webp);
+    }
+    @media (min-width: 1200px) {
+        content: url(../../media/zot/dsys_xl_5.webp);
+    }
+}
+.zot .dsys-img-6{
+    @media (min-width: 577px) {
+        content: url(../../media/zot/dsys_md_6.webp);
+    }
+    @media (min-width: 1025px) {
+        content: url(../../media/zot/dsys_lg_6.webp);
+    }
+    @media (min-width: 1200px) {
+        content: url(../../media/zot/dsys_xl_6.webp);
+    }
+}
+.zot .dsys-img-7{
+    @media (min-width: 577px) {
+        content: url(../../media/zot/dsys_md_7.webp);
+    }
+    @media (min-width: 1025px) {
+        content: url(../../media/zot/dsys_lg_7.webp);
+    }
+    @media (min-width: 1200px) {
+        content: url(../../media/zot/dsys_xl_7.webp);
+    }
+}
+.zot .dsys-img-8{
+    @media (min-width: 577px) {
+        content: url(../../media/zot/dsys_md_8.webp);
+    }
+    @media (min-width: 1025px) {
+        content: url(../../media/zot/dsys_lg_8.webp);
+    }
+    @media (min-width: 1200px) {
+        content: url(../../media/zot/dsys_xl_8.webp);
+    }
+}
 
 // Final Screens Section
 .zot .fsrc-img{

@@ -1023,6 +1023,70 @@
 }
 
 @media (min-width: 577px) {
+  .zot .dsys-img-5 {
+    content: url(../../media/zot/dsys_md_5.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .dsys-img-5 {
+    content: url(../../media/zot/dsys_lg_5.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .dsys-img-5 {
+    content: url(../../media/zot/dsys_xl_5.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .dsys-img-6 {
+    content: url(../../media/zot/dsys_md_6.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .dsys-img-6 {
+    content: url(../../media/zot/dsys_lg_6.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .dsys-img-6 {
+    content: url(../../media/zot/dsys_xl_6.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .dsys-img-7 {
+    content: url(../../media/zot/dsys_md_7.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .dsys-img-7 {
+    content: url(../../media/zot/dsys_lg_7.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .dsys-img-7 {
+    content: url(../../media/zot/dsys_xl_7.webp);
+  }
+}
+
+@media (min-width: 577px) {
+  .zot .dsys-img-8 {
+    content: url(../../media/zot/dsys_md_8.webp);
+  }
+}
+@media (min-width: 1025px) {
+  .zot .dsys-img-8 {
+    content: url(../../media/zot/dsys_lg_8.webp);
+  }
+}
+@media (min-width: 1200px) {
+  .zot .dsys-img-8 {
+    content: url(../../media/zot/dsys_xl_8.webp);
+  }
+}
+
+@media (min-width: 577px) {
   .zot .fsrc-img {
     content: url(../../media/zot/fsrc_md.webp);
   }
