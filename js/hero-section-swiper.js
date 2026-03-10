@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    
+
 // 1. 初始化 Swiper
     const heroSwiper = new Swiper('.hero-text-swiper', {
         speed: 600,

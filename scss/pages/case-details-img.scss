@@ -479,6 +479,50 @@
         content: url(../../media/acrox/dsys_xl_4.webp);
     }
 }
+.acrox .dsys-img-5{
+    @media (min-width: 577px) {
+        content: url(../../media/acrox/dsys_md_5.webp);
+    }
+    @media (min-width: 1025px) {
+        content: url(../../media/acrox/dsys_lg_5.webp);
+    }
+    @media (min-width: 1200px) {
+        content: url(../../media/acrox/dsys_xl_5.webp);
+    }
+}
+.acrox .dsys-img-6{
+    @media (min-width: 577px) {
+        content: url(../../media/acrox/dsys_md_6.webp);
+    }
+    @media (min-width: 1025px) {
+        content: url(../../media/acrox/dsys_lg_6.webp);
+    }
+    @media (min-width: 1200px) {
+        content: url(../../media/acrox/dsys_xl_6.webp);
+    }
+}
+.acrox .dsys-img-7{
+    @media (min-width: 577px) {
+        content: url(../../media/acrox/dsys_md_7.webp);
+    }
+    @media (min-width: 1025px) {
+        content: url(../../media/acrox/dsys_lg_7.webp);
+    }
+    @media (min-width: 1200px) {
+        content: url(../../media/acrox/dsys_xl_7.webp);
+    }
+}
+.acrox .dsys-img-8{
+    @media (min-width: 577px) {
+        content: url(../../media/acrox/dsys_md_8.webp);
+    }
+    @media (min-width: 1025px) {
+        content: url(../../media/acrox/dsys_lg_8.webp);
+    }
+    @media (min-width: 1200px) {
+        content: url(../../media/acrox/dsys_xl_8.webp);
+    }
+}
 
 // Final Screens Section
 .acrox .fsrc-img{
