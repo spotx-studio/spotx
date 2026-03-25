@@ -96,8 +96,7 @@
 }
 
 .ps table .index{
-    gap: 40px;
-    font-size: 12px;
+    gap:40px
 }
 
 .ps .content-box{
@@ -108,7 +107,6 @@
     
     @media (min-width: 768px){
         flex-direction: row;
-        align-items: flex-start;
         gap: 40px;
         padding: 12px 0px;
         flex-wrap: nowrap;
@@ -125,32 +123,20 @@
     }
 }
 
-.ps .p-stat{
-    @media (min-width:768px) {
-        min-width: 40%;
-    }
-}
-.ps .content-box .details{
-    @media (min-width:768px) {
-        width: auto;
-        padding-top: 40px;
-    }
-}
-
 .ps .content-box img{
     width: 24px;
     height: 24px;
 }
 
-.ps .content-box .p{
+.ps .content-box .p2{
     color: $secondary-200;
 }
 
-.ps .content-box .stat{
-    font-size: 64px;
-    color: #FA3633;
-    line-height: 100%;
+.ps .challenge, .ps .solution{
+    gap: 12px;
+    flex: 1 1 0;
 }
+
 
 // ----------------
 // Goals & Metrics Section
@@ -334,7 +320,6 @@
 }
 
 .its .photo-list{
-    position: relative;
     gap: 16px;
     flex: 1;
 
@@ -485,7 +470,7 @@
     display: flex;
     padding: 20px;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
     border-radius: 1px;
     background: var(--850, #262626);
 }
@@ -494,14 +479,6 @@
     width: 40px;
     height: 40px;
     object-fit: contain;
-}
-
-.outcs-box .stat{
-    font-size: 48px;
-    color: $primary-500;
-    @media (min-width:769px) {
-        font-size: 64px;
-    }
 }
 
 .outcs-box .details{

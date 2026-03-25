@@ -15563,7 +15563,6 @@ picture {
 
 .ps table .index {
   gap: 40px;
-  font-size: 12px;
 }
 
 .ps .content-box {
@@ -15575,7 +15574,6 @@ picture {
 @media (min-width: 768px) {
   .ps .content-box {
     flex-direction: row;
-    align-items: flex-start;
     gap: 40px;
     padding: 12px 0px;
     flex-wrap: nowrap;
@@ -15594,32 +15592,18 @@ picture {
   }
 }
 
-@media (min-width: 768px) {
-  .ps .p-stat {
-    min-width: 40%;
-  }
-}
-
-@media (min-width: 768px) {
-  .ps .content-box .details {
-    width: auto;
-    padding-top: 40px;
-  }
-}
-
 .ps .content-box img {
   width: 24px;
   height: 24px;
 }
 
-.ps .content-box .p {
+.ps .content-box .p2 {
   color: #cccccc;
 }
 
-.ps .content-box .stat {
-  font-size: 64px;
-  color: #FA3633;
-  line-height: 100%;
+.ps .challenge, .ps .solution {
+  gap: 12px;
+  flex: 1 1 0;
 }
 
 .gnms {
@@ -15788,7 +15772,6 @@ picture {
 }
 
 .its .photo-list {
-  position: relative;
   gap: 16px;
   flex: 1;
 }
@@ -15948,7 +15931,7 @@ picture {
   display: flex;
   padding: 20px;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
   border-radius: 1px;
   background: var(--850, #262626);
 }
@@ -15957,16 +15940,6 @@ picture {
   width: 40px;
   height: 40px;
   object-fit: contain;
-}
-
-.outcs-box .stat {
-  font-size: 48px;
-  color: #c8f900;
-}
-@media (min-width: 769px) {
-  .outcs-box .stat {
-    font-size: 64px;
-  }
 }
 
 .outcs-box .details {
