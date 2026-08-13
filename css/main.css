@@ -15676,6 +15676,10 @@ picture {
   color: #e6e6e6;
 }
 
+.uxs .subtitle {
+  color: #cccccc;
+}
+
 .uxs .content, .dss .content {
   color: #b3b3b3;
   margin: 0;
