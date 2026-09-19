@@ -99,7 +99,6 @@
                     <div class="p2 f-300">無縫整合本機與雲端的設定檔管理體驗。</div>
                 </div>
             </div>
-
         </div>
         
         <div class="ps col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-10 ">
@@ -112,7 +111,7 @@
                             <h4 class="f-700">的產品邏輯空窗期</h4>
                         </div>
                         <div class="details d-flex align-items-center mt-2">
-                            <div class="p f-300 text-grey">客戶提供的初始線稿僅有介面輪廓，缺乏對玩家真實情境的考量。高達 80% 的邊角情境與核心應用（如本地設定檔管理、工具細節）處於未定義狀態，若直接開發將導致極高的失敗率。</div>
+                            <div class="p f-300 text-grey">客戶提供的初始線稿僅有介面輪廓，缺乏對玩家真實情境的考量。高達 80% 的邊角情境 (Edge Cases) 與核心應用處於未定義狀態，若直接開發將導致極高的失敗率。</div>
                         </div>
                     </td>
                 </tr>
@@ -123,7 +122,7 @@
                             <h4 class="f-700">套互斥的硬體控制權限</h4>
                         </div>
                         <div class="details d-flex align-items-center mt-2">
-                            <div class="p f-300 text-grey">電競設備的客製化中，「全域燈效同步」與「單一設備細部自訂」在底層邏輯上互相打架。缺乏明確的覆蓋原則，導致玩家操作時極易產生設定被洗掉的挫折感與認知混亂。</div>
+                            <div class="p f-300 text-grey">電競設備的客製化中，「全域燈效同步」與「單一設備細部自訂」在底層邏輯上互相打架。缺乏明確的系統層級，導致玩家操作時極易產生設定被洗掉的挫折感與認知混亂。</div>
                         </div>
                     </td>
                 </tr>
@@ -141,7 +140,6 @@
             </table>
         </div>
     </div>
-
     <div class="gnms mb-10">
         <div class="container grid pt-6 py-md-9 px-4 px-sm-6 px-lg-9 pt-6">
             <h2 class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 f-700 mb-6">目標與指標</h2>
@@ -150,7 +148,7 @@
                     <div class="badge bg-primary f-300">體驗戰略</div>
                     <img src="/media/icons/redefine.svg" alt="" class="icon mb-6">
                     <h4 class="mb-2 mb-xl-4">主動發起產品健檢</h4>
-                    <div class="p f-300">打破單純「美化介面」的侷限，透過深度的體驗診斷，主動補齊缺失的功能邏輯，重新定義玩家的完整客製化旅程。</div>
+                    <div class="p f-300">打破單純「美化介面」的侷限，透過深度的 UX Audit (體驗診斷)，主動補齊缺失的功能邏輯，重新定義玩家的完整客製化旅程。</div>
                 </div>
                 <div class="gnm d-flex flex-column mb-5">
                     <div class="badge bg-primary f-300">架構重構</div>
@@ -162,7 +160,7 @@
                     <div class="badge bg-primary f-300">防呆結構</div>
                     <img src="/media/icons/workflow.svg" alt="" class="icon mb-6">
                     <h4 class="mb-2 mb-xl-4">消除導覽迷航感</h4>
-                    <div class="p f-300">在有限的筆電螢幕空間中，優化介面佈局與視覺資訊層級，讓使用者不需要去猜測設定藏在哪裡，降低新手的學習門檻。</div>
+                    <div class="p f-300">在有限的筆電螢幕空間中，優化介面佈局與視覺資訊層級 (Visual Hierarchy)，讓使用者不需要去猜測設定藏在哪裡，降低學習門檻。</div>
                 </div>
             </div>
         </div>
@@ -174,39 +172,80 @@
             <div class="p subtitle">在「客戶商業期望」與「真實玩家體驗」間的權衡</div>
         </div>
         
-        <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
-            <div>
-                <h4 class="content-title mb-3 mb-md-2 mb-xl-6">產品健檢：從視覺美化轉向邏輯補完</h4>
-                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">一開始客戶只希望我針對現有的 Wireframe 進行 UI 介面的視覺美化，讓畫面看起來更專業。但我實際盤點後，發現原稿漏掉了大量關鍵情境，如本地設定檔的權限、截圖路徑等。</div>
-                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">我識別到如果只做表面美化，玩家在實際操作時會處處碰壁，最終導致產品失敗。雖然這超出了原本的發包範圍，但我還是說服客戶先暫停視覺，進行深度的 UX 診斷，並主動提出了 10+ 項核心功能的優化與擴充，確保產品邏輯完整可行。</div>
+        <div class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-xl-9">
+            <h4 class="content-title mb-4 mb-xl-6">產品健檢：從視覺美化轉向邏輯補完 (UX Audit)</h4>
+            <div class="d-xl-flex gap-xl-6 mb-6">
+                <div class="w-100">
+                    <div class="p mb-2 f-400 subtitle">挖掘工程思維背後的隱蔽痛點</div>
+                    <div class="p content f-300">一開始客戶只發包了現有 Wireframe 的「視覺美化」。但我透過啟發式評估盤點後，發現原稿純粹是工程思維的產物，漏掉了大量玩家真實的使用情境。如果只做表面美化，產品上線後絕對會面臨極高的操作挫折。</div>
+                    <div class="p content f-300">所以我說服客戶暫停視覺開發，先進行深度 UX 診斷，並主動補齊了 10+ 項核心功能。例如：<br><br></div>
+                </div>
+                <picture class="w-100 d-flex flex-column gap-4 mt-3 mt-xl-0">
+                    <img class="w-100" src="/media/acrox/uxs_sm_1.webp" alt="">
+                </picture>
             </div>
-            <picture class="d-flex flex-column flex-xl-column gap-4 mb-9">
-                <img class="uxs-img-1" src="/media/acrox/uxs_sm_1.webp" alt="">
-            </picture>
+            <div class="d-xl-flex gap-xl-6 mb-8">
+                <div class="w-100">
+                    <div class="p mb-2 f-400 subtitle">無縫的設定檔社群機制</div>
+                    <div class="p content f-300">原版將「本機端」與「線上端」設定檔完全割裂，忽略了玩家將本機設定公開分享的剛性需求。我重新規劃了上傳與分享流程，並新增「種類」、「適用遊戲」等標籤，大幅提升設定檔的可尋性 (Findability)，讓新手能精準一鍵複製神人設定。</div>
+                </div>
+                <picture class="w-100 d-flex flex-column gap-4 mt-3 mt-xl-0">
+                    <img class="w-100" src="/media/acrox/uxs_sm_2.webp" alt="">
+                </picture>
+            </div>
+            <div class="d-xl-flex gap-xl-6 mb-8">
+                <div class="w-100">
+                    <div class="p mb-2 f-400 subtitle">全裝置適用的「設定細節列表」</div>
+                    <div class="p content f-300">原版僅有「巨集」具備總覽列表，其他硬體（如具備多重設定的滑鼠）只能透過點擊螢幕中間的設備示意圖來盲探，造成嚴重的資訊隱蔽 (Hidden Information)。透過任務分析，我主動提出並新增了全裝置通用的列表視圖，讓玩家能以全局視角快速管理所有複雜配置。</div>
+                </div>
+                <picture class="w-100 d-flex flex-column gap-4 mt-3 mt-xl-0">
+                    <img class="w-100" src="/media/acrox/uxs_sm_2.webp" alt="">
+                </picture>
+            </div>
         </div>
 
-        <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
-            <div class="w-xl-75">
-                <h4 class="content-title mb-3 mb-md-2 mb-xl-6">混合式架構：解開「全域 vs. 單機」的權限死結</h4>
-                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">針對燈效同步，原本的構想是把所有設定塞在一起。但工程測試與玩家回饋指出，這會讓人分不清現在改的是「全部設備」還是「單一滑鼠」，底層邏輯嚴重打架。</div>
-                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">我發現如果沒有明確的層級，玩家辛苦調好的單一燈效很容易被莫名其妙洗掉，產生極大挫折感。為了徹底解決這個死結，我提出「混合式架構」，將全域同步抽離成獨立的覆蓋層 (Override)。打開同步時覆蓋單機設定，關閉則恢復。雖然這增加了開發複雜度，但確保了軟硬體整合 100% 不打架。</div>
+        <div class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-xl-9">
+            <h4 class="content-title mb-4 mb-xl-6">混合式架構：解開「全域 vs. 單機」的權限死結</h4>
+            <div class="d-xl-flex gap-xl-6 mb-6">
+                <div class="w-100">
+                    <div class="p mb-2 f-400 subtitle">相互覆蓋的設定衝突</div>
+                    <div class="p content f-300">針對燈效同步，原本構想是把所有設定塞在一起。但這會讓人分不清現在改的是「全部設備」還是「單一滑鼠」，缺乏明確的層級會讓玩家辛苦調好的單一燈效莫名被洗掉，產生極大挫折感。</div>
+                </div>
+                <picture class="w-100 d-flex flex-column gap-4 mt-3 mt-xl-0">
+                    <img class="w-100" src="/media/acrox/uxs_sm_3.webp" alt="">
+                </picture>
             </div>
-            <picture class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 d-flex flex-column flex-xl-column gap-4">
-                <img class="uxs-img-4" src="/media/acrox/uxs_sm_4.webp" alt="">
-                <img class="uxs-img-5" src="/media/acrox/uxs_sm_5.webp" alt="">
-            </picture>
+            <div class="d-xl-flex gap-xl-6 mb-8">
+                <div class="w-100">
+                    <div class="p mb-2 f-400 subtitle">建立明確的 Override 覆蓋機制</div>
+                    <div class="p content f-300">為了解決這個硬體控制的死結，我提出建立明確的覆蓋機制 (Override Logic)。將全域同步抽離成獨立的覆蓋層，打開同步時覆蓋單機設定，關閉則恢復。雖然增加了開發複雜度，但確保了軟硬體整合 100% 不打架。</div>
+                </div>
+                <picture class="w-100 d-flex flex-column gap-4 mt-3 mt-xl-0">
+                    <img class="w-100" src="/media/acrox/uxs_sm_4.webp" alt="">
+                </picture>
+            </div>
         </div>
 
-        <div class="d-xl-flex col-span-xl-11 col-span-sm-7 col-span-xs-4 gap-xl-6 mb-xl-9">
-            <div class="w-xl-75">
-                <h4 class="content-title mb-3 mb-md-2 mb-xl-6">巨集邏輯的妥協與收斂</h4>
-                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">巨集本質上是一連串指令，與單一硬體無關，所以我最初強烈建議將它拉出來，做成一個獨立的全局管理頁面。但客戶基於他們的市場考量，堅持要將巨集歸屬在個別裝置的頁籤之下。</div>
-                <div class="p content f-300 mb-3 mb-md-6 mb-xl-4">我意識到如果直接照做，玩家會陷入「在滑鼠頁面裡設定鍵盤按鍵」的邏輯錯亂。在無法改變商業決策的情況下，我做了沒辦法的取捨（除了不合邏輯的耳機與喇叭外），將巨集的 UI 模組完全標準化，透過跨裝置一致的排版設計，來彌補並降低這種「反直覺架構」帶來的學習成本。</div>
+        <div class="col-span-xs-4 col-span-sm-8 col-span-md-7 col-span-xl-11 mb-xl-9">
+            <h4 class="content-title mb-4 mb-xl-6">利害關係人妥協：巨集邏輯的標準化降維打擊</h4>
+            <div class="d-xl-flex gap-xl-6 mb-6">
+                <div class="w-100">
+                    <div class="p mb-2 f-400 subtitle">反直覺的商業需求限制</div>
+                    <div class="p content f-300">巨集本質上是跨硬體的指令，我強烈建議將其獨立為全局管理頁面。但客戶基於「市場考量」，堅持要將巨集歸屬在個別裝置的頁籤之下。這會讓玩家陷入「在滑鼠頁面裡設定鍵盤按鍵」的邏輯錯亂。</div>
+                </div>
+                <picture class="w-100 d-flex flex-column gap-4 mt-3 mt-xl-0">
+                    <img class="w-100" src="/media/acrox/uxs_sm_5.webp" alt="">
+                </picture>
             </div>
-            <picture class="d-flex flex-column flex-xl-column gap-4 mb-9">
-                <img class="uxs-img-2" src="/media/acrox/uxs_sm_2.webp" alt="">
-                <img class="uxs-img-3" src="/media/acrox/uxs_sm_3.webp" alt="">
-            </picture>
+            <div class="d-xl-flex gap-xl-6 mb-8">
+                <div class="w-100">
+                    <div class="p mb-2 f-400 subtitle">透過 UI 標準化降低學習成本</div>
+                    <div class="p content f-300">在無法改變商業決策的情況下，我做了必要的妥協。我將巨集的 UI 模組完全標準化 (UI Standardization)，透過跨裝置一致的排版設計，來降低這種「反直覺架構」帶來的學習成本與認知摩擦。</div>
+                </div>
+                <picture class="w-100 d-flex flex-column gap-4 mt-3 mt-xl-0">
+                    <img class="w-100" src="/media/acrox/uxs_sm_6.webp" alt="">
+                </picture>
+            </div>
         </div>
     </div>
 
@@ -238,29 +277,43 @@
             <h4 class="version-title mb-4">迭代 1：結構上的防迷航優化 (三階段佈局演進)</h4>
             <div class="version-content d-flex flex-column flex-xl-row gap-4 mb-8 mb-xl-6">
                 <div class="photo-list d-flex flex-column w-100">
-                    <picture><img class="its-img-1" src="/media/acrox/its_sm_1.webp" alt=""></picture>
-                    <picture><img class="its-img-2" src="/media/acrox/its_sm_2.webp" alt=""></picture>
+                    <picture><img class="w-100" src="/media/acrox/its_sm_1.webp" alt=""></picture>
                 </div>
                 <div class="itb-list d-flex flex-xl-column">
                     <div class="itb d-flex">
                         <img src="/media/icons/alert.svg" alt="" class="category-icon">
                         <div class="details d-flex flex-column flex-grow-1">
-                            <div class="p mb-2">零碎的佈局嘗試與視覺跳動</div>
-                            <div class="p2 f-300">為了在筆電狹小的螢幕內塞入龐大設定，我一開始將基礎設定放左側，後來配合客戶喜好改放到裝置預覽圖的右下方。但因為每個裝置設定項目多寡不同，導致排版會隨著切換忽高忽低。</div>
+                            <div class="p mb-2 f-400 subtitle">零碎的佈局導致視覺跳動</div>
+                            <div class="p2 f-300">為了在筆電狹小螢幕內塞入龐大設定，基礎設定區塊的位置一改再改。由於每個裝置的設定項目多寡不同，導致排版會隨著切換忽高忽低，產生嚴重的視覺跳動與認知摩擦 (Cognitive Friction)。</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="version-content d-flex flex-column flex-xl-row gap-4 mb-8 mb-xl-6">
                 <div class="photo-list d-flex flex-column w-100">
-                    <picture><img class="its-img-3" src="/media/acrox/its_sm_3.webp" alt=""></picture>
+                    <picture><img class="w-100" src="/media/acrox/its_sm_1.webp" alt=""></picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="/media/icons/alert.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2 f-400 subtitle">導入固定的基礎設定和設定列表</div>
+                            <div class="p2 f-300">為了改善視覺跳動問題，我導入了固定的基礎設定區域和統一的設定列表，使不同裝置上的排版更加一致，減少使用者的認知負擔。</div><br>
+                            <div class="p2 f-300">而且基礎性的設定應該反而是使用者最常接觸的，在顯示的層級優先順序上要提高，固定的排版也會減低使用者不耐煩和新手找不到基礎設定的問題。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4 mb-8 mb-xl-6">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture><img class="w-100" src="/media/acrox/its_sm_2.webp" alt=""></picture>
                 </div>
                 <div class="itb-list d-flex flex-xl-column">
                     <div class="itb d-flex">
                         <img src="/media/icons/check-grey.svg" alt="" class="category-icon">
                         <div class="details d-flex flex-column flex-grow-1">
-                            <div class="p mb-2">統一「三欄式」佈局的決定</div>
-                            <div class="p2 f-300">我識別到這種「東一塊西一塊」的排版會讓使用者每次都要重新尋找功能，體驗極度破碎。我決定犧牲一點裝置預覽圖的空間，統一改為「三欄式佈局」，將基礎設定固定在右手邊。這讓使用者不需要埋頭苦幹去猜設定藏在哪，徹底消弭了切換設備時的視覺迷航。</div>
+                            <div class="p mb-2 f-400 subtitle">基於空間一致性的三欄式佈局</div>
+                            <div class="p2 f-300">我決定犧牲一點裝置預覽圖的空間，統一改為「三欄式佈局」，將基礎設定固定在右手邊。透過強大的空間一致性 (Spatial Consistency)，讓使用者不需猜測設定藏在哪，徹底消弭了切換設備時的視覺迷航。</div>
                         </div>
                     </div>
                 </div>
@@ -271,28 +324,28 @@
             <h4 class="version-title mb-4">迭代 2：設定檔詳情頁的資訊重心翻轉</h4>
             <div class="version-content d-flex flex-column flex-xl-row gap-4 mb-8 mb-xl-6">
                 <div class="photo-list d-flex flex-column w-100">
-                    <picture><img class="its-img-4" src="/media/acrox/its_sm_4.webp" alt=""></picture>
+                    <picture><img class="w-100" src="/media/acrox/its_sm_3.webp" alt=""></picture>
                 </div>
                 <div class="itb-list d-flex flex-xl-column">
                     <div class="itb d-flex">
                         <img src="/media/icons/alert.svg" alt="" class="category-icon">
                         <div class="details d-flex flex-column flex-grow-1">
-                            <div class="p mb-2">滿版封面導致的瀏覽限制</div>
-                            <div class="p2 f-300">在設定檔的詳細頁面，原本為了視覺美感，我設計了一個滿版的精美封面大圖放在最上方。但內部 Review 時發現，這樣會導致最重要的「設定細節」被往下擠，需要大量無效滑動。</div>
+                            <div class="p mb-2 f-400 subtitle">滿版封面導致的瀏覽限制</div>
+                            <div class="p2 f-300">在設定檔詳細頁面，原本為了美感設計了滿版精美封面大圖。但 Review 時發現，最重要的「設定參數細節」全被擠到了折疊線 (Above the fold) 之下，需要大量無效的滾動。</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="version-content d-flex flex-column flex-xl-row gap-4 mb-8 mb-xl-6">
                 <div class="photo-list d-flex flex-column w-100">
-                    <picture><img class="its-img-5" src="/media/acrox/its_sm_5.webp" alt=""></picture>
+                    <picture><img class="w-100" src="/media/acrox/its_sm_4.webp" alt=""></picture>
                 </div>
                 <div class="itb-list d-flex flex-xl-column">
                     <div class="itb d-flex">
                         <img src="/media/icons/check-grey.svg" alt="" class="category-icon">
                         <div class="details d-flex flex-column flex-grow-1">
-                            <div class="p mb-2">30/70 分區提升閱讀效率</div>
-                            <div class="p2 f-300">我意識到這完全放錯了重點，對專業玩家來說，快速比對參數遠比欣賞圖片重要。雖然滿版圖很美，但我果斷推翻原設計改採「左右 30/70 分區」。左側保留基本資料，右側一次性展開所有參數，讓資訊密度回歸專業工具的本質。</div>
+                            <div class="p mb-2 f-400 subtitle">30/70 分區提升資訊密度</div>
+                            <div class="p2 f-300">對專業玩家來說，快速比對參數遠比欣賞圖片重要。我果斷推翻原設計改採「左右 30/70 分區」。左側保留基本資料，右側一次性展開所有參數，讓資訊密度 (Information Density) 回歸專業工具的本質。</div>
                         </div>
                     </div>
                 </div>
@@ -300,18 +353,31 @@
         </div>
 
         <div class="version col-span-xs-4 col-span-md-7 col-span-xl-11">
-            <h4 class="version-title mb-4">迭代 3：設定檔卡片的瀏覽效率提升</h4>
-            <div class="version-content d-flex flex-column flex-xl-row gap-4">
-                <div class="photo-list d-flex w-100">
-                    <picture><img class="its-img-6" src="/media/acrox/its_sm_6.webp" alt=""></picture>
-                    <picture><img class="its-img-7" src="/media/acrox/its_sm_7.webp" alt=""></picture>
+            <h4 class="version-title mb-4">迭代 3：設定檔卡片的掃視效率 (Scannability) 提升</h4>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4 mb-8 mb-xl-6">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture><img class="w-100" src="/media/acrox/its_sm_5.webp" alt=""></picture>
+                </div>
+                <div class="itb-list d-flex flex-xl-column">
+                    <div class="itb d-flex">
+                        <img src="/media/icons/alert.svg" alt="" class="category-icon">
+                        <div class="details d-flex flex-column flex-grow-1">
+                            <div class="p mb-2 f-400 subtitle">封面主導造成的資訊層級隱沒</div>
+                            <div class="p2 f-300">在原版的卡片列表中，圖片佔據了絕大比例，導致最重要的設備型號與適用遊戲等文字標籤變得不顯眼，玩家很難在快速滑動中找到自己需要的設定檔。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="version-content d-flex flex-column flex-xl-row gap-4 mb-8 mb-xl-6">
+                <div class="photo-list d-flex flex-column w-100">
+                    <picture><img class="w-100" src="/media/acrox/its_sm_6.webp" alt=""></picture>
                 </div>
                 <div class="itb-list d-flex flex-xl-column">
                     <div class="itb d-flex">
                         <img src="/media/icons/check-grey.svg" alt="" class="category-icon">
                         <div class="details d-flex flex-column flex-grow-1">
-                            <div class="p mb-2">優化視覺層級與資訊密度</div>
-                            <div class="p2 f-300">在列表呈現上，我將「設備型號」標籤層級往前拉，並加入「遊戲圖示」讓玩家能憑直覺秒速辨識。同時刻意縮減了封面圖片的高度，確保在一次畫面滾動中能容納更多的卡片，極大地提升了尋找與瀏覽的效率。</div>
+                            <div class="p mb-2 f-400 subtitle">優化視覺層級與資訊密度</div>
+                            <div class="p2 f-300">我重新定義了視覺層級 (Visual Hierarchy)，將「設備型號」標籤往前拉，並加入「遊戲圖示」提供視覺線索。同時刻意縮減封面圖片高度，確保一次畫面滾動中能容納更多卡片，極大地提升了尋找與瀏覽的掃視效率。</div>
                         </div>
                     </div>
                 </div>
@@ -373,7 +439,7 @@
                     <div class="stat f-700">10+</div>
                     <div class="details d-flex flex-column flex-grow-1">
                         <div class="p mb-2">核心功能優化與擴充</div>
-                        <div class="p2 f-300">我不只交付介面，更主動進行體驗診斷，提出了超過 10 項重大功能優化（包含本地設定檔管理、批次鍵程設定等），將一份邏輯殘缺的草圖升級為具備市場競爭力的完整生態系。</div>
+                        <div class="p2 f-300">我不只交付介面，更主動進行體驗診斷，提出了超過 10 項重大功能優化（包含本地設定檔社群化、細節列表等），將一份邏輯殘缺的草圖升級為具備市場競爭力的完整生態系。</div>
                     </div>
                 </div>
                 <div class="outcs-box d-flex flex-column">
@@ -397,7 +463,7 @@
                         <div class="stat f-700">100%</div>
                     <div class="details d-flex flex-column flex-grow-1">
                         <div class="p mb-2">軟硬體邏輯的一致性</div>
-                        <div class="p2 f-300">開發混合式架構與明確的覆蓋原則，徹底解決了燈效同步在多設備間互相干擾的死結。確保在各種複雜的硬體組合下，都能達成 100% 不打架的客製化體驗。</div>
+                        <div class="p2 f-300">開發混合式架構與明確的 Override (覆蓋) 原則，徹底解決了燈效同步在多設備間互相干擾的死結。確保在各種複雜的硬體組合下，都能達成 100% 不打架的客製化體驗。</div>
                     </div>
                 </div>                
             </div>
